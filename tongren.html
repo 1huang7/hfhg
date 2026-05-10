@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>铜仁市 - 云上贵州行</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/region.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="region-header" style="background: url('images/铜仁乌江特大桥.jpeg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; padding: 150px 0;">
+        <div class="container" style="position: relative; padding: 0;">
+            <div style="position: relative; z-index: 1;">
+                <nav class="breadcrumb">
+                    <a href="index.html">首页</a>
+                    <span>/</span>
+                    <span>铜仁市</span>
+                </nav>
+                <h1 class="region-title">铜仁市</h1>
+                <p class="region-subtitle">梵天净土，桃源铜仁</p>
+            </div>
+
+        </div>
+    </header>
+
+    <nav class="region-navigation">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="tab-button active" data-tab="natural">
+                    <i class="fas fa-mountain"></i>
+                    <span>自然景观</span>
+                </button>
+                <button class="tab-button" data-tab="cultural">
+                    <i class="fas fa-landmark"></i>
+                    <span>人文风景</span>
+                </button>
+                <button class="tab-button" data-tab="food">
+                    <i class="fas fa-utensils"></i>
+                    <span>美食推荐</span>
+                </button>
+                <button class="tab-button" data-tab="transport">
+                    <i class="fas fa-train"></i>
+                    <span>交通出行</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="region-main">
+        <div class="container">
+            <div style="font-family: '楷体', 'KaiTi', serif; font-size: 3.5rem; color: #333; text-align: center; margin-bottom: 20px;">
+                梵天净土，桃源铜仁
+            </div>
+            <!-- 自然景观 -->
+            <section class="content-section active" id="natural">
+                <h2 class="section-header">自然景观</h2>
+                <div class="attractions-grid">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/梵净山.mp4" alt="梵净山" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">国家级自然保护区</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>梵净山</h3>
+                            <p class="attraction-description">中国十大避暑名山之一，原始森林，佛教圣地，蘑菇石奇观</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">原始森林</span>
+                                <span class="highlight">佛教圣地</span>
+                                <span class="highlight">蘑菇石奇观</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：1-2天</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>印江县、江口县、松桃县交界处</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleFanjingDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 梵净山详细介绍 -->
+                    <div class="attraction-detail" id="fanjing-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>梵净山详细简介</h3>
+                            <p class="detail-subtitle">中国十大避暑名山・佛教圣地</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>梵净山位于贵州省铜仁市印江县、江口县、松桃县交界处，是中国十大避暑名山之一，也是国家级自然保护区和世界自然遗产。梵净山以原始森林、佛教圣地和蘑菇石奇观而闻名。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
+                            <ul>
+                                <li><strong>原始森林</strong>：梵净山拥有丰富的原始森林资源，是黔金丝猴的栖息地。</li>
+                                <li><strong>佛教圣地</strong>：梵净山是中国五大佛教名山之一，有承恩寺等佛教寺庙。</li>
+                                <li><strong>蘑菇石奇观</strong>：梵净山的蘑菇石是其标志性景观，由风化作用形成。</li>
+                                <li><strong>自然生态</strong>：梵净山生态环境良好，空气清新，是天然的氧吧。</li>
+                                <li><strong>云海奇观</strong>：梵净山经常出现云海景观，景色壮观。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：成人票110元/人；学生、老人半价。</li>
+                                <li><strong>开放时间</strong>：08:00-17:00（16:00停止入园）。</li>
+                                <li><strong>交通</strong>：
+                                    <ul>
+                                        <li>自驾：从铜仁市区出发，经杭瑞高速，约1.5小时车程。</li>
+                                        <li>公共交通：铜仁客车站有直达梵净山的旅游专线车。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>最佳季节</strong>：春季和秋季，此时气候适宜，景色优美。</li>
+                                <li><strong>周边景点</strong>：九龙洞、石阡温泉群、铜仁古城。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>梵净山是一个集自然风光、佛教文化和生态保护于一体的旅游胜地。在这里，您可以感受到大自然的神奇魅力，了解到佛教文化的深厚底蕴，体验到生态旅游的乐趣。</p>
+                            <button class="close-detail-btn" onclick="toggleFanjingDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/九龙洞.mp4" alt="九龙洞" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">溶洞奇观</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>九龙洞</h3>
+                            <p class="attraction-description">大型天然溶洞，钟乳石千姿百态，地下奇观</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">大型天然溶洞</span>
+                                <span class="highlight">钟乳石奇观</span>
+                                <span class="highlight">地下景观</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：2-3小时</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>碧江区漾头镇</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleJiulongDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 九龙洞详细介绍 -->
+                    <div class="attraction-detail" id="jiulong-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>九龙洞详细简介</h3>
+                            <p class="detail-subtitle">大型天然溶洞・地下奇观</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>九龙洞位于贵州省铜仁市碧江区漾头镇，是一个大型天然溶洞，洞内钟乳石千姿百态，景观壮丽。九龙洞以其独特的地下景观而闻名，是铜仁市的重要旅游资源之一。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
+                            <ul>
+                                <li><strong>大型天然溶洞</strong>：九龙洞是一个大型天然溶洞，洞内空间宏大。</li>
+                                <li><strong>钟乳石奇观</strong>：洞内钟乳石千姿百态，有各种奇特的地质景观。</li>
+                                <li><strong>地下景观</strong>：九龙洞的地下景观丰富多样，令人叹为观止。</li>
+                                <li><strong>历史文化</strong>：九龙洞周边有丰富的历史文化遗迹。</li>
+                                <li><strong>自然生态</strong>：九龙洞周边生态环境良好，空气清新。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：成人票80元/人；学生、老人半价。</li>
+                                <li><strong>开放时间</strong>：08:30-17:30（16:30停止入园）。</li>
+                                <li><strong>交通</strong>：
+                                    <ul>
+                                        <li>自驾：从铜仁市区出发，经杭瑞高速，约30分钟车程。</li>
+                                        <li>公共交通：铜仁客车站有直达九龙洞的旅游专线车。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>最佳季节</strong>：全年适宜，洞内温度恒定，四季如春。</li>
+                                <li><strong>周边景点</strong>：梵净山、石阡温泉群、铜仁古城。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>九龙洞是一个集自然风光、地质科普和历史文化于一体的旅游胜地。在这里，您可以感受到大自然的鬼斧神工，欣赏到壮观的地下景观，了解到地质形成的过程。</p>
+                            <button class="close-detail-btn" onclick="toggleJiulongDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <img src="images/tongren/shuikou.jpg" alt="石阡温泉群">
+                            <div class="attraction-badge">天然温泉</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>石阡温泉群</h3>
+                            <p class="attraction-description">天然温泉，富含多种矿物质，养生休闲胜地</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">天然温泉</span>
+                                <span class="highlight">富含矿物质</span>
+                                <span class="highlight">养生休闲</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：半天-1天</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>石阡县汤山镇</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleShiqianDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 石阡温泉群详细介绍 -->
+                    <div class="attraction-detail" id="shiqian-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>石阡温泉群详细简介</h3>
+                            <p class="detail-subtitle">天然温泉・养生休闲胜地</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>石阡温泉群位于贵州省铜仁市石阡县汤山镇，是一个以天然温泉为主要特色的旅游景区。石阡温泉群富含多种矿物质，具有养生保健的功效，是贵州省著名的温泉疗养胜地。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
+                            <ul>
+                                <li><strong>天然温泉</strong>：石阡温泉群是天然形成的温泉，水质优良。</li>
+                                <li><strong>富含矿物质</strong>：温泉水中富含多种对人体有益的矿物质。</li>
+                                <li><strong>养生休闲</strong>：石阡温泉群是理想的养生休闲胜地。</li>
+                                <li><strong>历史文化</strong>：石阡温泉有着悠久的历史，早在明代就被开发利用。</li>
+                                <li><strong>自然环境</strong>：温泉群周边自然环境优美，空气清新。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：成人票120元/人；学生、老人半价。</li>
+                                <li><strong>开放时间</strong>：09:00-22:00。</li>
+                                <li><strong>交通</strong>：
+                                    <ul>
+                                        <li>自驾：从铜仁市区出发，经杭瑞高速，约2小时车程。</li>
+                                        <li>公共交通：铜仁客车站有直达石阡的班车，石阡县城有到温泉群的公交车。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>最佳季节</strong>：冬季，此时泡温泉最为舒适。</li>
+                                <li><strong>周边景点</strong>：梵净山、九龙洞、铜仁古城。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>石阡温泉群是一个集自然风光、养生保健和历史文化于一体的旅游胜地。在这里，您可以享受到天然温泉的舒适，感受到养生保健的功效，了解到温泉文化的深厚底蕴。</p>
+                            <button class="close-detail-btn" onclick="toggleShiqianDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 人文景观 -->
+            <section class="content-section" id="cultural">
+                <h2 class="section-header">人文风景</h2>
+                <div class="attractions-grid">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/铜仁古城.mp4" alt="铜仁古城" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">历史文化</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>铜仁古城</h3>
+                            <p class="attraction-description">明清古建筑群，锦江穿城而过，风光旖旎</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">明清古建筑</span>
+                                <span class="highlight">历史文化</span>
+                                <span class="highlight">锦江风光</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：半天</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>碧江区市中街道</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleGuchengDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 铜仁古城详细介绍 -->
+                    <div class="attraction-detail" id="gucheng-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>铜仁古城详细简介</h3>
+                            <p class="detail-subtitle">明清古建筑群・锦江风光</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>铜仁古城位于贵州省铜仁市碧江区市中街道，是一个以明清古建筑群为主要特色的旅游景区。古城内锦江穿城而过，风光旖旎，是铜仁市的历史文化中心。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
+                            <ul>
+                                <li><strong>明清古建筑</strong>：古城内保存着大量明清时期的古建筑，具有很高的历史价值。</li>
+                                <li><strong>历史文化</strong>：铜仁古城有着悠久的历史，是铜仁市的历史文化中心。</li>
+                                <li><strong>锦江风光</strong>：锦江穿城而过，为古城增添了一道美丽的风景线。</li>
+                                <li><strong>民俗文化</strong>：古城内保留着丰富的民俗文化，是了解铜仁传统文化的窗口。</li>
+                                <li><strong>美食小吃</strong>：古城内有各种铜仁特色美食，如社饭、米豆腐等。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：免费开放。</li>
+                                <li><strong>开放时间</strong>：全天开放。</li>
+                                <li><strong>交通</strong>：
+                                    <ul>
+                                        <li>自驾：从铜仁市区出发，经杭瑞高速，约10分钟车程。</li>
+                                        <li>公共交通：铜仁市区内有公交车直达古城。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>最佳季节</strong>：春季和秋季，此时气候适宜，景色优美。</li>
+                                <li><strong>周边景点</strong>：梵净山、九龙洞、石阡温泉群。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>铜仁古城是一个集历史文化、自然风光和民俗风情于一体的旅游胜地。在这里，您可以感受到明清时期的建筑风格，欣赏到锦江的美丽风光，了解到铜仁的历史文化。</p>
+                            <button class="close-detail-btn" onclick="toggleGuchengDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/苗王城.mp4" alt="苗王城" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">苗族文化</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>苗王城</h3>
+                            <p class="attraction-description">苗族传统文化展示地，苗族建筑风格，民族风情浓郁</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">苗族文化</span>
+                                <span class="highlight">传统建筑</span>
+                                <span class="highlight">民族风情</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：半天</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>松桃县正大乡</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleMiaowangDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 苗王城详细介绍 -->
+                    <div class="attraction-detail" id="miaowang-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>苗王城详细简介</h3>
+                            <p class="detail-subtitle">苗族传统文化展示地・民族风情浓郁</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>苗王城位于贵州省铜仁市松桃县正大乡，是一个以苗族传统文化为主要特色的旅游景区。苗王城展示了苗族的建筑风格、民族风情和传统文化，是了解苗族文化的重要窗口。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
+                            <ul>
+                                <li><strong>苗族文化</strong>：苗王城是苗族传统文化的展示地，保存着丰富的苗族文化遗产。</li>
+                                <li><strong>传统建筑</strong>：苗王城的建筑风格独特，体现了苗族的建筑艺术。</li>
+                                <li><strong>民族风情</strong>：苗王城民族风情浓郁，游客可以体验苗族的传统习俗。</li>
+                                <li><strong>历史文化</strong>：苗王城有着悠久的历史，是苗族历史文化的重要载体。</li>
+                                <li><strong>自然环境</strong>：苗王城周边自然环境优美，空气清新。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：成人票80元/人；学生、老人半价。</li>
+                                <li><strong>开放时间</strong>：08:30-17:30。</li>
+                                <li><strong>交通</strong>：
+                                    <ul>
+                                        <li>自驾：从铜仁市区出发，经杭瑞高速，约1小时车程。</li>
+                                        <li>公共交通：铜仁客车站有直达苗王城的旅游专线车。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>最佳季节</strong>：春季和秋季，此时气候适宜，景色优美。</li>
+                                <li><strong>周边景点</strong>：梵净山、九龙洞、铜仁古城。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>苗王城是一个集苗族文化、传统建筑和民族风情于一体的旅游胜地。在这里，您可以感受到苗族的传统文化，欣赏到苗族的建筑艺术，体验到苗族的民族风情。</p>
+                            <button class="close-detail-btn" onclick="toggleMiaowangDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!-- 美食推荐 -->
+            <section class="content-section" id="food">
+                <h2 class="section-header">美食推荐</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/社饭.jpeg" alt="社饭">
+                            <div class="food-tag">特色小吃</div>
+                        </div>
+                        <div class="food-content">
+                            <h3>社饭</h3>
+                            <p class="food-description">铜仁特色美食，社菜与腊肉炒制，香味扑鼻</p>
+                            <div class="food-highlights">
+                                <span class="highlight">地方特色</span>
+                                <span class="highlight">香味扑鼻</span>
+                            </div>
+                            <div class="food-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>铜仁各地餐厅</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/酸汤鱼.jpeg" alt="酸汤鱼">
+                            <div class="food-tag">地方名菜</div>
+                        </div>
+                        <div class="food-content">
+                            <h3>酸汤鱼</h3>
+                            <p class="food-description">贵州名菜，酸汤开胃，鱼肉鲜嫩，回味无穷</p>
+                            <div class="food-highlights">
+                                <span class="highlight">酸汤开胃</span>
+                                <span class="highlight">鱼肉鲜嫩</span>
+                            </div>
+                            <div class="food-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>铜仁各大餐厅</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/凉拌折耳根.jpeg" alt="折耳根">
+                            <div class="food-tag">特色蔬菜</div>
+                        </div>
+                        <div class="food-content">
+                            <h3>折耳根</h3>
+                            <p class="food-description">贵州特色蔬菜，凉拌折耳根，清热解毒，口感独特</p>
+                            <div class="food-highlights">
+                                <span class="highlight">清热解毒</span>
+                                <span class="highlight">口感独特</span>
+                            </div>
+                            <div class="food-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>铜仁各地餐厅</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 交通出行 -->
+            <section class="content-section" id="transport">
+                <h2 class="section-header">交通出行</h2>
+                <div class="transport-container">
+                    <div class="transport-section">
+                        <h3>如何到达</h3>
+                        <div class="transport-grid">
+                            <div class="transport-card">
+                                <div class="transport-icon">
+                                    <i class="fas fa-plane"></i>
+                                </div>
+                                <div class="transport-info">
+                                    <h4>航空</h4>
+                                    <p>铜仁凤凰机场距离市区约20公里，有航班连接贵阳等地</p>
+                                </div>
+                            </div>
+                            <div class="transport-card">
+                                <div class="transport-icon">
+                                    <i class="fas fa-train"></i>
+                                </div>
+                                <div class="transport-info">
+                                    <h4>铁路</h4>
+                                    <p>铜仁站是渝怀铁路重要站点，连接重庆、怀化等地</p>
+                                </div>
+                            </div>
+                            <div class="transport-card">
+                                <div class="transport-icon">
+                                    <i class="fas fa-bus"></i>
+                                </div>
+                                <div class="transport-info">
+                                    <h4>公路</h4>
+                                    <p>铜仁是贵州省东部交通枢纽，多条高速公路在此交汇</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transport-section">
+                        <h3>主要交通路线</h3>
+                        <div class="route-list">
+                            <div class="route-item">
+                                <div class="route-icon">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <div class="route-info">
+                                    <h4>铜仁市区 - 梵净山</h4>
+                                    <p>距离约80公里，车程约2小时，有直达旅游专线</p>
+                                </div>
+                            </div>
+                            <div class="route-item">
+                                <div class="route-icon">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <div class="route-info">
+                                    <h4>铜仁市区 - 九龙洞</h4>
+                                    <p>距离约25公里，车程约40分钟，可乘坐公交车或出租车</p>
+                                </div>
+                            </div>
+                            <div class="route-item">
+                                <div class="route-icon">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <div class="route-info">
+                                    <h4>铜仁市区 - 万山国家矿山公园</h4>
+                                    <p>距离约35公里，车程约1小时，可乘坐班车或自驾前往</p>
+                                </div>
+                            </div>
+                            <div class="route-item">
+                                <div class="route-icon">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <div class="route-info">
+                                    <h4>铜仁市区 - 石阡温泉群</h4>
+                                    <p>距离约100公里，车程约2小时，建议自驾或包车前往</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="region-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>云上贵州行</h4>
+                    <p>探索贵州的自然风光与民族风情</p>
+                </div>
+                <div class="footer-section">
+                    <h4>联系信息</h4>
+                    <p>邮箱: info@yunshang.gz.com</p>
+                    <p>电话: 400-123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="guiyang.html">贵阳</a></li>
+                        <li><a href="zunyi.html">遵义</a></li>
+                        <li><a href="anshun.html">安顺</a></li>
+                        <li><a href="qiandongnan.html">黔东南</a></li>
+                        <li><a href="qiannan.html">黔南</a></li>
+                        <li><a href="qianxinan.html">黔西南</a></li>
+                        <li><a href="tongren.html">铜仁</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 云上贵州行. 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/tongren.js"></script>
+</body>
+</html>

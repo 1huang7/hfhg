@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六盘水市 - 云上贵州行</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/region.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="region-header" style="background: url('images/六盘水北盘江第一桥.jpeg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; padding: 150px 0;">
+        <div class="container" style="position: relative; padding: 0;">
+            <div style="position: relative; z-index: 1;">
+                <nav class="breadcrumb">
+                    <a href="index.html">首页</a>
+                    <span>/</span>
+                    <span>六盘水市</span>
+                </nav>
+                <h1 class="region-title">六盘水市</h1>
+                <p class="region-subtitle">中国凉都，避暑胜地</p>
+            </div>
+
+        </div>
+    </header>
+
+    <nav class="region-navigation">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="tab-button active" data-tab="natural">
+                    <i class="fas fa-mountain"></i>
+                    <span>自然景观</span>
+                </button>
+                <button class="tab-button" data-tab="cultural">
+                    <i class="fas fa-landmark"></i>
+                    <span>人文风景</span>
+                </button>
+                <button class="tab-button" data-tab="food">
+                    <i class="fas fa-utensils"></i>
+                    <span>美食推荐</span>
+                </button>
+                <button class="tab-button" data-tab="transport">
+                    <i class="fas fa-train"></i>
+                    <span>交通出行</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="region-main">
+        <div class="container">
+            <div style="font-family: '楷体', 'KaiTi', serif; font-size: 3.5rem; color: #333; text-align: center; margin-bottom: 20px;">
+                中国凉都・康养胜地
+            </div>
+            <!-- 自然景观 -->
+            <section class="content-section active" id="natural">
+                <h2 class="section-header">自然景观</h2>
+                <div class="attractions-grid">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/乌蒙大草原.mp4" alt="乌蒙大草原" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">高原草场</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>乌蒙大草原</h3>
+                            <p class="attraction-description">西南地区海拔最高、面积最大的高原草场之一，每年夏季盛开壮观的杜鹃花海</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">高原草场</span>
+                                <span class="highlight">杜鹃花海</span>
+                                <span class="highlight">佛光奇观</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>最佳游览时间：6-9月</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>盘州市四格乡</span>
+                                </div>
+                            </div>
+                            <button id="wumengButton" class="detail-btn" onclick="toggleWumengDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-detail" id="wumengDetail">
+                        <div class="detail-content">
+                            <h3>乌蒙大草原</h3>
+                            <div class="detail-grid">
+                                <div class="detail-section">
+                                    <h4>基本概况</h4>
+                                    <ul>
+                                        <li><strong>位置：</strong>六盘水市盘州市（盘县）北部，乌蒙镇与坪地乡交界处</li>
+                                        <li><strong>海拔：</strong>2000–2857 米（贵州第二高峰牛棚梁子就在这里）</li>
+                                        <li><strong>等级：</strong>国家 4A 级景区</li>
+                                        <li><strong>门票：</strong>约 30 元 / 人</li>
+                                        <li><strong>开放时间：</strong>全天开放</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>核心自然景观</h4>
+                                    <ul>
+                                        <li><strong>10 万亩高山草场</strong>：贵州少有的辽阔草原，蓝天白云、牛羊成群，"风吹草低见牛羊" 的高原风光</li>
+                                        <li><strong>天池（长海子）</strong>：高原淡水湖，湖水清澈，被称为 "草原之眼"，适合环湖、拍照、露营</li>
+                                        <li><strong>4 万亩高山矮杜鹃</strong>：每年4–5 月盛开，粉紫色花海铺满草原，与绿草、蓝天、风车同框，非常梦幻</li>
+                                        <li><strong>云海佛光（奇景）</strong>：雨后清晨常见云海翻涌；运气好能看到佛光（人影被七彩光环包围），是乌蒙一绝</li>
+                                        <li><strong>白色风车群</strong>：巨型风力发电机沿山脊排列，草原 + 风车 + 云海，出片率极高</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>人文与彝族风情</h4>
+                                    <ul>
+                                        <li><strong>彝族村寨</strong>：周边是彝族聚居区，保留传统民居、服饰、语言</li>
+                                        <li><strong>彝家美食</strong>：羊肉汤锅、烤土豆、荞麦饼</li>
+                                        <li><strong>民俗</strong>：芦笙舞、山歌、刺绣、蜡染</li>
+                                        <li><strong>火把节（农历六月二十四）</strong>：彝族最盛大节日：篝火晚会、斗牛、斗羊、歌舞、火把巡游，非常热闹</li>
+                                        <li><strong>古夜郎与历史遗迹</strong>：属古夜郎国疆域，有吴王扎营山、管家老岩等历史传说与遗迹</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>最佳游玩时间</h4>
+                                    <ul>
+                                        <li><strong>4–5 月</strong>：看杜鹃花海</li>
+                                        <li><strong>6–8 月</strong>：避暑（均温约 11–19℃）、看草原、观云海</li>
+                                        <li><strong>冬季（12–2 月）</strong>：乌蒙滑雪场（西南最大高原滑雪场）</li>
+                                    </ul>
+                                    <h4>交通与住宿</h4>
+                                    <ul>
+                                        <li><strong>交通：</strong>从盘州市区乘坐旅游专线车可达</li>
+                                        <li><strong>住宿：</strong>草原内有帐篷酒店和蒙古包可供选择</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/梅花山.mp4" alt="梅花山" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">高原索道</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>梅花山</h3>
+                            <p class="attraction-description">六盘水市标志性景点，拥有世界最长同路径山地索道，四季景色各异</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">山地索道</span>
+                                <span class="highlight">四季景色</span>
+                                <span class="highlight">云海奇观</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：半天-1天</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>钟山区梅花山</span>
+                                </div>
+                            </div>
+                            <button id="meihuashanButton" class="detail-btn" onclick="toggleMeihuashanDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-detail" id="meihuashanDetail">
+                        <div class="detail-content">
+                            <h3>梅花山</h3>
+                            <div class="detail-grid">
+                                <div class="detail-section">
+                                    <h4>基本信息</h4>
+                                    <ul>
+                                        <li><strong>位置：</strong>六盘水市钟山区西郊（距市区仅 5 公里）</li>
+                                        <li><strong>海拔：</strong>最高约2800 米，贵州第二高峰附近</li>
+                                        <li><strong>称号：</strong>中国凉都・六盘水地标、国家 4A 级景区</li>
+                                        <li><strong>门票：</strong>景区免费，索道、游乐项目单独收费</li>
+                                        <li><strong>开放时间：</strong>9:00-17:00</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>核心亮点（必玩）</h4>
+                                    <ul>
+                                        <li><strong>世界最长同路径山地索道（9.91 公里）</strong>：单程约45–50 分钟，穿越城市、峡谷、森林、云海；俯瞰峰林、雾海、风车、山城全景，天气好时绝美；票价：往返约118 元，单程 78 元；终点有旋转餐厅、星空屋、网红打卡点</li>
+                                        <li><strong>梅花坪景区（网红打卡核心）</strong>：360° 旋转餐厅（海拔 2560m）：边吃火锅 / 西餐边看全景；球形星空屋、童话树屋：拍照出片率极高；梅花造型建筑、云端栈道、日落 / 夜景台</li>
+                                        <li><strong>梅花山国际滑雪场（冬季限定）</strong>：西南最大高原滑雪场之一；冬季（12–2 月）开放，滑雪、玩雪圈、雪地拍照；票价约120 元起 / 小时</li>
+                                        <li><strong>梦幻激情谷（游乐项目）</strong>：玻璃鹊桥（玻璃吊桥）、彩虹滑道、精灵乐园；适合年轻人、亲子游玩</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>人文与民族风情</h4>
+                                    <ul>
+                                        <li><strong>回民风情园</strong>：体验回族文化、清真美食</li>
+                                        <li><strong>周边彝族、苗族村寨</strong>：民俗浓郁</li>
+                                        <li><strong>凉都森林公园</strong>：徒步、吸氧、避暑</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>最佳游玩时间</h4>
+                                    <ul>
+                                        <li><strong>夏季（6–8 月）</strong>：避暑（均温约 17–20℃）、看云海、日落</li>
+                                        <li><strong>冬季（12–2 月）</strong>：滑雪 + 雾凇雪景</li>
+                                        <li><strong>春秋</strong>：赏花、徒步、看风车、拍全景</li>
+                                        <li><strong>夜景</strong>：俯瞰六盘水全城灯火，非常震撼</li>
+                                    </ul>
+                                    <h4>交通与住宿</h4>
+                                    <ul>
+                                        <li><strong>交通：</strong>从市区乘坐公交可达</li>
+                                        <li><strong>住宿：</strong>山顶有酒店可供选择</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!-- 人文景观 -->
+            <section class="content-section" id="cultural">
+                <h2 class="section-header">人文风景</h2>
+                <div class="attractions-grid">
+
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/水城古镇.mp4" alt="水城古镇" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">明清古镇</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>水城古镇</h3>
+                            <p class="attraction-description">六盘水历史文化的见证，保存完好的明清古建筑群</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">明清建筑</span>
+                                <span class="highlight">历史文化</span>
+                                <span class="highlight">特色民居</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：半天</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>钟山区老城</span>
+                                </div>
+                            </div>
+                            <button id="shuichengButton" class="detail-btn" onclick="toggleShuichengDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-detail" id="shuichengDetail">
+                        <div class="detail-content">
+                            <h3>水城古镇</h3>
+                            <div class="detail-grid">
+                                <div class="detail-section">
+                                    <h4>基本信息</h4>
+                                    <ul>
+                                        <li><strong>位置：</strong>六盘水市钟山区老城</li>
+                                        <li><strong>历史：</strong>历史悠久，是六盘水历史文化的见证</li>
+                                        <li><strong>门票：</strong>免费</li>
+                                        <li><strong>开放时间：</strong>全天开放</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>核心亮点</h4>
+                                    <ul>
+                                        <li><strong>明清古建筑群</strong>：保存完好的明清时期建筑，展现了六盘水的历史风貌</li>
+                                        <li><strong>历史遗迹</strong>：古镇内有众多历史遗迹和文化景点，如文昌阁、水星楼等</li>
+                                        <li><strong>特色店铺</strong>：街道两旁有各种特色小吃和手工艺品店铺，琳琅满目</li>
+                                        <li><strong>夜景</strong>：夜晚灯光璀璨，景色迷人，是拍照的好去处</li>
+                                        <li><strong>美食</strong>：古镇内有多家特色餐馆，推荐品尝水城烙锅、羊肉粉等当地美食</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>游玩建议</h4>
+                                    <ul>
+                                        <li><strong>最佳游览时间</strong>：下午和晚上，夜景尤为美丽</li>
+                                        <li><strong>游览路线</strong>：从古镇入口开始，沿着主街漫步，欣赏古建筑，品尝当地美食</li>
+                                        <li><strong>购物</strong>：可以购买当地特色手工艺品，如彝族刺绣、蜡染等</li>
+                                        <li><strong>文化体验</strong>：可以参观当地的文化展览，了解六盘水的历史文化</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>交通与住宿</h4>
+                                    <ul>
+                                        <li><strong>交通：</strong>从市区乘坐公交可达，也可打车前往</li>
+                                        <li><strong>住宿：</strong>古镇内有多家客栈可供选择，也可以选择市区的酒店</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/妥乐古银杏旅游景区.mp4" alt="妥乐古银杏" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">千株古银杏</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>妥乐古银杏旅游景区</h3>
+                            <p class="attraction-description">拥有1000多株古银杏树的村庄，秋季金黄满树满地</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">古银杏群</span>
+                                <span class="highlight">秋景金黄</span>
+                                <span class="highlight">摄影天堂</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>最佳游览时间：10-11月</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>盘州市石桥镇妥乐村</span>
+                                </div>
+                            </div>
+                            <button id="tuoleButton" class="detail-btn" onclick="toggleTuoleDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-detail" id="tuoleDetail">
+                        <div class="detail-content">
+                            <h3>妥乐古银杏旅游景区</h3>
+                            <div class="detail-grid">
+                                <div class="detail-section">
+                                    <h4>基本信息</h4>
+                                    <ul>
+                                        <li><strong>位置：</strong>盘州市石桥镇妥乐村</li>
+                                        <li><strong>称号：</strong>"世界古银杏之乡"</li>
+                                        <li><strong>门票：</strong>30元/人</li>
+                                        <li><strong>开放时间：</strong>8:00-18:00</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>核心亮点</h4>
+                                    <ul>
+                                        <li><strong>古银杏群</strong>：拥有1000多株古银杏树，树龄最长达1500年，是世界上古银杏最集中的地方之一</li>
+                                        <li><strong>秋季景色</strong>：每年10-11月，银杏树叶金黄满树满地，景色壮观，是摄影的绝佳时机</li>
+                                        <li><strong>村庄环境</strong>：村庄环境优美，民风淳朴，保留了传统的农村风貌</li>
+                                        <li><strong>银杏文化</strong>：当地有丰富的银杏文化，包括银杏节等活动</li>
+                                        <li><strong>生态环境</strong>：景区内生态环境良好，空气清新，是休闲度假的好去处</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>游玩建议</h4>
+                                    <ul>
+                                        <li><strong>最佳游览时间</strong>：10-11月，此时银杏树叶金黄，景色最美</li>
+                                        <li><strong>游览路线</strong>：从景区入口开始，沿着银杏林漫步，欣赏古银杏树，拍照留念</li>
+                                        <li><strong>摄影提示</strong>：最佳拍摄时间为清晨和黄昏，光线柔和，效果最佳</li>
+                                        <li><strong>活动体验</strong>：可以参加当地的银杏节活动，体验银杏文化</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>交通与住宿</h4>
+                                    <ul>
+                                        <li><strong>交通：</strong>从盘州市区乘坐旅游专线车可达，也可自驾前往</li>
+                                        <li><strong>住宿：</strong>村内有农家乐可供选择，也可以选择盘州市区的酒店</li>
+                                        <li><strong>美食：</strong>当地特色美食有银杏炖鸡、银杏粥等，值得品尝</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 美食推荐 -->
+            <section class="content-section" id="food">
+                <h2 class="section-header">美食推荐</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/水城烙锅.jpeg" alt="水城烙锅">
+                            <div class="food-badge">地方特色</div>
+                        </div>
+                        <div class="food-content">
+                            <h3>水城烙锅</h3>
+                            <p class="food-description">起源于明末清初的"西部名小吃"，以特制平底锅现烙食材，口感独特</p>
+                            <div class="food-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>推荐店铺：德坞第一家烙锅</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-tag"></i>
+                                    <span>价格范围：人均50-80元</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/水城羊肉粉.jpeg" alt="水城羊肉粉">
+                            <div class="food-badge">汤鲜味美</div>
+                        </div>
+                        <div class="food-content">
+                            <h3>水城羊肉粉</h3>
+                            <p class="food-description">六盘水传统小吃，以羊肉鲜香、汤汁浓郁、米粉爽滑著称</p>
+                            <div class="food-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>推荐店铺：老城羊肉粉</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-tag"></i>
+                                    <span>价格范围：人均15-25元</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/盘州刺梨果脯.jpeg" alt="盘州刺梨果脯">
+                            <div class="food-badge">天然健康</div>
+                        </div>
+                        <div class="food-content">
+                            <h3>盘州刺梨果脯</h3>
+                            <p class="food-description">选用六盘水盘州山区野生刺梨为原料，天然健康，营养丰富</p>
+                            <div class="food-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>推荐购买：盘州各特产店</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-tag"></i>
+                                    <span>价格范围：20-50元/盒</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 交通出行 -->
+            <section class="content-section" id="transport">
+                <h2 class="section-header">交通出行</h2>
+                <div class="transport-grid">
+                    <div class="transport-card">
+                        <div class="transport-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="transport-content">
+                            <h3>航空交通</h3>
+                            <p>六盘水月照机场已开通北京、上海、广州、深圳等主要城市的航班，为游客出行提供便捷的空运服务。</p>
+                            <div class="transport-route">
+                                <span class="route-title">主要航线：</span>
+                                <span class="route-item">六盘水→北京（六盘水月照机场）</span>
+                                <span class="route-item">六盘水→上海（六盘水月照机场）</span>
+                                <span class="route-item">六盘水→广州（六盘水月照机场）</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transport-card">
+                        <div class="transport-icon">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <div class="transport-content">
+                            <h3>铁路交通</h3>
+                            <p>六盘水站是贵州西部重要的铁路枢纽，安六城际铁路和株六铁路在此交汇，连接省内及全国主要城市。</p>
+                            <div class="transport-route">
+                                <span class="route-title">主要线路：</span>
+                                <span class="route-item">六盘水→贵阳（安六城际铁路）</span>
+                                <span class="route-item">六盘水→昆明（沪昆高铁）</span>
+                                <span class="route-item">六盘水→广州（贵广高铁）</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transport-card">
+                        <div class="transport-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="transport-content">
+                            <h3>公路交通</h3>
+                            <p>六盘水市交通便利，沪昆高速、六六高速、水盘高速等多条高速公路贯穿全境，自驾游出行非常便利。</p>
+                            <div class="transport-route">
+                                <span class="route-title">主要高速：</span>
+                                <span class="route-item">六盘水→贵阳（沪昆高速）</span>
+                                <span class="route-item">六盘水→昆明（沪昆高速）</span>
+                                <span class="route-item">六盘水→安顺（六六高速）</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transport-card">
+                        <div class="transport-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <div class="transport-content">
+                            <h3>市内交通</h3>
+                            <p>六盘水市内交通便利，有公交、出租车、网约车等多种出行方式。主要景区之间有专门的旅游巴士线路，方便游客游览。</p>
+                            <div class="transport-route">
+                                <span class="route-title">主要线路：</span>
+                                <span class="route-item">市区→乌蒙大草原</span>
+                                <span class="route-item">市区→玉舍国家森林公园</span>
+                                <span class="route-item">市区→明湖国家湿地公园</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="region-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">返回首页</a>
+                <a href="#top">返回顶部</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 云上贵州行 - 探索魅力贵州，发现无限可能</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/liupanshui.js"></script>
+</body>
+</html>

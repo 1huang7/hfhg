@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贵阳市 - 云上贵州行</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/region.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="region-header">
+        <div class="container" style="position: relative; padding: 40px 0;">
+            <div style="position: relative; z-index: 1;">
+                <nav class="breadcrumb">
+                    <a href="index.html">首页</a>
+                    <span>/</span>
+                    <span>贵阳市</span>
+                </nav>
+                <h1 class="region-title">贵阳市</h1>
+                <p class="region-subtitle">林城贵阳，避暑胜地</p>
+            </div>
+
+        </div>
+    </header>
+
+    <nav class="region-navigation">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="tab-button active" data-tab="natural">
+                    <i class="fas fa-mountain"></i>
+                    <span>自然景观</span>
+                </button>
+                <button class="tab-button" data-tab="cultural">
+                    <i class="fas fa-landmark"></i>
+                    <span>人文风景</span>
+                </button>
+                <button class="tab-button" data-tab="food">
+                    <i class="fas fa-utensils"></i>
+                    <span>美食推荐</span>
+                </button>
+                <button class="tab-button" data-tab="transport">
+                    <i class="fas fa-train"></i>
+                    <span>交通出行</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="region-main">
+        <div class="container">
+            <div style="font-family: '楷体', 'KaiTi', serif; font-size: 3.5rem; color: #333; text-align: center; margin-bottom: 20px;">
+                爽爽贵阳，避暑天堂
+            </div>
+            <!-- 自然景观 -->
+            <section class="content-section active" id="natural">
+                <h2 class="section-header">自然景观</h2>
+                <div class="attractions-grid">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/黔灵山公园.mp4" alt="黔灵山公园" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">AAAAA级景区</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>黔灵山公园</h3>
+                            <p class="attraction-description">城市喀斯特森林公园，野生猕猴群 + 弘福寺禅意，春季可赏樱</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">野生猕猴</span>
+                                <span class="highlight">弘福寺</span>
+                                <span class="highlight">樱花季</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：3-4小时</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>云岩区枣山路187号</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleQianlingDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 黔灵山公园详细介绍 -->
+                    <div class="attraction-detail" id="qianling-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>黔灵山公园详细简介</h3>
+                            <p class="detail-subtitle">贵阳地标・4A 级景区</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>黔灵山公园位于贵阳市云岩区枣山路 187 号，是集自然风光、野生猕猴、佛教文化与历史遗迹于一体的城市综合性公园，素有"黔南第一山"之称，为国家 4A 级旅游景区，是贵阳市民日常休闲与外地游客必打卡的核心景点。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-info-circle"></i> 基本信息</h4>
+                            <ul>
+                                <li><strong>开放时间</strong>：07:00-20:00（20:00 停止入园）</li>
+                                <li><strong>核心面积</strong>：约 426 公顷，由三岭湾猕猴观赏园、弘福寺、麒麟洞、动物园、黔灵湖、风雨桥等景区及盘山步道组成</li>
+                                <li><strong>特色标签</strong>：城市绿肺、野生猕猴王国、佛教圣地、历史见证地</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-mountain"></i> 自然景观亮点</h4>
+                            <div class="detail-subsection">
+                                <h5>1. 黔灵湖（城市翡翠）</h5>
+                                <p>1954 年建成的人工湖，蓄水面积约 0.22 平方公里，湖水清澈，与青山绿树相映成趣。可划船游览（约 30 元 / 小时），春季赏樱花，秋季观红枫，四季皆美。湖岸设有风雨桥、二坝游船码头，环境清幽，适合散步休憩。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>2. 三岭湾猕猴观赏园（野生精灵）</h5>
+                                <p>公园核心特色，拥有数百只野生猕猴，是国内为数不多的城市野生猕猴栖息地。猴子不怕人，常与游客互动（注意防猴攻略：不手提塑料袋、外露食物，避免亮色衣物）。最佳观赏点：九曲径沿线、弘福寺周边、黔灵湖沿岸。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>3. 原生森林与植被</h5>
+                                <p>森林覆盖率达 95% 以上，拥有红豆杉、相思树等珍稀树种，负氧离子含量高。盘山步道（九曲径）全长约 1.5 公里，沿北西 — 南东向陡倾斜断层盘旋，沿途古木参天。瞰筑亭：位于山顶，可 360° 俯瞰贵阳全景，是摄影爱好者的绝佳机位。</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-landmark"></i> 人文景观与历史遗迹</h4>
+                            <div class="detail-subsection">
+                                <h5>1. 弘福寺（黔中名刹）</h5>
+                                <p>始建于清康熙十一年（1672 年），由临济宗高僧赤松和尚创建，以"黔中灵山"之意命名。省级文物保护单位，寺内有 383 级九曲径，沿途有 13 处摩崖石刻和古亭。寺内两株红豆树为镇寺之宝，秋季红果满树，著名书法家陈恒安题书"红豆家"匾额。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>2. 麒麟洞（历史见证）</h5>
+                                <p>原名云崖洞，因洞内石如麒麟得名，洞口摩崖刻"麒麟洞"三字为明嘉靖年间巡抚所题。省级文物保护单位，抗战时期曾囚禁张学良、杨虎城两位爱国将领，洞内保存当年陈设。洞深数丈，钟乳石形态各异，兼具自然奇观与历史价值。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>3. 动物园与熊猫馆（萌宠乐园）</h5>
+                                <p>始建于 1958 年 7 月 1 日，占地面积 7.55 公顷，动物品种达 72 种 1038 只。熊猫馆：明星熊猫"星宝"和"海滨"，开放时间 9:00-17:00（17:00 闭馆）。分区：猴馆、金鱼馆、两栖爬行馆、小兽区、猛兽区等，适合亲子游。</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-utensils"></i> 特色美食推荐</h4>
+                            <div class="food-recommendations">
+                                <div class="food-item">
+                                    <strong>烤豆腐</strong> - 外酥里嫩，蘸秘制辣椒面，5 元 / 份，市井烟火味十足（园内小吃摊、南门出口处）
+                                </div>
+                                <div class="food-item">
+                                    <strong>丝娃娃</strong> - 薄米皮裹数十种素菜，浇酸汤，清爽开胃（南门外"丝恋红汤丝娃娃"）
+                                </div>
+                                <div class="food-item">
+                                    <strong>肠旺面</strong> - 贵阳特色，猪血 + 肥肠 + 面条，香辣入味（南门外枣山路小吃街）
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-route"></i> 推荐游玩路线</h4>
+                            <div class="route-options">
+                                <div class="route-item">
+                                    <strong>经典全景线（3-4 小时）</strong>
+                                    <p>南门进→乘缆车上山→瞰筑亭（俯瞰贵阳）→弘福寺（祈福）→猕猴观赏区→黔灵湖（划船）→动物园（含熊猫馆）→麒麟洞（历史遗迹）→南门出</p>
+                                </div>
+                                <div class="route-item">
+                                    <strong>萌宠亲子线（2-3 小时）</strong>
+                                    <p>东门进→动物园（熊猫馆）→黔灵湖（划船）→猕猴互动区→弘福寺（外观）→南门出</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-exclamation-triangle"></i> 注意事项</h4>
+                            <ul>
+                                <li><strong>防猴安全</strong>：不投喂、不挑逗猴子，食物装包内，避免直接接触</li>
+                                <li><strong>穿着建议</strong>：舒适运动鞋，轻便衣物，雨季带雨具，夏季做好防晒</li>
+                                <li><strong>文明游览</strong>：不乱扔垃圾，保护文物，寺庙内保持安静</li>
+                                <li><strong>最佳时间</strong>：7:00-9:00（人少、光线好、猴子活跃），避开节假日高峰</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>黔灵山公园以其 5 元超值门票、丰富的自然与人文景观、独特的野生猕猴互动体验，成为贵阳旅游的"性价比之王"，是感受城市生态与历史文化的理想去处。</p>
+                            <button class="close-detail-btn" onclick="toggleQianlingDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/花溪公园.mp4" alt="花溪公园" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">国家级公园</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>花溪公园</h3>
+                            <p class="attraction-description">"高原明珠"，花溪河蜿蜒 + 油菜花田 / 枫叶季（春 / 秋）</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">花溪河</span>
+                                <span class="highlight">油菜花</span>
+                                <span class="highlight">枫叶季</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：2-3小时</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>花溪区花溪大道南段</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleHuaxiDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 花溪公园详细介绍 -->
+                    <div class="attraction-detail" id="huaxi-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>花溪公园详细简介</h3>
+                            <p class="detail-subtitle">贵阳地标・4A 级景区</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>花溪公园位于贵阳市花溪区花溪大道南段 3108 号，是融真山真水、田园风光、人文底蕴、民族风情于一体的贵州著名风景区，被誉为 "高原明珠" 与 "贵阳市后花园"，为国家 4A 级旅游景区，也是贵阳人周末休闲与外地游客必游的诗意胜地。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-info-circle"></i> 基本信息</h4>
+                            <ul>
+                                <li><strong>开放时间</strong>：全年全天免费开放（核心景点 08:30-18:00）</li>
+                                <li><strong>核心面积</strong>：约 800 余亩，形成 "四山夹一水，一水带四山" 的独特格局</li>
+                                <li><strong>四山</strong>：麟山、龟山、凤山、蛇山</li>
+                                <li><strong>一水</strong>：被誉为 "中国第一爱河" 的花溪河</li>
+                                <li><strong>特色标签</strong>：天然山水园、高原避暑地、人文爱情圣地、喀斯特湿地</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-mountain"></i> 自然景观亮点</h4>
+                            <div class="detail-subsection">
+                                <h5>1. 花溪河（高原玉带）</h5>
+                                <p>贯穿全园的灵魂水系，河水清澈碧绿，蜿蜒曲折。可泛舟湖上（约 30 元 / 小时），两岸绿树成荫、垂柳依依，兼具江南水乡的灵秀与高原山水的清奇，是散步、拍照、戏水的核心区域。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>2. 百步桥（水上奇景）</h5>
+                                <p>由数十块天然石蹬排列而成的跨水通道，游客需鱼贯而行，脚下流水潺潺、倒影如画，是公园最具标志性的网红打卡点之一，行走其上如在水面漫步，趣味十足。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>3. 麟山（全园制高点）</h5>
+                                <p>公园主峰，山势玲珑如麒麟。登山约 15 分钟可达山顶飞云阁，可 360° 俯瞰全园山水、田园与城市风光，视野开阔。山腰有摩崖石刻与天然溶洞，古意盎然。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>4. 黄金大道（秋日童话）</h5>
+                                <p>公园北侧的标志性林荫道，两侧高大梧桐树遮天蔽日。秋季树叶金黄，落叶铺满地面，阳光透过叶隙洒下，景色如诗如画，是秋季必打卡的绝美景观。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>5. 坝上桥与棋亭</h5>
+                                <p>朱栏石砌的坝上桥横跨花溪河，造型古朴优美；桥头建有棋亭，陈毅元帅曾在此题诗，亭柱刻有 "棋逢对手" 等楹联，尽显文人雅趣与山水诗意。</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-landmark"></i> 人文景观与历史遗迹</h4>
+                            <div class="detail-subsection">
+                                <h5>1. 憩园（东舍）与西舍 —— 爱情与文学圣地</h5>
+                                <p>公园核心人文景点。1944 年，巴金与妻子萧珊在此居住，并完成中篇小说《憩园》的创作；周恩来与邓颖超夫妇也曾在此休憩。建筑为古朴的中式小楼，环境清幽，充满浪漫与文学气息。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>2. 戴安澜将军衣冠墓</h5>
+                                <p>为纪念抗日名将戴安澜将军而建，是省级文物保护单位与爱国主义教育基地。墓园庄重肃穆，松柏常青，供后人缅怀英烈。</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-history"></i> 历史沿革</h4>
+                            <ul>
+                                <li>雏形始于清乾隆五十二年（1787 年），由举人周奎父子营造</li>
+                                <li>1939 年始建，原名 "中正公园"</li>
+                                <li>1949 年后正式更名为 "花溪公园"</li>
+                                <li>陈毅元帅曾赋诗赞叹："真山真水到处是，花溪布局更天然"</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-utensils"></i> 特色美食推荐</h4>
+                            <div class="food-recommendations">
+                                <div class="food-item">
+                                    <strong>花溪牛肉粉</strong> - 贵阳招牌美食，汤鲜味浓、粉滑肉香，公园周边十字街 "飞碗""王记" 等老店最正宗
+                                </div>
+                                <div class="food-item">
+                                    <strong>恋爱豆腐果</strong> - 外焦里嫩的烤豆腐，裹上香辣蘸水，风味独特（十字街小吃摊）
+                                </div>
+                                <div class="food-item">
+                                    <strong>青岩卤猪脚（状元蹄）</strong> - 软糯入味，酱香浓郁，可配花溪冰粉解暑
+                                </div>
+                                <div class="food-item">
+                                    <strong>玫瑰冰粉</strong> - 清甜冰爽，玫瑰花香浓郁，夏日消暑佳品
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-route"></i> 推荐游玩路线</h4>
+                            <div class="route-options">
+                                <div class="route-item">
+                                    <strong>经典全景线（2-3 小时）</strong>
+                                    <p>南门 → 花溪湖 → 百步桥 → 坝上桥 → 麟山（飞云阁）→ 棋亭 → 憩园（东舍）→ 黄金大道 → 戴安澜将军衣冠墓 → 北门出</p>
+                                </div>
+                                <div class="route-item">
+                                    <strong>休闲浪漫线（1.5-2 小时）</strong>
+                                    <p>南门 → 花溪河泛舟 → 百步桥 → 碧云窝草坪（野餐）→ 坝上桥 → 憩园 → 北门出</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-exclamation-triangle"></i> 注意事项</h4>
+                            <ul>
+                                <li><strong>门票</strong>：免费入园，性价比极高</li>
+                                <li><strong>交通</strong>：地铁 3 号线花溪公园站直达；公交 203、248、223 路至花溪公园站</li>
+                                <li><strong>穿着</strong>：穿舒适运动鞋，园区较大、步道较多；夏季做好防晒与防蚊</li>
+                                <li><strong>安全</strong>：百步桥石蹬湿滑，行走时注意脚下；湖边戏水注意安全</li>
+                                <li><strong>最佳时间</strong>：3-10 月（春夏赏花避暑，秋冬观叶）；清晨或傍晚人少景美，拍照更佳</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>花溪公园以其免费开放、天然山水、深厚人文、四季皆景的独特魅力，成为贵阳最具诗意与性价比的旅游胜地，是感受 "爽爽贵阳" 与高原江南风情的理想之选。</p>
+                            <button class="close-detail-btn" onclick="toggleHuaxiDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 人文景观 -->
+            <section class="content-section" id="cultural">
+                <h2 class="section-header">人文风景</h2>
+                <div class="attractions-grid">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/青岩古镇.mp4" alt="青岩古镇" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">历史文化名镇</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>青岩古镇</h3>
+                            <p class="attraction-description">明清军事屯堡，石砌街巷 + 状元故居 + 城墙炮台，夜游灯笼氛围感拉满</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">屯堡建筑</span>
+                                <span class="highlight">状元故居</span>
+                                <span class="highlight">夜游灯笼</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：半天</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>花溪区青岩镇</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleQingyanDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 青岩古镇详细介绍 -->
+                    <div class="attraction-detail" id="qingyan-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>青岩古镇详细简介</h3>
+                            <p class="detail-subtitle">贵阳唯一 5A 古镇・600 年石头兵城</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>青岩古镇位于贵阳市花溪区南部，是贵州四大古镇之一、国家 5A 级旅游景区。始建于明洪武十一年（1378 年），原为军事要塞，素有 "筑南门户" 之称。古镇以青石建造的城墙、街巷、民居闻名，是一座融合军事屯堡、多元宗教与状元文化的 "石头城"。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-info-circle"></i> 基本信息</h4>
+                            <ul>
+                                <li><strong>开放时间</strong>：08:10-22:00</li>
+                                <li><strong>核心面积</strong>：约 3 平方公里</li>
+                                <li><strong>特色标签</strong>：中国历史文化名镇、状元故里、四教并存、《寻枪》取景地</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-landmark"></i> 核心看点</h4>
+                            <div class="detail-subsection">
+                                <h5>1. 定广门与古城墙</h5>
+                                <p>古镇南门，气势恢宏的石砌城门，全长约 1.5 公里的古城墙环绕全镇，设有炮台、烽火台，尽显军事要塞风貌。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>2. 背街石巷</h5>
+                                <p>古镇最网红打卡点。片石垒砌的幽深小巷，青苔藤蔓遍布，是电影《寻枪》的取景地，光影效果绝佳。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>3. 状元府（赵以炯故居）</h5>
+                                <p>清代云贵两省首位文状元赵以炯的府邸，典型的明清四合院，见证古镇崇文重教的文脉。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>4. 石牌坊群</h5>
+                                <p>镇内完好保存 3 座清代石牌坊（赵理伦百寿坊等），石雕工艺精湛，是古镇的标志性人文景观。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>5. 多元宗教文化</h5>
+                                <p>佛、道、天主教、基督教四教建筑共存，有九寺八庙五阁等近 20 处宗教场所，文化包容性极强。</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-utensils"></i> 必尝美食</h4>
+                            <div class="food-recommendations">
+                                <div class="food-item">
+                                    <strong>状元蹄（卤猪脚）</strong> - 软糯入味，寓意 "金榜题名"，古镇招牌菜。
+                                </div>
+                                <div class="food-item">
+                                    <strong>糕粑稀饭</strong> - 香甜软糯，搭配玫瑰糖，暖心甜品。
+                                </div>
+                                <div class="food-item">
+                                    <strong>豆腐圆子</strong> - 外酥里嫩，蘸折耳根辣椒水，贵阳特色小吃。
+                                </div>
+                                <div class="food-item">
+                                    <strong>玫瑰冰粉</strong> - 清凉解暑，夏日必备。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-route"></i> 游玩路线</h4>
+                            <div class="route-options">
+                                <div class="route-item">
+                                    <strong>经典路线</strong>
+                                    <p>定广门 → 背街 → 状元府 → 石牌坊 → 万寿宫 → 慈云寺 → 美食街</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>青岩古镇以其 600 年的历史文化、独特的石头建筑、多元的宗教文化和丰富的美食，成为贵阳唯一的国家 5A 级古镇景区，是感受贵州历史文化和屯堡风情的理想去处。</p>
+                            <button class="close-detail-btn" onclick="toggleQingyanDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/甲秀楼.mp4" alt="甲秀楼" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">明代地标</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>甲秀楼</h3>
+                            <p class="attraction-description">明代贵阳地标，毗邻翠微园，夜游灯光秀衬着南明河超出片</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">明代建筑</span>
+                                <span class="highlight">翠微园</span>
+                                <span class="highlight">灯光秀</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：1-2小时</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>南明区南明河畔</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleJiaxiuDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 甲秀楼详细介绍 -->
+                    <div class="attraction-detail" id="jiaxiu-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>甲秀楼详细简介</h3>
+                            <p class="detail-subtitle">贵阳文化地标・中国十大名楼</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>甲秀楼是贵阳的文化地标与城市象征，坐落于南明河中的鳌矶石上，始建于明代，是 "中国十大名楼" 之一。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-history"></i> 历史沿革</h4>
+                            <ul>
+                                <li><strong>始建</strong>：明万历二十六年（1598 年），由贵州巡抚江东之倡建，取名 "甲秀"，寓意 "科甲挺秀"，希望振兴贵州文教，人才辈出。</li>
+                                <li><strong>重建</strong>：历经战火与风雨，屡毁屡修。现存建筑主要为清宣统元年（1909 年）重建遗存，并于1981-1982 年大规模修缮。</li>
+                                <li><strong>地位</strong>：2006 年被列为全国重点文物保护单位。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-building"></i> 建筑特色</h4>
+                            <ul>
+                                <li><strong>主体建筑</strong>：为三层三檐四角攒尖顶木石结构阁楼，高约 22.9 米。</li>
+                                <li><strong>独特构造</strong>：楼体层层收进，飞甍翘角，由 12 根白石巨柱托檐，护以雕花石栏，在中国古建筑史上独一无二。</li>
+                            </ul>
+                            <h5>景区组成：</h5>
+                            <ul>
+                                <li><strong>浮玉桥</strong>：九孔石拱桥，连接两岸，如白龙卧波。</li>
+                                <li><strong>涵碧亭</strong>：建于桥上，是 "鳌矶浮玉"（贵阳古八景之一）的绝佳观景点。</li>
+                                <li><strong>翠微园</strong>：楼南侧的明清古建筑群，含拱南阁、翠微阁、龙门书院等。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-gem"></i> 文化瑰宝</h4>
+                            <ul>
+                                <li><strong>甲秀长联</strong>：清代进士刘韫良所题，共 174 字，描绘贵州山川与历史，为镇楼之宝。</li>
+                                <li><strong>夜景</strong>：华灯初上时，朱楼碧瓦、石桥亭台倒映水中，是贵阳最美夜景之一。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-info-circle"></i> 核心信息</h4>
+                            <ul>
+                                <li><strong>地址</strong>：贵阳市南明区翠微巷 8 号</li>
+                                <li><strong>门票</strong>：免费</li>
+                                <li><strong>开放时间</strong>：09:00-17:00</li>
+                                <li><strong>看点</strong>：古建楼阁、长联碑刻、浮玉桥、涵碧亭、翠微园、绝美夜景</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>甲秀楼以其悠久的历史、独特的建筑风格和深厚的文化底蕴，成为贵阳的标志性建筑和文化象征，是游客了解贵阳历史文化的重要窗口。</p>
+                            <button class="close-detail-btn" onclick="toggleJiaxiuDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 美食推荐 -->
+            <section class="content-section" id="food">
+                <h2 class="section-header">美食推荐</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/丝娃娃.jpeg" alt="丝娃娃">
+                        </div>
+                        <div class="food-content">
+                            <h3>丝娃娃</h3>
+                            <p class="food-description">薄饼裹脆哨 / 折耳根，蘸酸汤蘸水</p>
+                            <div class="food-tags">
+                                <span class="food-tag">特色小吃</span>
+                                <span class="food-tag">酸辣开胃</span>
+                            </div>
+                            <div class="food-price">价格：15-25元/份</div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/花溪牛肉粉.jpeg" alt="花溪牛肉粉">
+                        </div>
+                        <div class="food-content">
+                            <h3>花溪牛肉粉</h3>
+                            <p class="food-description">清汤炖黄牛肉，配花溪糊辣椒面</p>
+                            <div class="food-tags">
+                                <span class="food-tag">贵阳名小吃</span>
+                                <span class="food-tag">营养丰富</span>
+                            </div>
+                            <div class="food-price">价格：12-18元/碗</div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/酸汤鱼.jpeg" alt="酸汤鱼">
+                        </div>
+                        <div class="food-content">
+                            <h3>酸汤鱼</h3>
+                            <p class="food-description">番茄 / 木姜子酸汤煮江团，酸辣鲜香</p>
+                            <div class="food-tags">
+                                <span class="food-tag">贵州名菜</span>
+                                <span class="food-tag">酸辣鲜香</span>
+                            </div>
+                            <div class="food-price">价格：68-128元/份</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 交通出行 -->
+            <section class="content-section" id="transport">
+                <h2 class="section-header">交通出行</h2>
+                <div class="transport-info">
+                    <div class="transport-card">
+                        <div class="transport-header">
+                            <i class="fas fa-train"></i>
+                            <h3>贵阳北站为起点</h3>
+                        </div>
+                        <div class="transport-routes">
+                            <div class="route-item">
+                                <h4>到黔灵山公园</h4>
+                                <p><strong>公交 264 路</strong>（6:30-22:00，约 20 分钟）</p>
+                                <p>或 <strong>地铁 1 号线</strong>（贵阳北站→北京路站）步行 10 分钟</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>到青岩古镇</h4>
+                                <p><strong>公交 203 路</strong>（6:00-21:00，约 1 小时）</p>
+                                <p>或 <strong>景区直通车</strong>（8:00-16:00，约 40 分钟）</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>到甲秀楼</h4>
+                                <p><strong>地铁 1 号线转 2 号线</strong>（贵阳北站→喷水池→阳明祠站）步行 8 分钟</p>
+                                <p>或 <strong>公交 48 路</strong>（约 30 分钟）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="index.html">返回首页</a></li>
+                        <li><a href="zunyi.html">遵义市</a></li>
+                        <li><a href="anshun.html">安顺市</a></li>
+                        <li><a href="qiandongnan.html">黔东南州</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>热门景点</h4>
+                    <ul>
+                        <li><a href="#natural">黔灵山公园</a></li>
+                        <li><a href="#cultural">青岩古镇</a></li>
+                        <li><a href="#food">丝娃娃</a></li>
+                        <li><a href="#transport">交通指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>旅游贴士</h4>
+                    <ul>
+                        <li><span>最佳旅游季节：春夏秋三季</span></li>
+                        <li><span>特色推荐：避暑胜地</span></li>
+                        <li><span>文化体验：屯堡文化</span></li>
+                        <li><span>美食特色：酸辣口味</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 云上贵州行 - 贵阳市页面. 林城贵阳，避暑胜地</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/guiyang.js"></script>
+</body>
+</html>

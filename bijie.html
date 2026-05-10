@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毕节市 - 云上贵州行</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/region.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="region-header" style="background: url('images/毕节鸭池河大桥.jpeg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; padding: 150px 0;">
+        <div class="container" style="position: relative; padding: 0;">
+            <div style="position: relative; z-index: 1;">
+                <nav class="breadcrumb">
+                    <a href="index.html">首页</a>
+                    <span>/</span>
+                    <span>毕节市</span>
+                </nav>
+                <h1 class="region-title">毕节市</h1>
+                <p class="region-subtitle">洞天福地，花海毕节</p>
+            </div>
+
+        </div>
+    </header>
+
+    <nav class="region-navigation">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="tab-button active" data-tab="natural">
+                    <i class="fas fa-mountain"></i>
+                    <span>自然景观</span>
+                </button>
+                <button class="tab-button" data-tab="cultural">
+                    <i class="fas fa-landmark"></i>
+                    <span>人文风景</span>
+                </button>
+                <button class="tab-button" data-tab="food">
+                    <i class="fas fa-utensils"></i>
+                    <span>美食推荐</span>
+                </button>
+                <button class="tab-button" data-tab="transport">
+                    <i class="fas fa-train"></i>
+                    <span>交通出行</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="region-main">
+        <div class="container">
+            <div style="font-family: '楷体', 'KaiTi', serif; font-size: 3.5rem; color: #333; text-align: center; margin-bottom: 20px;">
+                洞天福地，花海毕节
+            </div>
+            <!-- 自然景观 -->
+            <section class="content-section active" id="natural">
+                <h2 class="section-header">自然景观</h2>
+                <div class="attractions-grid">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/百里杜鹃.mp4" alt="百里杜鹃风景区" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">世界最大天然花园</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>百里杜鹃风景区</h3>
+                            <p class="attraction-description">世界最大的天然杜鹃花园，花期如海，烂漫云霞</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">世界最大天然花园</span>
+                                <span class="highlight">杜鹃花海</span>
+                                <span class="highlight">花期壮观</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>最佳游览时间：3-4月花期</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>百里杜鹃管理区</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleBailiDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 百里杜鹃详细介绍 -->
+                    <div class="attraction-detail" id="baili-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>百里杜鹃详细简介</h3>
+                            <p class="detail-subtitle">世界最大天然杜鹃花园・国家5A级景区</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>百里杜鹃风景区位于贵州省毕节市，是世界上最大的天然杜鹃花园，总面积约125.8平方公里。每年3-4月，杜鹃花盛开，漫山遍野的杜鹃花形成一片花的海洋，景象壮观。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
+                            <ul>
+                                <li><strong>世界最大天然花园</strong>：总面积约125.8平方公里，是世界上最大的天然杜鹃花园。</li>
+                                <li><strong>杜鹃花海</strong>：每年3-4月，杜鹃花盛开，漫山遍野的杜鹃花形成一片花的海洋。</li>
+                                <li><strong>花期壮观</strong>：花期长达一个月，吸引了大量游客前来观赏。</li>
+                                <li><strong>品种丰富</strong>：景区内有马缨杜鹃、露珠杜鹃、团花杜鹃等41个品种，花色多样。</li>
+                                <li><strong>生态环境</strong>：景区内生态环境良好，空气清新，是天然的氧吧。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：成人票150元/人；学生、老人半价。</li>
+                                <li><strong>开放时间</strong>：08:00-18:00。</li>
+                                <li><strong>交通</strong>：
+                                    <ul>
+                                        <li>自驾：从毕节市区出发，经杭瑞高速，约1小时车程。</li>
+                                        <li>公共交通：毕节客车站有直达百里杜鹃的班车。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>最佳季节</strong>：3-4月花期，此时杜鹃花盛开，景色最美。</li>
+                                <li><strong>周边景点</strong>：奢香古镇、慕俄格古城、油杉河大峡谷。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>百里杜鹃是毕节市的一张旅游名片，每年吸引着大量游客前来观赏。在这里，您可以感受到大自然的神奇魅力，欣赏到壮观的杜鹃花海。</p>
+                            <button class="close-detail-btn" onclick="toggleBailiDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/威宁草海.mp4" alt="威宁草海" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">高原明珠</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>威宁草海</h3>
+                            <p class="attraction-description">中国三大高原湖泊之一，候鸟栖息地，生态宝库</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">高原湖泊</span>
+                                <span class="highlight">候鸟栖息地</span>
+                                <span class="highlight">生态宝库</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：半天-1天</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>威宁县草海镇</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleWeiningDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 威宁草海详细介绍 -->
+                    <div class="attraction-detail" id="weining-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>威宁草海详细简介</h3>
+                            <p class="detail-subtitle">中国三大高原湖泊之一・候鸟栖息地</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>威宁草海位于贵州省毕节市威宁彝族回族苗族自治县，是中国三大高原湖泊之一，也是贵州省最大的天然淡水湖，面积约45平方公里。草海是一个典型的高原湿地生态系统，是众多候鸟的栖息地。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
+                            <ul>
+                                <li><strong>高原湖泊</strong>：海拔2171.7米，是中国三大高原湖泊之一。</li>
+                                <li><strong>候鸟栖息地</strong>：每年有超过10万只候鸟在此越冬，包括黑颈鹤、灰鹤等珍稀鸟类。</li>
+                                <li><strong>生态宝库</strong>：草海是一个典型的高原湿地生态系统，拥有丰富的生物多样性。</li>
+                                <li><strong>自然风光</strong>：湖水清澈，周围山峦环绕，景色优美。</li>
+                                <li><strong>文化底蕴</strong>：草海周边居住着彝族、回族、苗族等多个民族，具有丰富的民族文化。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：免费开放。</li>
+                                <li><strong>开放时间</strong>：全天开放。</li>
+                                <li><strong>交通</strong>：
+                                    <ul>
+                                        <li>自驾：从毕节市区出发，经杭瑞高速，约2.5小时车程。</li>
+                                        <li>公共交通：毕节客车站有直达威宁的班车，威宁县城有到草海的公交车。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>最佳季节</strong>：11月至次年3月，此时是候鸟越冬的季节，可观赏到大量候鸟。</li>
+                                <li><strong>周边景点</strong>：百草坪、马摆大山、中水遗址。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>威宁草海是一个集自然风光、生态保护和民族文化于一体的旅游胜地。在这里，您可以欣赏到美丽的湖光山色，观察到各种珍稀鸟类，体验到浓郁的民族风情。</p>
+                            <button class="close-detail-btn" onclick="toggleWeiningDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/纳雍九洞天.mp4" alt="纳雍九洞天" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">溶洞奇观</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>纳雍九洞天</h3>
+                            <p class="attraction-description">大型溶洞群，洞中有洞，洞洞相连，奇观异景</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">大型溶洞群</span>
+                                <span class="highlight">洞洞相连</span>
+                                <span class="highlight">奇观异景</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：2-3小时</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>纳雍县锅圈岩乡</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleJiudongDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 纳雍九洞天详细介绍 -->
+                    <div class="attraction-detail" id="jiudong-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>纳雍九洞天详细简介</h3>
+                            <p class="detail-subtitle">大型溶洞群・洞洞相连</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>纳雍九洞天位于贵州省毕节市纳雍县锅圈岩乡，是一个大型溶洞群，由九个洞天组成，洞中有洞，洞洞相连，形成了独特的溶洞景观。九洞天以其奇特的喀斯特地貌和壮观的溶洞景观而闻名。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
+                            <ul>
+                                <li><strong>大型溶洞群</strong>：由九个洞天组成，洞中有洞，洞洞相连。</li>
+                                <li><strong>洞洞相连</strong>：九个洞天通过地下暗河相连，形成了一个完整的溶洞系统。</li>
+                                <li><strong>奇观异景</strong>：洞内有各种奇特的钟乳石、石笋、石柱等地质景观。</li>
+                                <li><strong>地下暗河</strong>：洞内有地下暗河，游客可以乘船游览。</li>
+                                <li><strong>历史文化</strong>：洞内有古代人类活动的痕迹，具有一定的历史文化价值。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：成人票120元/人；学生、老人半价。</li>
+                                <li><strong>开放时间</strong>：08:30-17:30。</li>
+                                <li><strong>交通</strong>：
+                                    <ul>
+                                        <li>自驾：从毕节市区出发，经杭瑞高速、厦蓉高速，约2小时车程。</li>
+                                        <li>公共交通：毕节客车站有直达纳雍的班车，纳雍县城有到九洞天的旅游专线车。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>最佳季节</strong>：全年适宜，洞内温度恒定，四季如春。</li>
+                                <li><strong>周边景点</strong>：总溪河、宣慰大田、枪杆岩。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>纳雍九洞天是一个集自然风光、地质奇观和历史文化于一体的旅游胜地。在这里，您可以感受到大自然的鬼斧神工，欣赏到壮观的溶洞景观，了解到古代人类的活动痕迹。</p>
+                            <button class="close-detail-btn" onclick="toggleJiudongDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/韭菜坪.mp4" alt="韭菜坪" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">贵州屋脊</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>韭菜坪</h3>
+                            <p class="attraction-description">贵州最高峰，万亩韭菜花海，中国十大避暑名山</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">贵州屋脊</span>
+                                <span class="highlight">万亩花海</span>
+                                <span class="highlight">避暑胜地</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>最佳游览时间：8-9月花期</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>赫章县与威宁县交界处</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleJiucaiDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 韭菜坪详细介绍 -->
+                    <div class="attraction-detail" id="jiucai-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>韭菜坪详细简介</h3>
+                            <p class="detail-subtitle">贵州屋脊・万亩韭菜花海</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>韭菜坪位于贵州省毕节市赫章县与威宁县交界处，是贵州的最高峰，海拔高达2900.6米，被誉为"贵州屋脊"。韭菜坪分为大韭菜坪和小韭菜坪，大韭菜坪以万亩野生韭菜花为主要景观，小韭菜坪则以石林景观著称。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
+                            <ul>
+                                <li><strong>贵州屋脊</strong>：海拔2900.6米，是贵州的最高峰。</li>
+                                <li><strong>万亩韭菜花海</strong>：每年8-9月，大韭菜坪的万亩野生韭菜花盛开，形成紫色海洋。</li>
+                                <li><strong>避暑胜地</strong>：夏季平均气温仅19℃，是中国十大避暑名山之一。</li>
+                                <li><strong>石林景观</strong>：小韭菜坪以奇特的石林景观著称，石柱、石笋形态各异。</li>
+                                <li><strong>自然奇观</strong>：站在贵州屋脊上，可俯瞰云海、日出、日落等自然奇观。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：成人票70元/人；学生、老人半价。</li>
+                                <li><strong>开放时间</strong>：08:00-17:30（16:30停止入园）。</li>
+                                <li><strong>交通</strong>：
+                                    <ul>
+                                        <li>自驾：从毕节市区出发，经杭瑞高速、毕威高速，约2.5小时车程。</li>
+                                        <li>公共交通：毕节客车站有直达赫章的班车，赫章县城有到韭菜坪的旅游专线车。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>最佳季节</strong>：8-9月花期，此时韭菜花盛开，景色最美。</li>
+                                <li><strong>周边景点</strong>：阿西里西大草原、赫章国家森林公园、可乐古夜郎文化遗址。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>韭菜坪是一个集自然风光、避暑休闲和民族文化于一体的旅游胜地。在这里，您可以感受到贵州屋脊的雄伟，欣赏到壮观的韭菜花海，体验到浓郁的民族风情。</p>
+                            <button class="close-detail-btn" onclick="toggleJiucaiDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 人文景观 -->
+            <section class="content-section" id="cultural">
+                <h2 class="section-header">人文风景</h2>
+                <div class="attractions-grid">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/乌江百里画廊.mp4" alt="乌江百里画廊" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">乌江风光</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>乌江百里画廊</h3>
+                            <p class="attraction-description">乌江上游的壮丽峡谷风光，山水相连，景色宜人</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">峡谷风光</span>
+                                <span class="highlight">山水相连</span>
+                                <span class="highlight">景色宜人</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：半天-1天</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>乌江上游毕节段</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleWujiangDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 乌江百里画廊详细介绍 -->
+                    <div class="attraction-detail" id="wujiang-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>乌江百里画廊详细简介</h3>
+                            <p class="detail-subtitle">乌江上游壮丽峡谷・山水相连</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>乌江百里画廊位于贵州省毕节市乌江上游，是一个以峡谷风光为主要特色的旅游景区。景区内山水相连，景色宜人，是毕节市的重要旅游资源之一。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
+                            <ul>
+                                <li><strong>峡谷风光</strong>：乌江上游的峡谷风光壮丽，两岸山峦叠嶂，江水碧绿。</li>
+                                <li><strong>山水相连</strong>：景区内山与水相互映衬，形成了独特的自然景观。</li>
+                                <li><strong>景色宜人</strong>：四季景色各异，春季山花烂漫，夏季绿树成荫，秋季层林尽染，冬季银装素裹。</li>
+                                <li><strong>生态环境</strong>：景区内生态环境良好，空气清新，是天然的氧吧。</li>
+                                <li><strong>文化底蕴</strong>：乌江是贵州的母亲河，具有丰富的历史文化内涵。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：免费开放。</li>
+                                <li><strong>开放时间</strong>：全天开放。</li>
+                                <li><strong>交通</strong>：
+                                    <ul>
+                                        <li>自驾：从毕节市区出发，经杭瑞高速，约1.5小时车程。</li>
+                                        <li>公共交通：毕节客车站有直达乌江百里画廊的旅游专线车。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>最佳季节</strong>：四季皆宜，春季和秋季景色最美。</li>
+                                <li><strong>周边景点</strong>：织金洞、九洞天、百里杜鹃。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>乌江百里画廊是一个集自然风光、生态保护和历史文化于一体的旅游胜地。在这里，您可以欣赏到壮丽的峡谷风光，感受到大自然的神奇魅力，了解到乌江的历史文化。</p>
+                            <button class="close-detail-btn" onclick="toggleWujiangDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/织金洞.mp4" alt="织金洞" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">溶洞之王</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>织金洞</h3>
+                            <p class="attraction-description">中国最美溶洞，洞内钟乳石千姿百态，景观壮丽</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">中国最美溶洞</span>
+                                <span class="highlight">钟乳石奇观</span>
+                                <span class="highlight">景观壮丽</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：2-3小时</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>织金县城东北</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleZhijinDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 织金洞详细介绍 -->
+                    <div class="attraction-detail" id="zhijin-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>织金洞详细简介</h3>
+                            <p class="detail-subtitle">中国最美溶洞・溶洞之王</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>织金洞位于贵州省毕节市织金县城东北23公里处的官寨苗族乡，是一个以溶洞景观为主要特色的旅游景区。织金洞是中国最美的溶洞之一，被誉为"溶洞之王"，洞内钟乳石千姿百态，景观壮丽。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
+                            <ul>
+                                <li><strong>中国最美溶洞</strong>：织金洞是中国最美的溶洞之一，被评为"中国十大奇洞"之首。</li>
+                                <li><strong>钟乳石奇观</strong>：洞内钟乳石千姿百态，有"银雨树"、"霸王盔"等著名景观。</li>
+                                <li><strong>景观壮丽</strong>：洞内空间宏大，景观丰富，有各种奇特的地质景观。</li>
+                                <li><strong>地质科普</strong>：织金洞是一个天然的地质博物馆，展示了喀斯特地貌的形成过程。</li>
+                                <li><strong>历史文化</strong>：织金洞周边有丰富的民族文化和历史遗迹。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：成人票140元/人；学生、老人半价。</li>
+                                <li><strong>开放时间</strong>：08:30-17:30（16:30停止入园）。</li>
+                                <li><strong>交通</strong>：
+                                    <ul>
+                                        <li>自驾：从毕节市区出发，经杭瑞高速、厦蓉高速，约2小时车程。</li>
+                                        <li>公共交通：毕节客车站有直达织金的班车，织金县城有到织金洞的旅游专线车。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>最佳季节</strong>：全年适宜，洞内温度恒定，四季如春。</li>
+                                <li><strong>周边景点</strong>：乌江百里画廊、九洞天、百里杜鹃。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>织金洞是一个集自然风光、地质科普和历史文化于一体的旅游胜地。在这里，您可以感受到大自然的鬼斧神工，欣赏到壮观的溶洞景观，了解到喀斯特地貌的形成过程。</p>
+                            <button class="close-detail-btn" onclick="toggleZhijinDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 美食推荐 -->
+            <section class="content-section" id="food">
+                <h2 class="section-header">美食推荐</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/威宁荞酥.jpeg" alt="威宁荞酥">
+                            <div class="food-tag">特色糕点</div>
+                        </div>
+                        <div class="food-content">
+                            <h3>威宁荞酥</h3>
+                            <p class="food-description">威宁特产，酥脆香甜，营养丰富，历史悠久</p>
+                            <div class="food-highlights">
+                                <span class="highlight">酥脆香甜</span>
+                                <span class="highlight">营养丰富</span>
+                            </div>
+                            <div class="food-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>威宁县各大特产店</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/洋芋.jpeg" alt="毕节洋芋">
+                            <div class="food-tag">特色主食</div>
+                        </div>
+                        <div class="food-content">
+                            <h3>毕节洋芋</h3>
+                            <p class="food-description">毕节特色主食，口感粉糯，可制作多种美食</p>
+                            <div class="food-highlights">
+                                <span class="highlight">口感粉糯</span>
+                                <span class="highlight">制作多样</span>
+                            </div>
+                            <div class="food-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>毕节各地餐厅</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/威宁苦荞酒.jpeg" alt="威宁苦荞酒">
+                            <div class="food-tag">特色酒类</div>
+                        </div>
+                        <div class="food-content">
+                            <h3>威宁苦荞酒</h3>
+                            <p class="food-description">威宁特产酒类，苦荞酿制，香味独特，营养丰富</p>
+                            <div class="food-highlights">
+                                <span class="highlight">香味独特</span>
+                                <span class="highlight">营养丰富</span>
+                            </div>
+                            <div class="food-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>威宁县各大酒行</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 交通出行 -->
+            <section class="content-section" id="transport">
+                <h2 class="section-header">交通出行</h2>
+                <div class="transport-container">
+                    <div class="transport-section">
+                        <h3>如何到达</h3>
+                        <div class="transport-grid">
+                            <div class="transport-card">
+                                <div class="transport-icon">
+                                    <i class="fas fa-plane"></i>
+                                </div>
+                                <div class="transport-info">
+                                    <h4>航空</h4>
+                                    <p>毕节飞雄机场位于大方县，距离市区约30公里</p>
+                                </div>
+                            </div>
+                            <div class="transport-card">
+                                <div class="transport-icon">
+                                    <i class="fas fa-train"></i>
+                                </div>
+                                <div class="transport-info">
+                                    <h4>铁路</h4>
+                                    <p>织金站、六盘水站是主要火车站，连接贵阳等地</p>
+                                </div>
+                            </div>
+                            <div class="transport-card">
+                                <div class="transport-icon">
+                                    <i class="fas fa-bus"></i>
+                                </div>
+                                <div class="transport-info">
+                                    <h4>公路</h4>
+                                    <p>毕节是贵州省西北部交通枢纽，多条高速公路交汇</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transport-section">
+                        <h3>主要交通路线</h3>
+                        <div class="route-list">
+                            <div class="route-item">
+                                <div class="route-icon">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <div class="route-info">
+                                    <h4>毕节市区 - 百里杜鹃</h4>
+                                    <p>距离约50公里，车程约1小时，有直达旅游专线</p>
+                                </div>
+                            </div>
+                            <div class="route-item">
+                                <div class="route-icon">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <div class="route-info">
+                                    <h4>毕节市区 - 威宁草海</h4>
+                                    <p>距离约120公里，车程约2.5小时，可乘坐班车</p>
+                                </div>
+                            </div>
+                            <div class="route-item">
+                                <div class="route-icon">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <div class="route-info">
+                                    <h4>毕节市区 - 织金洞</h4>
+                                    <p>距离约100公里，车程约2小时，可乘坐旅游巴士</p>
+                                </div>
+                            </div>
+                            <div class="route-item">
+                                <div class="route-icon">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <div class="route-info">
+                                    <h4>毕节市区 - 纳雍九洞天</h4>
+                                    <p>距离约80公里，车程约1.5小时，可包车或自驾</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="region-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>云上贵州行</h4>
+                    <p>探索贵州的自然风光与民族风情</p>
+                </div>
+                <div class="footer-section">
+                    <h4>联系信息</h4>
+                    <p>邮箱: info@yunshang.gz.com</p>
+                    <p>电话: 400-123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="guiyang.html">贵阳</a></li>
+                        <li><a href="zunyi.html">遵义</a></li>
+                        <li><a href="anshun.html">安顺</a></li>
+                        <li><a href="qiandongnan.html">黔东南</a></li>
+                        <li><a href="qiannan.html">黔南</a></li>
+                        <li><a href="qianxinan.html">黔西南</a></li>
+                        <li><a href="tongren.html">铜仁</a></li>
+                        <li><a href="bijie.html">毕节</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 云上贵州行. 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bijie.js"></script>
+</body>
+</html>

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遵义市 - 云上贵州行</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/region.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="region-header" style="background: url('images/遵义江界河大桥.jpeg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; padding: 150px 0;">
+        <div class="container" style="position: relative; padding: 0;">
+            <div style="position: relative; z-index: 1;">
+                <nav class="breadcrumb">
+                    <a href="index.html">首页</a>
+                    <span>/</span>
+                    <span>遵义市</span>
+                </nav>
+                <h1 class="region-title">遵义市</h1>
+                <p class="region-subtitle">红色圣地，历史文化</p>
+            </div>
+
+        </div>
+    </header>
+
+    <nav class="region-navigation">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="tab-button active" data-tab="natural">
+                    <i class="fas fa-mountain"></i>
+                    <span>自然景观</span>
+                </button>
+                <button class="tab-button" data-tab="cultural">
+                    <i class="fas fa-landmark"></i>
+                    <span>人文风景</span>
+                </button>
+                <button class="tab-button" data-tab="food">
+                    <i class="fas fa-utensils"></i>
+                    <span>美食推荐</span>
+                </button>
+                <button class="tab-button" data-tab="transport">
+                    <i class="fas fa-train"></i>
+                    <span>交通出行</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="region-main">
+        <div class="container">
+            <div style="font-family: '楷体', 'KaiTi', serif; font-size: 3.5rem; color: #333; text-align: center; margin-bottom: 20px;">
+                红色圣地，醉美遵义
+            </div>
+            <!-- 自然景观 -->
+            <section class="content-section active" id="natural">
+                <h2 class="section-header">自然景观</h2>
+                <div class="attractions-grid">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/赤水丹霞旅游区.mp4" alt="赤水丹霞旅游区" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">世界自然遗产</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>赤水丹霞旅游区</h3>
+                            <p class="attraction-description">世界自然遗产，含佛光岩（丹霞绝壁）+ 十丈洞瀑布（长江流域最大瀑布）</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">丹霞地貌</span>
+                                <span class="highlight">佛光岩</span>
+                                <span class="highlight">十丈洞瀑布</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：1-2天</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>赤水市两河口乡</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleChishuiDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 赤水丹霞详细介绍 -->
+                    <div class="attraction-detail" id="chishui-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>赤水丹霞详细简介</h3>
+                            <p class="detail-subtitle">世界自然遗产・中国丹霞之冠</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>赤水丹霞（遵义・赤水市）是中国面积最大、发育最典型的青年早期丹霞地貌，也是世界自然遗产 "中国丹霞" 的核心组成部分，以 "丹山、碧水、翠林、飞瀑" 四绝闻名，被誉为 "丹霞之冠、千瀑之市、竹子之乡、桫椤王国"。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-info-circle"></i> 核心概况</h4>
+                            <ul>
+                                <li><strong>地位</strong>：2010 年列入世界自然遗产、国家 5A 级旅游景区、国家地质公园。</li>
+                                <li><strong>面积</strong>：总面积1300 多平方公里，核心区273.64 平方公里，为中国丹霞项目中面积最大的景观。</li>
+                                <li><strong>地貌</strong>：青年早期丹霞典型代表，以 "顶平、身陡、麓缓" 为特征，崖壁呈鲜艳赤红 / 橘红色。</li>
+                                <li><strong>特色</strong>：绿色丹霞—— 赤红岩壁与原始森林、竹海、桫椤共生，是全球罕见的生态型丹霞。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-mountain"></i> 三大必游景点</h4>
+                            <div class="detail-subsection">
+                                <h5>1. 佛光岩（丹霞之冠）</h5>
+                                <p>弧形丹霞绝壁，弧长1117 米、高385 米，有 "世界丹霞第一壁" 之称。中央有高 269 米的柱状大瀑布，阳光穿过时易现佛光（最佳：上午 9-11 点）。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>2. 赤水大瀑布（十丈洞）</h5>
+                                <p>高 76 米、宽 80 米，比黄果树瀑布高 8 米，是中国丹霞第一瀑、长江流域最大瀑布。红岩白瀑，水雾常现彩虹，可入水帘洞体验。</p>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>3. 燕子岩</h5>
+                                <p>丹霞绝壁、弧形瀑布、桫椤王国、原始森林四景合一。岩壁如雕，森林覆盖率95%+，是天然大氧吧。</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-tree"></i> 其他精华</h4>
+                            <ul>
+                                <li><strong>四洞沟</strong>：四级瀑布串联（水帘洞、月亮潭、飞蛙瀑、白龙潭），"小家碧玉" 型丹霞水景。</li>
+                                <li><strong>桫椤国家级自然保护区</strong>：2 亿年前恐龙时代植物 "活化石"，全球最大桫椤原生地。</li>
+                                <li><strong>竹海国家森林公园</strong>：17 万亩楠竹，碧波万顷，"竹海听涛"。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>地址</strong>：贵州省遵义市赤水市南部</li>
+                                <li><strong>联票</strong>：180 元（大瀑布 + 佛光岩 + 燕子岩）</li>
+                                <li><strong>最佳季节</strong>：5-10 月（瀑布水量大、植被翠绿）</li>
+                                <li><strong>关键词</strong>：红岩、瀑布、竹海、桫椤、清凉、洗肺</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>赤水丹霞以其独特的自然景观和丰富的生态资源，成为中国丹霞地貌的杰出代表，也是世界自然遗产的重要组成部分，是游客体验自然之美、探索地质奇观的理想去处。</p>
+                            <button class="close-detail-btn" onclick="toggleChishuiDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/娄山关风景区.mp4" alt="娄山关景区" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">黔北要塞</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>娄山关景区</h3>
+                            <p class="attraction-description">黔北要塞，"雄关漫道" 峡谷 + 红军战斗遗址，秋季红叶壮美</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">雄关要塞</span>
+                                <span class="highlight">红军遗址</span>
+                                <span class="highlight">秋季红叶</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：3-4小时</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>汇川区板桥镇</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleLoushanDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 娄山关详细介绍 -->
+                    <div class="attraction-detail" id="loushan-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>娄山关详细简介</h3>
+                            <p class="detail-subtitle">黔北咽喉要塞・红色长征圣地</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>娄山关（遵义・汇川区 / 桐梓县）是大娄山脉主峰的黔北咽喉要塞、红色长征圣地，因 "娄山关大捷"与毛泽东《忆秦娥・娄山关》而名扬天下，是国家 4A 级景区、全国红色旅游经典景区。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-map-marked-alt"></i> 地理与历史</h4>
+                            <ul>
+                                <li><strong>位置</strong>：遵义市汇川区与桐梓县交界处，大娄山中段，川黔锁钥，自古 "一夫当关，万夫莫开"。</li>
+                                <li><strong>海拔</strong>：关口1277 米，主峰笋子山1779 米。</li>
+                                <li><strong>得名</strong>：唐时因娄、梁二将守关得名，原名高岩子。</li>
+                            </ul>
+                            <h5>核心历史（1935 年）：</h5>
+                            <ul>
+                                <li><strong>首克</strong>：1 月，红军占领娄山关，保障遵义会议召开。</li>
+                                <li><strong>大捷（核心）</strong>：2 月 25—26 日，二渡赤水后再夺关，歼敌 4 个团，是长征以来首次大胜，扭转战局。</li>
+                                <li><strong>名篇</strong>：毛泽东写下 《忆秦娥・娄山关》："雄关漫道真如铁，而今迈步从头越"。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-landmark"></i> 必游景点</h4>
+                            <ul>
+                                <li><strong>西风台（制高点）</strong> 海拔 1779 米，360° 观群山，"苍山如海、残阳如血" 最佳观景点，云海、日落极壮观。</li>
+                                <li><strong>毛泽东词碑</strong> 巨幅摩崖石刻，《忆秦娥・娄山关》全文，气势磅礴。</li>
+                                <li><strong>红军战斗纪念碑</strong> 高 11 米，双柱造型，基座浮雕再现战斗场景，庄严肃穆。</li>
+                                <li><strong>小尖山战斗遗址</strong> 保存当年战壕、碉堡，可亲身感受战场险峻。</li>
+                                <li><strong>长空桥</strong> 悬崖悬索桥，横跨峡谷，连接东西观景，惊险出片。</li>
+                                <li><strong>陈列馆 / 诗词馆</strong> 展文物、史料、战斗沙盘，深度了解历史。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>地址</strong>：遵义市汇川区板桥镇</li>
+                                <li><strong>门票</strong>：免费（需 "一码游贵州" 预约）</li>
+                                <li><strong>观光车</strong>：50 元 / 人（必购，山路长）</li>
+                                <li><strong>开放</strong>：夏季 8:00-18:00；冬季 9:00-17:00（陈列馆周一闭馆）</li>
+                                <li><strong>建议</strong>：3–4 小时；最佳4–10 月（云海 / 日落）</li>
+                                <li><strong>交通</strong>：遵义自驾约 40 分钟；高铁至娄山关南站（14 分钟）</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-tags"></i> 核心关键词</h4>
+                            <div class="keywords">
+                                <span class="keyword">雄关</span>
+                                <span class="keyword">长征首胜</span>
+                                <span class="keyword">红色经典</span>
+                                <span class="keyword">苍山如海</span>
+                                <span class="keyword">残阳如血</span>
+                                <span class="keyword">一夫当关</span>
+                            </div>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>娄山关以其险要的地理位置和重要的历史意义，成为了中国革命史上的重要地标，也是游客了解红军长征历史、感受革命精神的重要场所。</p>
+                            <button class="close-detail-btn" onclick="toggleLoushanDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 人文景观 -->
+            <section class="content-section" id="cultural">
+                <h2 class="section-header">人文风景</h2>
+                <div class="attractions-grid">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/遵义会议会址.mp4" alt="遵义会议会址" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">红色经典</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>遵义会议会址</h3>
+                            <p class="attraction-description">红色核心景区，复原会议场景 + 革命文物展</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">遵义会议</span>
+                                <span class="highlight">革命文物</span>
+                                <span class="highlight">红色教育</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：2-3小时</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>红花岗区子尹路</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleZunyiMeetingDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 遵义会议详细介绍 -->
+                    <div class="attraction-detail" id="zunyi-meeting-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>遵义会议详细简介</h3>
+                            <p class="detail-subtitle">中国革命的伟大转折・红色圣地</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>遵义会议（1935 年 1 月 15—17 日）是中国共产党历史上生死攸关的转折点，在长征最危急关头挽救了党、红军和中国革命，也是贵州最核心的红色地标。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-history"></i> 历史背景（为何召开）</h4>
+                            <ul>
+                                <li><strong>时间</strong>：长征途中，湘江战役惨败后，红军锐减至 3 万余人，革命濒临绝境。</li>
+                                <li><strong>地点</strong>：贵州遵义老城子尹路 96 号（原黔军师长柏辉章公馆）。</li>
+                                <li><strong>核心矛盾</strong>：批判博古、李德的 "左" 倾军事错误，纠正错误路线。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-file-alt"></i> 会议核心内容</h4>
+                            <h5>解决军事问题</h5>
+                            <p>明确否定第五次反 "围剿" 失败的军事指挥，恢复毛泽东的正确战略战术。</p>
+                            <h5>改组中央领导（关键转折）</h5>
+                            <ul>
+                                <li>取消博古、李德最高军事指挥权。</li>
+                                <li>增选毛泽东为中央政治局常委。</li>
+                                <li>由张闻天代替博古负总责；军事由毛泽东、周恩来负责。</li>
+                                <li>后成立毛泽东、周恩来、王稼祥三人军事小组，确立核心指挥。</li>
+                            </ul>
+                            <h5>历史意义（三句话总结）</h5>
+                            <ul>
+                                <li>事实上确立毛泽东在党中央和红军的领导地位。</li>
+                                <li>中共首次独立自主用马列主义解决自身路线问题（标志党走向成熟）。</li>
+                                <li>在危机关头挽救了党、红军、中国革命，是长征走向胜利的起点。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-building"></i> 遵义会议会址（景区）</h4>
+                            <ul>
+                                <li><strong>建筑</strong>：中西合璧二层砖木小楼，赭红色门窗、回廊拱券，极具辨识度。</li>
+                                <li><strong>会议室（二楼）</strong>：27㎡房间，长方桌、藤椅、挂钟、火盆，按原貌复原。</li>
+                                <li><strong>陈列馆</strong>：海量文物、图片、沙盘、多媒体，全景展现长征与会议历史。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>地址</strong>：遵义市红花岗区子尹路 96 号</li>
+                                <li><strong>门票</strong>：免费（需预约）</li>
+                                <li><strong>开放</strong>：8:30–17:00（周一闭馆）</li>
+                                <li><strong>交通</strong>：贵阳高铁至遵义站（约 40 分钟），转公交 / 打车即到</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-tags"></i> 关键词</h4>
+                            <div class="keywords">
+                                <span class="keyword">伟大转折</span>
+                                <span class="keyword">红色圣地</span>
+                                <span class="keyword">生死攸关</span>
+                                <span class="keyword">独立自主</span>
+                                <span class="keyword">毛泽东领导地位</span>
+                            </div>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>遵义会议是中国共产党历史上的重要转折点，它不仅挽救了党和红军，也为中国革命的胜利奠定了基础。遵义会议会址作为这一历史事件的见证，成为了中国红色旅游的重要景点。</p>
+                            <button class="close-detail-btn" onclick="toggleZunyiMeetingDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/海龙屯.mp4" alt="海龙屯" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">世界文化遗产</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>海龙屯</h3>
+                            <p class="attraction-description">世界文化遗产，明代土司军事城堡，石砌关隘 / 屯道超震撼</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">土司城堡</span>
+                                <span class="highlight">明代建筑</span>
+                                <span class="highlight">军事防御</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：半天</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>汇川区高坪镇</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleHailongtunDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 海龙屯详细介绍 -->
+                    <div class="attraction-detail" id="hailongtun-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>海龙屯详细简介</h3>
+                            <p class="detail-subtitle">世界文化遗产・东方马丘比丘</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>海龙屯（海龙屯土司遗址） 是贵州首个世界文化遗产（2015 年入选），位于遵义龙岩山巅，是亚洲保存最完好的中世纪军事城堡、播州杨氏土司 725 年统治的终极见证，被誉为 "东方马丘比丘"。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-history"></i> 核心历史</h4>
+                            <ul>
+                                <li><strong>始建</strong>：南宋宝祐五年（1257 年），15 世土司杨文为抗蒙而建，是西南抗蒙要塞。</li>
+                                <li><strong>鼎盛</strong>：明万历年间，末代土司杨应龙大规模扩建，作为 "夏宫" 与军事中心。</li>
+                                <li><strong>终结</strong>：1600 年 "平播之役"，杨应龙反明被 24 万明军攻克，自焚身亡，海龙屯遭焚毁，杨氏统治终结。</li>
+                                <li><strong>地位</strong>：见证羁縻制→土司制→改土归流的历史演变。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-landmark"></i> 必游景点（九关连营，天险奇观）</h4>
+                            <ul>
+                                <li><strong>飞虎关 & 三十六步天梯</strong> 最险关隘。近乎垂直的巨型石阶（梯高 50cm+），需手脚并用攀爬，亲验 "飞鸟难逾"。</li>
+                                <li><strong>飞龙关 & 朝天关</strong> 核心防御枢纽，巨石垒砌、气势雄浑，居高临下，视野震撼。</li>
+                                <li><strong>新王宫遗址</strong> 屯顶1.8 万㎡宫殿基址，"九宫八院" 格局，残垣断壁间尽显当年土司王宫的宏伟规模。</li>
+                                <li><strong>绣花楼</strong> 传说为杨应龙女儿居所，孤悬绝壁，云海山景绝美，是摄影佳点。</li>
+                                <li><strong>万安关（后关）</strong> 屯堡最后防线，三层瓮城结构，军事防御艺术的巅峰。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用攻略</h4>
+                            <ul>
+                                <li><strong>地址</strong>：遵义市汇川区高坪镇（距市区 20km）</li>
+                                <li><strong>门票</strong>：80 元（旺季）/60 元（淡季）；观光车35 元（必购）</li>
+                                <li><strong>开放</strong>：09:00–17:00（16:00 停止入园）</li>
+                                <li><strong>用时</strong>：3–4 小时（全程登山）</li>
+                                <li><strong>贴士</strong>：穿防滑鞋、带登山杖、备足水；山路陡峭，量力而行</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-tags"></i> 关键词</h4>
+                            <div class="keywords">
+                                <span class="keyword">世界遗产</span>
+                                <span class="keyword">土司城堡</span>
+                                <span class="keyword">平播之役</span>
+                                <span class="keyword">三十六步天梯</span>
+                                <span class="keyword">东方马丘比丘</span>
+                                <span class="keyword">军事奇迹</span>
+                            </div>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>海龙屯作为贵州首个世界文化遗产，不仅是中国土司制度的重要见证，也是中国古代军事防御工程的杰出代表，具有极高的历史、文化和艺术价值。</p>
+                            <button class="close-detail-btn" onclick="toggleHailongtunDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 美食推荐 -->
+            <section class="content-section" id="food">
+                <h2 class="section-header">美食推荐</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/遵义羊肉粉.jpeg" alt="遵义羊肉粉">
+                        </div>
+                        <div class="food-content">
+                            <h3>遵义羊肉粉</h3>
+                            <p class="food-description">鲜羊骨汤煮粉，配糊辣椒 + 羊肉片，加泡菜解腻</p>
+                            <div class="food-tags">
+                                <span class="food-tag">遵义名小吃</span>
+                                <span class="food-tag">温补养生</span>
+                            </div>
+                            <div class="food-price">价格：15-20元/碗</div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/豆花面.jpeg" alt="豆花面">
+                        </div>
+                        <div class="food-content">
+                            <h3>豆花面</h3>
+                            <p class="food-description">碱水面配嫩豆花，蘸肉臊辣椒蘸水</p>
+                            <div class="food-tags">
+                                <span class="food-tag">地方特色</span>
+                                <span class="food-tag">香辣嫩滑</span>
+                            </div>
+                            <div class="food-price">价格：10-15元/碗</div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/鸡蛋糕.jpeg" alt="鸡蛋糕">
+                        </div>
+                        <div class="food-content">
+                            <h3>鸡蛋糕</h3>
+                            <p class="food-description">传统烘焙，金黄酥软蛋香浓</p>
+                            <div class="food-tags">
+                                <span class="food-tag">传统糕点</span>
+                                <span class="food-tag">香甜可口</span>
+                            </div>
+                            <div class="food-price">价格：8-12元/个</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 交通出行 -->
+            <section class="content-section" id="transport">
+                <h2 class="section-header">交通出行</h2>
+                <div class="transport-info">
+                    <div class="transport-card">
+                        <div class="transport-header">
+                            <i class="fas fa-train"></i>
+                            <h3>遵义站为起点</h3>
+                        </div>
+                        <div class="transport-routes">
+                            <div class="route-item">
+                                <h4>到遵义会议会址</h4>
+                                <p><strong>公交 1 路 / 13 路</strong>（6:20-22:00，约 15 分钟）</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>到海龙屯</h4>
+                                <p><strong>旅游 2 路</strong>（7:00-17:00，约 40 分钟）</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>到赤水丹霞</h4>
+                                <p><strong>遵义站客运总站→赤水客车站</strong>（8:00-16:00，约 3 小时）</p>
+                                <p>转景区专线（约 30 分钟）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="index.html">返回首页</a></li>
+                        <li><a href="guiyang.html">贵阳市</a></li>
+                        <li><a href="anshun.html">安顺市</a></li>
+                        <li><a href="qiandongnan.html">黔东南州</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>热门景点</h4>
+                    <ul>
+                        <li><a href="#natural">赤水丹霞</a></li>
+                        <li><a href="#cultural">遵义会议会址</a></li>
+                        <li><a href="#food">羊肉粉</a></li>
+                        <li><a href="#transport">交通指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>旅游贴士</h4>
+                    <ul>
+                        <li><span>最佳旅游季节：四季皆宜</span></li>
+                        <li><span>特色推荐：红色文化</span></li>
+                        <li><span>文化体验：革命历史</span></li>
+                        <li><span>美食特色：黔北菜系</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 云上贵州行 - 遵义市页面. 红色圣地，历史文化</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/zunyi.js"></script>
+</body>
+</html>

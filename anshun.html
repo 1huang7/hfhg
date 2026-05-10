@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安顺市 - 云上贵州行</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/region.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="region-header" style="background: url('images/安顺坝陵河大桥.jpeg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; padding: 150px 0;">
+        <div class="container" style="position: relative; padding: 0;">
+            <div style="position: relative; z-index: 1;">
+                <nav class="breadcrumb">
+                    <a href="index.html">首页</a>
+                    <span>/</span>
+                    <span>安顺市</span>
+                </nav>
+                <h1 class="region-title">安顺市</h1>
+                <p class="region-subtitle">黄果树之乡，喀斯特王国</p>
+            </div>
+
+        </div>
+    </header>
+
+    <nav class="region-navigation">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="tab-button active" data-tab="natural">
+                    <i class="fas fa-mountain"></i>
+                    <span>自然景观</span>
+                </button>
+                <button class="tab-button" data-tab="cultural">
+                    <i class="fas fa-landmark"></i>
+                    <span>人文风景</span>
+                </button>
+                <button class="tab-button" data-tab="food">
+                    <i class="fas fa-utensils"></i>
+                    <span>美食推荐</span>
+                </button>
+                <button class="tab-button" data-tab="transport">
+                    <i class="fas fa-train"></i>
+                    <span>交通出行</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="region-main">
+        <div class="container">
+            <div style="font-family: '楷体', 'KaiTi', serif; font-size: 3.5rem; color: #333; text-align: center; margin-bottom: 20px;">
+                康养福地・瀑乡安顺
+            </div>
+            <!-- 自然景观 -->
+            <section class="content-section active" id="natural">
+                <h2 class="section-header">自然景观</h2>
+                <div class="attractions-grid">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/黄果树瀑布.mp4" alt="黄果树瀑布" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">亚洲最大瀑布</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>黄果树瀑布</h3>
+                            <p class="attraction-description">亚洲最大瀑布，含陡坡塘 / 天星桥，夏季水量足可看 "瀑布彩虹"</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">亚洲最大</span>
+                                <span class="highlight">陡坡塘</span>
+                                <span class="highlight">天星桥</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：半天</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>镇宁县黄果树瀑布景区</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleHuangguoshuDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 黄果树瀑布详细介绍 -->
+                    <div class="attraction-detail" id="huangguoshu-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>黄果树瀑布景区详细简介</h3>
+                            <p class="detail-subtitle">国家 5A 景区・世界自然遗产・中华第一瀑</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>黄果树瀑布位于贵州省安顺市镇宁布依族苗族自治县，是亚洲第一大瀑布、世界最大瀑布群，以雄、奇、险、秀闻名。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-info-circle"></i> 基本概况</h4>
+                            <ul>
+                                <li><strong>位置</strong>：安顺市西南 45 公里，距贵阳 128 公里</li>
+                                <li><strong>规模</strong>：总面积 163 平方公里，以高 77.8 米、宽 101 米的大瀑布为核心，串联 18 个风格各异瀑布，获吉尼斯 "世界最大瀑布群" 认证</li>
+                                <li><strong>气候</strong>：年均温 15.6℃，森林覆盖率超 66%，负氧离子丰富，为 "天然大氧吧"</li>
+                                <li><strong>称号</strong>：国家 5A 景区、世界自然遗产、中华第一瀑</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-mountain"></i> 三大核心景区</h4>
+                            <div class="detail-subsection">
+                                <h5>1. 黄果树大瀑布（核心）</h5>
+                                <ul>
+                                    <li><strong>亮点</strong>：世界唯一可6 方位（上 / 下 / 前 / 后 / 左 / 右）观赏的瀑布</li>
+                                    <li><strong>水帘洞</strong>：瀑布后 134 米天然溶洞，6 个洞窗可伸手触瀑、观彩虹</li>
+                                    <li><strong>犀牛潭</strong>：深 17 米，常现双彩虹</li>
+                                    <li><strong>大扶梯</strong>：上下山可选，省力省时</li>
+                                </ul>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>2. 天星桥景区（精华）</h5>
+                                <ul>
+                                    <li>集山、水、林、洞、根、石为一体的水上石林</li>
+                                    <li><strong>银链坠潭瀑布</strong>：黄果树最美瀑布，水流如银链坠入深潭</li>
+                                    <li><strong>天星洞</strong>：壮观喀斯特旱洞</li>
+                                    <li><strong>建议</strong>：必走完全程（含下半段）</li>
+                                </ul>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>3. 陡坡塘瀑布</h5>
+                                <ul>
+                                    <li>瀑顶宽105 米，黄果树最宽瀑布</li>
+                                    <li>86 版《西游记》片尾曲取景地</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：旺季（3-11 月）160 元，淡季（12-2 月）150 元</li>
+                                <li><strong>必购</strong>：观光车50 元（三景区往返）</li>
+                                <li><strong>开放</strong>：旺季 7:00-18:30；淡季 7:30-18:00</li>
+                                <li><strong>用时</strong>：5-6 小时</li>
+                                <li><strong>贴士</strong>：丰水期（6-9 月）最壮观；穿防滑鞋、带雨衣</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>黄果树瀑布以其壮观的气势和独特的景观，成为贵州最著名的旅游景点之一，也是世界自然遗产的重要组成部分。</p>
+                            <button class="close-detail-btn" onclick="toggleHuangguoshuDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/龙宫.mp4" alt="龙宫景区" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">喀斯特奇观</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>龙宫景区</h3>
+                            <p class="attraction-description">喀斯特水溶洞，"地下暗河"+"龙门飞瀑"，洞内钟乳石形态各异</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">水溶洞</span>
+                                <span class="highlight">地下暗河</span>
+                                <span class="highlight">龙门飞瀑</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：3-4小时</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>西秀区龙宫镇</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleLonggongDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 龙宫景区详细介绍 -->
+                    <div class="attraction-detail" id="longgong-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>龙宫景区详细简介</h3>
+                            <p class="detail-subtitle">国家 5A 景区・世界自然遗产・天下喀斯特</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>龙宫位于安顺市西秀区，距黄果树 30 公里，以最长水溶洞、洞中瀑布、地下暗河为特色，被誉为 "天下喀斯特，尽在龙宫"。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-info-circle"></i> 基本概况</h4>
+                            <ul>
+                                <li><strong>位置</strong>：安顺市南郊 27 公里，距贵阳 116 公里</li>
+                                <li><strong>规模</strong>：总面积 60 平方公里，核心区 18 平方公里</li>
+                                <li><strong>地貌</strong>：90% 为碳酸岩，喀斯特地貌最集中全面</li>
+                                <li><strong>荣誉</strong>：国家 5A、中国最美水溶洞、世界最低天然辐射剂量溶洞</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-cave"></i> 核心景点</h4>
+                            <div class="detail-subsection">
+                                <h5>1. 一进 / 二进龙宫（必玩）</h5>
+                                <ul>
+                                    <li>中国最长最美水溶洞，全长 1240 米</li>
+                                    <li>乘船穿越地下暗河，钟乳石林立、灯光绚丽，全程约 40 分钟</li>
+                                </ul>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>2. 龙门飞瀑</h5>
+                                <ul>
+                                    <li>中国最大洞中瀑布，高 38 米、宽 25 米</li>
+                                    <li>天池水从溶洞天窗倾泻，声如雷鸣</li>
+                                </ul>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>3. 天池</h5>
+                                <ul>
+                                    <li>山顶天然湖泊，水深 30 米，碧绿如玉，为龙宫水源</li>
+                                </ul>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>4. 观音洞</h5>
+                                <ul>
+                                    <li>中国最大洞中佛堂，天然溶洞内供奉佛像</li>
+                                </ul>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>5. 龙字田</h5>
+                                <ul>
+                                    <li>世界最大植物汉字（8 万㎡）</li>
+                                    <li>春季油菜花、秋季稻浪呈现巨型 "龙" 字</li>
+                                </ul>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>6. 漩塘</h5>
+                                <ul>
+                                    <li>天然圆形池塘，池水常年自然旋转，为地下水系奇观</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：130 元（含游船）；观光车 20 元</li>
+                                <li><strong>开放</strong>：旺季 7:30-17:30；淡季 8:00-17:00</li>
+                                <li><strong>用时</strong>：3-4 小时</li>
+                                <li><strong>贴士</strong>：洞内恒温 16-18℃，带薄外套</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>龙宫景区以其独特的喀斯特地貌和丰富的地下景观，成为贵州喀斯特旅游的重要组成部分，也是世界自然遗产的重要景点。</p>
+                            <button class="close-detail-btn" onclick="toggleLonggongDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 人文景观 -->
+            <section class="content-section" id="cultural">
+                <h2 class="section-header">人文风景</h2>
+                <div class="attractions-grid">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/天龙屯堡.mp4" alt="天龙屯堡" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">明代军屯</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>天龙屯堡</h3>
+                            <p class="attraction-description">明代军屯村落，保留 "凤阳汉装"+ 地戏表演，石砌民居很有年代感</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">明代军屯</span>
+                                <span class="highlight">凤阳汉装</span>
+                                <span class="highlight">地戏表演</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：2-3小时</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>西秀区天龙镇</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleTianlongDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 天龙屯堡详细介绍 -->
+                    <div class="attraction-detail" id="tianlong-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>天龙屯堡详细简介</h3>
+                            <p class="detail-subtitle">明代生活的活化石・大明遗风</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>天龙屯堡（位于安顺市平坝区）是明代军屯后裔的活态古村落，被誉为 "明代生活的活化石"，完整保留了 600 年前江淮汉族的服饰、建筑、语言与民俗，与黄果树、龙宫同属安顺经典喀斯特 + 人文组合。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-history"></i> 历史渊源（大明遗风）</h4>
+                            <ul>
+                                <li><strong>起源</strong>：明洪武十四年（1381 年），朱元璋 "调北征南" 派 30 万大军平定云南，后就地 "屯田戍边"，并 "调北填南" 移民。</li>
+                                <li><strong>身份</strong>：居民多为江南（南京、安徽、江西）军士后裔，世代聚居，文化未被同化。</li>
+                                <li><strong>原名</strong>：元代为 "饭笼驿"（古驿道驿站），后取 "天台山""龙眼山" 改名天龙屯堡。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-landmark"></i> 核心看点（四大特色）</h4>
+                            <div class="detail-subsection">
+                                <h5>1. 石头城堡建筑（军事 + 江南）</h5>
+                                <ul>
+                                    <li>全石结构：石板瓦、石墙、石巷、石拱门、碉楼，户户相通、巷巷相连，九宫八卦布局。</li>
+                                    <li>防御智慧：厚石墙、射击孔（猫儿窗）、高墙窄巷，易守难攻。</li>
+                                </ul>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>2. 凤阳汉装（活化石服饰）</h5>
+                                <ul>
+                                    <li>妇女仍穿宝蓝色长衣大袖，衣襟绣花，头包青 / 白头巾。</li>
+                                    <li>已婚：盘头 + 白头巾 + 黑腰带；未婚：扎马尾，无巾无带。</li>
+                                </ul>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>3. 地戏（国家级非遗）</h5>
+                                <ul>
+                                    <li>又称 "跳神"，头戴木雕假面、穿战裙，唱演三国、隋唐、杨家将等忠烈故事。</li>
+                                    <li>2006 年首批国家级非遗，被称为 "中国戏剧活化石"。</li>
+                                    <li>表演：演武堂每日 10:30 / 14:30 各一场（含在门票内）。</li>
+                                </ul>
+                            </div>
+                            <div class="detail-subsection">
+                                <h5>4. 必游景点</h5>
+                                <ul>
+                                    <li><strong>沈万三故居</strong>：明代富商沈万三晚年居于此，江南风格宅院。</li>
+                                    <li><strong>天龙学堂（1907 年）</strong>：石木结构，清末民初教育遗迹。</li>
+                                    <li><strong>三教寺</strong>：佛、道、儒三教合一的罕见古寺。</li>
+                                    <li><strong>天台山伍龙寺（联票含）</strong>：2 公里外 "空中石头堡垒"，明代军事寺庙，登顶俯瞰全景。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>位置</strong>：安顺平坝区天龙镇，距贵阳 72km、安顺 40km（沪昆高速旁）</li>
+                                <li><strong>门票</strong>：联票约 60 元（古镇 + 天台山 + 地戏 + 观光车）；学生 / 老人半价</li>
+                                <li><strong>开放</strong>：旺季（4-10 月）8:00-18:00；淡季 8:30-17:30</li>
+                                <li><strong>用时</strong>：2–3 小时（半天）</li>
+                                <li><strong>最佳</strong>：春秋；春节有庙会、地戏展演</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-route"></i> 与黄果树 / 龙宫组合</h4>
+                            <ul>
+                                <li><strong>安顺西线经典</strong>：黄果树 → 龙宫 → 天龙屯堡（1–2 日串联）</li>
+                                <li><strong>风格互补</strong>：雄奇山水 + 神秘溶洞 + 大明人文</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>天龙屯堡作为明代军屯的活态遗存，不仅是贵州历史文化的重要组成部分，也是研究明代军事、移民和文化的重要实物资料。</p>
+                            <button class="close-detail-btn" onclick="toggleTianlongDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <video src="images/桥梁博物馆.mp4?v=1" alt="贵州省桥梁科普教育博物馆" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
+                            <div class="attraction-badge">科普教育</div>
+                        </div>
+                        <div class="attraction-content">
+                            <h3>贵州省桥梁科普教育博物馆</h3>
+                            <p class="attraction-description">展示贵州桥梁建设成就，普及桥梁科学知识，互动体验桥梁设计与建造</p>
+                            <div class="attraction-highlights">
+                                <span class="highlight">桥梁科普</span>
+                                <span class="highlight">互动体验</span>
+                                <span class="highlight">科技教育</span>
+                            </div>
+                            <div class="attraction-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>建议游览时间：2-3小时</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>安顺市西秀区</span>
+                                </div>
+                            </div>
+                            <button class="detail-btn" onclick="toggleBridgeMuseumDetails()">
+                                <i class="fas fa-info-circle"></i>
+                                查看详细介绍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 贵州省桥梁科普教育博物馆详细介绍 -->
+                    <div class="attraction-detail" id="bridge-museum-detail" style="display: none;">
+                        <div class="detail-header">
+                            <h3>贵州省桥梁科普教育博物馆详细简介</h3>
+                            <p class="detail-subtitle">桥梁科技殿堂・科普教育基地</p>
+                        </div>
+                        
+                        <div class="detail-intro">
+                            <p>贵州省桥梁科普教育博物馆是一座以桥梁科学为主题的综合性博物馆，位于安顺市西秀区，旨在展示贵州桥梁建设的辉煌成就，普及桥梁科学知识，培养公众对桥梁工程的兴趣和理解。</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
+                            <ul>
+                                <li><strong>贵州桥梁成就展</strong>：展示贵州从传统桥梁到现代高桥的发展历程，包括平塘大桥、清水河大桥、鸭池河大桥等著名桥梁的模型和图片。</li>
+                                <li><strong>桥梁科学原理</strong>：通过互动展品和多媒体展示，介绍桥梁的基本结构、受力原理、设计方法等科学知识。</li>
+                                <li><strong>互动体验区</strong>：设有桥梁设计模拟、桥梁承重测试、桥梁建造体验等互动项目，让游客亲身体验桥梁工程的魅力。</li>
+                                <li><strong>贵州桥梁文化</strong>：展示贵州各民族传统桥梁的特色和文化内涵，如风雨桥、石拱桥等。</li>
+                                <li><strong>未来桥梁展望</strong>：通过虚拟现实技术，展示未来桥梁的发展趋势和创新设计。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                            <ul>
+                                <li><strong>门票</strong>：成人票50元/人，学生、老人半价，14岁以下儿童免费。</li>
+                                <li><strong>开放时间</strong>：周二至周日 09:00-17:00（16:30停止入场），周一闭馆。</li>
+                                <li><strong>交通</strong>：
+                                    <ul>
+                                        <li>公交：市区内乘坐1路、2路、3路等公交车到博物馆站下车。</li>
+                                        <li>自驾：导航至"贵州省桥梁科普教育博物馆"，景区内有停车场。</li>
+                                    </ul>
+                                </li>
+                                <li><strong>最佳游览时间</strong>：春秋两季，气候适宜，游客较少。</li>
+                                <li><strong>周边景点</strong>：黄果树瀑布、龙宫、天龙屯堡。</li>
+                                <li><strong>特色活动</strong>：定期举办桥梁科普讲座、桥梁模型制作工作坊等活动。</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-footer">
+                            <p>贵州省桥梁科普教育博物馆是贵州桥梁文化的重要展示窗口，也是青少年科普教育的重要基地，为公众了解桥梁科学、感受贵州桥梁建设成就提供了独特的平台。</p>
+                            <button class="close-detail-btn" onclick="toggleBridgeMuseumDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 美食推荐 -->
+            <section class="content-section" id="food">
+                <h2 class="section-header">美食推荐</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/安顺裹卷.jpeg" alt="安顺裹卷">
+                        </div>
+                        <div class="food-content">
+                            <h3>安顺裹卷</h3>
+                            <p class="food-description">米皮裹豆芽 / 折耳根，配秘制辣椒蘸水，酸辣爽口</p>
+                            <div class="food-tags">
+                                <span class="food-tag">安顺名小吃</span>
+                                <span class="food-tag">酸辣爽口</span>
+                            </div>
+                            <div class="food-price">价格：8-12元/份</div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="images/夺夺粉.jpeg" alt="夺夺粉">
+                        </div>
+                        <div class="food-content">
+                            <h3>夺夺粉</h3>
+                            <p class="food-description">砂锅煮豆腐 / 蔬菜，蘸煳辣椒蘸水，市井烟火味</p>
+                            <div class="food-tags">
+                                <span class="food-tag">地方特色</span>
+                                <span class="food-tag">市井烟火</span>
+                            </div>
+                            <div class="food-price">价格：15-20元/份</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 交通出行 -->
+            <section class="content-section" id="transport">
+                <h2 class="section-header">交通出行</h2>
+                <div class="transport-info">
+                    <div class="transport-card">
+                        <div class="transport-header">
+                            <i class="fas fa-train"></i>
+                            <h3>安顺西站为起点</h3>
+                        </div>
+                        <div class="transport-routes">
+                            <div class="route-item">
+                                <h4>到黄果树瀑布</h4>
+                                <p><strong>景区直通车</strong>（7:30-15:30，约 1 小时）</p>
+                                <p>或 <strong>19 路转客运东站专线</strong>（约 1.5 小时）</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>到龙宫</h4>
+                                <p><strong>客运东站转龙宫专线</strong>（8:00-16:00，约 50 分钟）</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>到天龙屯堡</h4>
+                                <p><strong>12 路转平坝大巴→天龙屯堡站</strong>（约 40 分钟）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="index.html">返回首页</a></li>
+                        <li><a href="guiyang.html">贵阳市</a></li>
+                        <li><a href="zunyi.html">遵义市</a></li>
+                        <li><a href="qiandongnan.html">黔东南州</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>热门景点</h4>
+                    <ul>
+                        <li><a href="#natural">黄果树瀑布</a></li>
+                        <li><a href="#cultural">天龙屯堡</a></li>
+                        <li><a href="#food">安顺裹卷</a></li>
+                        <li><a href="#transport">交通指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>旅游贴士</h4>
+                    <ul>
+                        <li><span>最佳旅游季节：夏季</span></li>
+                        <li><span>特色推荐：瀑布奇观</span></li>
+                        <li><span>文化体验：屯堡文化</span></li>
+                        <li><span>美食特色：酸辣口味</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 云上贵州行 - 安顺市页面. 瀑乡安顺，溶洞奇观</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/anshun.js"></script>
+</body>
+</html>
