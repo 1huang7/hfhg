@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ZCOOL XiaoWei', 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 视频背景区域 */
+.video-section {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    aspect-ratio: 16 / 9; /* 16:9比例 */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-image: url('images/背景.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* 恢复视频显示 */
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.video-title {
+    font-family: 'Ma Shan Zheng', 'ZCOOL XiaoWei', serif;
+    font-size: 4rem; /* 从3rem改为4rem */
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+.video-subtitle {
+    font-size: 1.5rem; /* 从1.2rem改为1.5rem */
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease 0.3s both;
+}
+
+
+
+
+
+@keyframes titleFloat {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes charGlow {
+    0%, 100% { filter: brightness(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); }
+    50% { filter: brightness(1.2) drop-shadow(0 0 20px rgba(255, 255, 255, 0.8)); }
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeInUp 1s ease 2s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 导航栏样式 */
+.navigation {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 15px 25px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    min-width: 120px;
+}
+
+.nav-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.nav-item i {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover i {
+    transform: scale(1.1);
+}
+
+/* 主要内容区域 */
+.main-content {
+    padding: 60px 0;
+    background: url('../images/背景.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* 可选：添加固定背景效果 */
+    margin: 0;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    top: -20px;
+    z-index: 1;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem; /* 从2.5rem改为3rem */
+    color: #fff; /* 修改为白色 */
+    margin-bottom: 50px;
+    font-family: 'Ma Shan Zheng', serif;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+/* 地州网格布局 */
+.regions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.region-card {
+    background: rgba(255, 255, 255, 0.45); /* 添加45%透明度蒙版 */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.region-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.region-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.region-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.region-card:hover .region-image img {
+    transform: scale(1.1);
+}
+
+.region-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.45));
+    color: white;
+    padding: 30px 20px 20px;
+}
+
+.region-overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-family: 'Ma Shan Zheng', serif;
+    color: #fff; /* 修改为白色 */
+}
+
+.region-overlay p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    color: #fff; /* 修改为白色 */
+}
+
+.category-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    backdrop-filter: blur(10px);
+}
+
+.region-content {
+    padding: 20px;
+}
+
+.region-stats {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.stat i {
+    color: #667eea;
+    font-size: 1rem;
+}
+
+/* 页脚样式 */
+.footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ecf0f1;
+    font-family: 'Ma Shan Zheng', serif;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #667eea;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+    color: #bdc3c7;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+    
+    .nav-categories {
+        gap: 15px;
+    }
+    
+    .nav-item {
+        padding: 10px 15px;
+        min-width: 80px;
+    }
+    
+    .nav-item span {
+        font-size: 0.8rem;
+    }
+    
+    .regions-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .title-char {
+        margin: 0 2px;
+    }
+    
+    .header {
+        padding: 40px 0;
+    }
+    
+    .main-content {
+        padding: 40px 0;
+    }
+}
+
+/* 加载动画 */
+.loading {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5a67d8, #6b46c1);
+}
