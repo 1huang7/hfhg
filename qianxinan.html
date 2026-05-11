@@ -10,650 +10,467 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 统一修复视频高度 & 卡片样式 */
+        .attraction-image video {
+            width: 100% !important;
+            height: 220px !important;
+            object-fit: cover !important;
+            border-radius: 12px;
+        }
+        .attraction-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        .region-header {
+            background: url('images/黔西南花江峡谷大桥.jpeg') center / cover no-repeat !important;
+            padding: 100px 0 !important;
+        }
+        .page-slogan {
+            font-family: '楷体', KaiTi, serif;
+            font-size: 2.8rem;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+        }
+        @media (max-width:768px) {
+            .page-slogan {
+                font-size: 1.8rem;
+            }
+        }
+        /* 详情面板默认隐藏 */
+        .attraction-detail {
+            display: none;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <header class="region-header" style="background: url('images/黔西南花江峡谷大桥.jpeg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; padding: 150px 0;">
-        <div class="container" style="position: relative; padding: 0;">
-            <div style="position: relative; z-index: 1;">
-                <nav class="breadcrumb">
-                    <a href="index.html">首页</a>
-                    <span>/</span>
-                    <span>黔西南州</span>
-                </nav>
-                <h1 class="region-title">黔西南州</h1>
-                <p class="region-subtitle">山水长卷，水墨金州</p>
-            </div>
 
+<header class="region-header">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span>/</span>
+            <span>黔西南州</span>
+        </nav>
+        <h1 class="region-title">黔西南州</h1>
+        <p class="region-subtitle">山水长卷，水墨金州</p>
+    </div>
+</header>
+
+<nav class="region-navigation">
+    <div class="container">
+        <div class="nav-tabs">
+            <button class="tab-button active" data-tab="natural">
+                <i class="fas fa-mountain"></i>
+                <span>自然景观</span>
+            </button>
+            <button class="tab-button" data-tab="cultural">
+                <i class="fas fa-landmark"></i>
+                <span>人文风景</span>
+            </button>
+            <button class="tab-button" data-tab="food">
+                <i class="fas fa-utensils"></i>
+                <span>美食推荐</span>
+            </button>
+            <button class="tab-button" data-tab="transport">
+                <i class="fas fa-train"></i>
+                <span>交通出行</span>
+            </button>
         </div>
-    </header>
+    </div>
+</nav>
 
-    <nav class="region-navigation">
-        <div class="container">
-            <div class="nav-tabs">
-                <button class="tab-button active" data-tab="natural">
-                    <i class="fas fa-mountain"></i>
-                    <span>自然景观</span>
-                </button>
-                <button class="tab-button" data-tab="cultural">
-                    <i class="fas fa-landmark"></i>
-                    <span>人文风景</span>
-                </button>
-                <button class="tab-button" data-tab="food">
-                    <i class="fas fa-utensils"></i>
-                    <span>美食推荐</span>
-                </button>
-                <button class="tab-button" data-tab="transport">
-                    <i class="fas fa-train"></i>
-                    <span>交通出行</span>
-                </button>
+<main class="region-main">
+    <div class="container">
+        <div class="page-slogan">水墨金州，神奇山水</div>
+
+        <!-- 自然景观 -->
+        <section class="content-section active" id="natural">
+            <h2 class="section-header">自然景观</h2>
+            <div class="attractions-grid">
+
+                <!-- 万峰林 -->
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/万峰林.mp4" alt="万峰林" autoplay muted loop></video>
+                        <div class="attraction-badge">八卦田</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>万峰林</h3>
+                        <p class="attraction-description">八卦田景观，万峰成林，马岭河峡谷相连，田园风光无限</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">八卦田</span>
+                            <span class="highlight">万峰成林</span>
+                            <span class="highlight">田园风光</span>
+                        </div>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览：1天</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>兴义市万峰林景区</span>
+                            </div>
+                        </div>
+                        <button class="detail-btn" onclick="toggleWanfenglinDetails()">
+                            <i class="fas fa-info-circle"></i> 查看详细介绍
+                        </button>
+                    </div>
+                </div>
+
+                <div class="attraction-detail" id="wanfenglinDetail">
+                    <div class="detail-content">
+                        <h3>万峰林</h3>
+                        <div class="detail-grid">
+                            <div class="detail-section">
+                                <h4>基本信息</h4>
+                                <ul>
+                                    <li><strong>位置：</strong>兴义市万峰林景区</li>
+                                    <li><strong>等级：</strong>国家 4A 级景区</li>
+                                    <li><strong>门票：</strong>80元/人</li>
+                                    <li><strong>开放时间：</strong>8:00-18:00</li>
+                                </ul>
+                            </div>
+                            <div class="detail-section">
+                                <h4>核心亮点</h4>
+                                <ul>
+                                    <li><strong>八卦田景观</strong>：造型独特的八卦田，是万峰林的标志性景观</li>
+                                    <li><strong>万峰成林</strong>：成千上万座奇峰组成的壮观景象</li>
+                                    <li><strong>田园风光</strong>：峰林之间的田园风光，四季景色各异</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-footer">
+                            <button class="close-detail-btn" onclick="toggleWanfenglinDetails()">
+                                <i class="fas fa-times"></i> 收起详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 马岭河峡谷 -->
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/马岭河大峡谷.mp4" alt="马岭河峡谷" autoplay muted loop></video>
+                        <div class="attraction-badge">地球裂缝</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>马岭河峡谷</h3>
+                        <p class="attraction-description">地球裂缝，瀑布群景观，漂流体验，峡谷风光壮观</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">地球裂缝</span>
+                            <span class="highlight">瀑布群</span>
+                            <span class="highlight">漂流体验</span>
+                        </div>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览：1天</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>兴义市马岭河峡谷景区</span>
+                            </div>
+                        </div>
+                        <button class="detail-btn" onclick="toggleMalingheDetails()">
+                            <i class="fas fa-info-circle"></i> 查看详细介绍
+                        </button>
+                    </div>
+                </div>
+
+                <div class="attraction-detail" id="malingheDetail">
+                    <div class="detail-content">
+                        <h3>马岭河峡谷</h3>
+                        <div class="detail-grid">
+                            <div class="detail-section">
+                                <h4>基本信息</h4>
+                                <ul>
+                                    <li><strong>位置：</strong>兴义市马岭河峡谷景区</li>
+                                    <li><strong>等级：</strong>国家 4A 级景区</li>
+                                    <li><strong>门票：</strong>70元/人</li>
+                                    <li><strong>开放时间：</strong>8:00-18:00</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-footer">
+                            <button class="close-detail-btn" onclick="toggleMalingheDetails()">收起详情</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 双乳峰 -->
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/双乳峰.mp4" alt="双乳峰" autoplay muted loop></video>
+                        <div class="attraction-badge">奇石地貌</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>双乳峰</h3>
+                        <p class="attraction-description">奇石地貌，酷似双乳，石峰雄伟壮观，地质奇观</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">奇石地貌</span>
+                            <span class="highlight">地质奇观</span>
+                            <span class="highlight">石峰雄伟</span>
+                        </div>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览：半天</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>贞丰县双乳峰景区</span>
+                            </div>
+                        </div>
+                        <button class="detail-btn" onclick="toggleShuangruDetails()">
+                            <i class="fas fa-info-circle"></i> 查看详细介绍
+                        </button>
+                    </div>
+                </div>
+
+                <div class="attraction-detail" id="shuangruDetail">
+                    <div class="detail-content">
+                        <h3>双乳峰</h3>
+                        <div class="detail-grid">
+                            <div class="detail-section">
+                                <h4>基本信息</h4>
+                                <ul>
+                                    <li><strong>位置：</strong>贞丰县双乳峰景区</li>
+                                    <li><strong>等级：</strong>国家 4A 级景区</li>
+                                    <li><strong>门票：</strong>60元/人</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-footer">
+                            <button class="close-detail-btn" onclick="toggleShuangruDetails()">收起详情</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </nav>
+        </section>
 
-    <main class="region-main">
-        <div class="container">
-            <div style="font-family: '楷体', 'KaiTi', serif; font-size: 3.5rem; color: #333; text-align: center; margin-bottom: 20px;">
-                水墨金州，神奇山水
+        <!-- 人文景观 -->
+        <section class="content-section" id="cultural">
+            <h2 class="section-header">人文风景</h2>
+            <div class="attractions-grid">
+
+                <!-- 南明皇宫 -->
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/南明皇宫.mp4" alt="南明皇宫" autoplay muted loop></video>
+                        <div class="attraction-badge">历史文化</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>南明皇宫</h3>
+                        <p class="attraction-description">南明王朝的行宫遗址，历史文化底蕴深厚</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">历史文化</span>
+                            <span class="highlight">宫殿遗址</span>
+                            <span class="highlight">文化底蕴</span>
+                        </div>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览：2小时</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>安龙县南明皇宫遗址</span>
+                            </div>
+                        </div>
+                        <button class="detail-btn" onclick="toggleNanmingDetails()">查看详细介绍</button>
+                    </div>
+                </div>
+
+                <div class="attraction-detail" id="nanmingDetail">
+                    <div class="detail-content">
+                        <h3>南明皇宫</h3>
+                        <div class="detail-footer">
+                            <button class="close-detail-btn" onclick="toggleNanmingDetails()">收起详情</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 二十四道拐 -->
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/二十四道拐.mp4" alt="二十四道拐" autoplay muted loop></video>
+                        <div class="attraction-badge">抗战公路</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>二十四道拐</h3>
+                        <p class="attraction-description">抗战时期的重要公路，以24道弯而闻名</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">抗战公路</span>
+                            <span class="highlight">24道弯</span>
+                            <span class="highlight">历史意义</span>
+                        </div>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览：1-2小时</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>晴隆县二十四道拐景区</span>
+                            </div>
+                        </div>
+                        <button class="detail-btn" onclick="toggleErshisiDetails()">查看详细介绍</button>
+                    </div>
+                </div>
+
+                <div class="attraction-detail" id="ershisiDetail">
+                    <div class="detail-content">
+                        <h3>二十四道拐</h3>
+                        <div class="detail-footer">
+                            <button class="close-detail-btn" onclick="toggleErshisiDetails()">收起详情</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <!-- 自然景观 -->
-            <section class="content-section active" id="natural">
-                <h2 class="section-header">自然景观</h2>
-                <div class="attractions-grid">
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <video src="images/万峰林.mp4" alt="万峰林" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
-                            <div class="attraction-badge">八卦田</div>
-                        </div>
-                        <div class="attraction-content">
-                            <h3>万峰林</h3>
-                            <p class="attraction-description">八卦田景观，万峰成林，马岭河峡谷相连，田园风光无限</p>
-                            <div class="attraction-highlights">
-                                <span class="highlight">八卦田</span>
-                                <span class="highlight">万峰成林</span>
-                                <span class="highlight">田园风光</span>
-                            </div>
-                            <div class="attraction-info">
-                                <div class="info-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>建议游览时间：1天</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>兴义市万峰林景区</span>
-                                </div>
-                            </div>
-                            <button class="detail-btn" onclick="toggleWanfenglinDetails()">
-                                <i class="fas fa-info-circle"></i>
-                                查看详细介绍
-                            </button>
-                        </div>
+        </section>
+
+        <!-- 美食推荐 -->
+        <section class="content-section" id="food">
+            <h2 class="section-header">美食推荐</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/贵州醇酒.jpeg" alt="贵州醇" loading="lazy">
+                        <div class="food-tag">名酒</div>
                     </div>
-
-                    <div class="attraction-detail" id="wanfenglinDetail">
-                        <div class="detail-content">
-                            <h3>万峰林</h3>
-                            <div class="detail-grid">
-                                <div class="detail-section">
-                                    <h4>基本信息</h4>
-                                    <ul>
-                                        <li><strong>位置：</strong>兴义市万峰林景区</li>
-                                        <li><strong>等级：</strong>国家 4A 级景区</li>
-                                        <li><strong>门票：</strong>80元/人</li>
-                                        <li><strong>开放时间：</strong>8:00-18:00</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>核心亮点</h4>
-                                    <ul>
-                                        <li><strong>八卦田景观</strong>：造型独特的八卦田，是万峰林的标志性景观</li>
-                                        <li><strong>万峰成林</strong>：成千上万座奇峰组成的壮观景象</li>
-                                        <li><strong>田园风光</strong>：峰林之间的田园风光，四季景色各异</li>
-                                        <li><strong>马岭河峡谷相连</strong>：与马岭河峡谷形成独特的地质景观</li>
-                                        <li><strong>民族风情</strong>：周边有布依族、苗族等少数民族村寨</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>游玩建议</h4>
-                                    <ul>
-                                        <li><strong>最佳游览时间</strong>：春季（油菜花盛开）和秋季（稻田金黄）</li>
-                                        <li><strong>游览方式</strong>：可以选择乘坐观光车或徒步游览</li>
-                                        <li><strong>摄影提示</strong>：最佳拍摄点为将军峰观景台</li>
-                                        <li><strong>特色活动</strong>：可以体验布依族的传统习俗和美食</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>交通与住宿</h4>
-                                    <ul>
-                                        <li><strong>交通：</strong>从兴义市区乘坐公交或打车可达</li>
-                                        <li><strong>住宿：</strong>景区内有农家乐和民宿可供选择</li>
-                                        <li><strong>美食：</strong>当地特色美食有布依八大碗、鸡肉汤圆等</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <video src="images/马岭河大峡谷.mp4" alt="马岭河峡谷" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
-                            <div class="attraction-badge">地球裂缝</div>
-                        </div>
-                        <div class="attraction-content">
-                            <h3>马岭河峡谷</h3>
-                            <p class="attraction-description">地球裂缝，瀑布群景观，漂流体验，峡谷风光壮观</p>
-                            <div class="attraction-highlights">
-                                <span class="highlight">地球裂缝</span>
-                                <span class="highlight">瀑布群</span>
-                                <span class="highlight">漂流体验</span>
-                            </div>
-                            <div class="attraction-info">
-                                <div class="info-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>建议游览时间：1天</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>兴义市马岭河峡谷景区</span>
-                                </div>
-                            </div>
-                            <button class="detail-btn" onclick="toggleMalingheDetails()">
-                                <i class="fas fa-info-circle"></i>
-                                查看详细介绍
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="attraction-detail" id="malingheDetail">
-                        <div class="detail-content">
-                            <h3>马岭河峡谷</h3>
-                            <div class="detail-grid">
-                                <div class="detail-section">
-                                    <h4>基本信息</h4>
-                                    <ul>
-                                        <li><strong>位置：</strong>兴义市马岭河峡谷景区</li>
-                                        <li><strong>等级：</strong>国家 4A 级景区</li>
-                                        <li><strong>门票：</strong>70元/人</li>
-                                        <li><strong>开放时间：</strong>8:00-18:00</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>核心亮点</h4>
-                                    <ul>
-                                        <li><strong>地球裂缝</strong>：深邃的峡谷，被誉为"地球最美丽的伤疤"</li>
-                                        <li><strong>瀑布群</strong>：峡谷内有数十个瀑布，形成壮观的瀑布群</li>
-                                        <li><strong>漂流体验</strong>：夏季可以体验刺激的峡谷漂流</li>
-                                        <li><strong>峡谷风光</strong>：两岸峰林对峙，峡谷幽深，景色壮观</li>
-                                        <li><strong>钙化瀑布</strong>：独特的钙化瀑布景观，形成层层叠叠的钙华堆积</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>游玩建议</h4>
-                                    <ul>
-                                        <li><strong>最佳游览时间</strong>：夏季（水量充沛，瀑布壮观）</li>
-                                        <li><strong>游览方式</strong>：可以选择步行游览或漂流</li>
-                                        <li><strong>漂流提示</strong>：漂流需要注意安全，听从导游指导</li>
-                                        <li><strong>摄影提示</strong>：最佳拍摄点为峡谷两岸的观景台</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>交通与住宿</h4>
-                                    <ul>
-                                        <li><strong>交通：</strong>从兴义市区乘坐公交或打车可达</li>
-                                        <li><strong>住宿：</strong>景区内有酒店可供选择</li>
-                                        <li><strong>美食：</strong>当地特色美食有酸汤鱼、兴义烤鸭等</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="detail-footer">
-                                <button class="close-detail-btn" onclick="toggleMalingheDetails()">
-                                    <i class="fas fa-times"></i> 收起详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <video src="images/双乳峰.mp4" alt="双乳峰" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
-                            <div class="attraction-badge">奇石地貌</div>
-                        </div>
-                        <div class="attraction-content">
-                            <h3>双乳峰</h3>
-                            <p class="attraction-description">奇石地貌，酷似双乳，石峰雄伟壮观，地质奇观</p>
-                            <div class="attraction-highlights">
-                                <span class="highlight">奇石地貌</span>
-                                <span class="highlight">地质奇观</span>
-                                <span class="highlight">石峰雄伟</span>
-                            </div>
-                            <div class="attraction-info">
-                                <div class="info-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>建议游览时间：半天</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>贞丰县双乳峰景区</span>
-                                </div>
-                            </div>
-                            <button class="detail-btn" onclick="toggleShuangruDetails()">
-                                <i class="fas fa-info-circle"></i>
-                                查看详细介绍
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="attraction-detail" id="shuangruDetail">
-                        <div class="detail-content">
-                            <h3>双乳峰</h3>
-                            <div class="detail-grid">
-                                <div class="detail-section">
-                                    <h4>基本信息</h4>
-                                    <ul>
-                                        <li><strong>位置：</strong>贞丰县双乳峰景区</li>
-                                        <li><strong>等级：</strong>国家 4A 级景区</li>
-                                        <li><strong>门票：</strong>60元/人</li>
-                                        <li><strong>开放时间：</strong>8:00-18:00</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>核心亮点</h4>
-                                    <ul>
-                                        <li><strong>奇石地貌</strong>：两座酷似双乳的石峰，是大自然的鬼斧神工</li>
-                                        <li><strong>石峰雄伟</strong>：双乳峰高达120余米，形态逼真</li>
-                                        <li><strong>地质奇观</strong>：喀斯特地貌的典型代表，具有重要的地质研究价值</li>
-                                        <li><strong>周边景观</strong>：景区内还有其他奇特的喀斯特地貌景观</li>
-                                        <li><strong>民族文化</strong>：周边有布依族、苗族等少数民族村寨</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>游玩建议</h4>
-                                    <ul>
-                                        <li><strong>最佳游览时间</strong>：四季皆宜，春秋两季气候宜人</li>
-                                        <li><strong>游览方式</strong>：可以选择乘坐观光车或徒步游览</li>
-                                        <li><strong>摄影提示</strong>：最佳拍摄点为景区内的观景台</li>
-                                        <li><strong>特色活动</strong>：可以体验布依族的传统习俗和美食</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>交通与住宿</h4>
-                                    <ul>
-                                        <li><strong>交通：</strong>从贞丰县城乘坐公交或打车可达</li>
-                                        <li><strong>住宿：</strong>景区内有酒店可供选择</li>
-                                        <li><strong>美食：</strong>当地特色美食有布依八大碗、贞丰糯米饭等</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="detail-footer">
-                                <button class="close-detail-btn" onclick="toggleShuangruDetails()">
-                                    <i class="fas fa-times"></i> 收起详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
-
-            <!-- 人文景观 -->
-            <section class="content-section" id="cultural">
-                <h2 class="section-header">人文风景</h2>
-                <div class="attractions-grid">
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <video src="images/南明皇宫.mp4" alt="南明皇宫" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
-                            <div class="attraction-badge">历史文化</div>
-                        </div>
-                        <div class="attraction-content">
-                            <h3>南明皇宫</h3>
-                            <p class="attraction-description">南明王朝的行宫遗址，历史文化底蕴深厚</p>
-                            <div class="attraction-highlights">
-                                <span class="highlight">历史文化</span>
-                                <span class="highlight">宫殿遗址</span>
-                                <span class="highlight">文化底蕴</span>
-                            </div>
-                            <div class="attraction-info">
-                                <div class="info-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>建议游览时间：2小时</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>安龙县南明皇宫遗址</span>
-                                </div>
-                            </div>
-                            <button class="detail-btn" onclick="toggleNanmingDetails()">
-                                <i class="fas fa-info-circle"></i>
-                                查看详细介绍
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="attraction-detail" id="nanmingDetail">
-                        <div class="detail-content">
-                            <h3>南明皇宫</h3>
-                            <div class="detail-grid">
-                                <div class="detail-section">
-                                    <h4>基本信息</h4>
-                                    <ul>
-                                        <li><strong>位置：</strong>安龙县南明皇宫遗址</li>
-                                        <li><strong>历史：</strong>南明王朝的行宫遗址，历史文化底蕴深厚</li>
-                                        <li><strong>门票：</strong>40元/人</li>
-                                        <li><strong>开放时间：</strong>8:00-18:00</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>核心亮点</h4>
-                                    <ul>
-                                        <li><strong>历史文化</strong>：南明王朝的行宫遗址，见证了南明历史</li>
-                                        <li><strong>宫殿遗址</strong>：保存完好的宫殿遗址，展示了当时的建筑风格</li>
-                                        <li><strong>文化底蕴</strong>：深厚的历史文化底蕴，是研究南明历史的重要场所</li>
-                                        <li><strong>周边景观</strong>：周边有其他历史文化景点</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>游玩建议</h4>
-                                    <ul>
-                                        <li><strong>最佳游览时间</strong>：春秋两季，气候宜人</li>
-                                        <li><strong>游览方式</strong>：徒步游览，了解历史文化</li>
-                                        <li><strong>摄影提示</strong>：可以拍摄宫殿遗址和历史建筑</li>
-                                        <li><strong>特色活动</strong>：可以参加历史文化讲座和展览</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>交通与住宿</h4>
-                                    <ul>
-                                        <li><strong>交通：</strong>从安龙县城乘坐公交或打车可达</li>
-                                        <li><strong>住宿：</strong>可以选择在安龙县城住宿</li>
-                                        <li><strong>美食：</strong>当地特色美食有安龙饵块粑、安龙剪粉等</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="detail-footer">
-                                <button class="close-detail-btn" onclick="toggleNanmingDetails()">
-                                    <i class="fas fa-times"></i> 收起详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <video src="images/二十四道拐.mp4" alt="二十四道拐" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
-                            <div class="attraction-badge">抗战公路</div>
-                        </div>
-                        <div class="attraction-content">
-                            <h3>二十四道拐</h3>
-                            <p class="attraction-description">抗战时期的重要公路，以24道弯而闻名</p>
-                            <div class="attraction-highlights">
-                                <span class="highlight">抗战公路</span>
-                                <span class="highlight">24道弯</span>
-                                <span class="highlight">历史意义</span>
-                            </div>
-                            <div class="attraction-info">
-                                <div class="info-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>建议游览时间：1-2小时</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>晴隆县二十四道拐景区</span>
-                                </div>
-                            </div>
-                            <button class="detail-btn" onclick="toggleErshisiDetails()">
-                                <i class="fas fa-info-circle"></i>
-                                查看详细介绍
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="attraction-detail" id="ershisiDetail">
-                        <div class="detail-content">
-                            <h3>二十四道拐</h3>
-                            <div class="detail-grid">
-                                <div class="detail-section">
-                                    <h4>基本信息</h4>
-                                    <ul>
-                                        <li><strong>位置：</strong>晴隆县二十四道拐景区</li>
-                                        <li><strong>历史：</strong>抗战时期的重要公路，是滇缅公路的重要组成部分</li>
-                                        <li><strong>门票：</strong>60元/人</li>
-                                        <li><strong>开放时间：</strong>8:00-18:00</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>核心亮点</h4>
-                                    <ul>
-                                        <li><strong>抗战公路</strong>：抗战时期的重要运输通道，为抗战胜利做出了重要贡献</li>
-                                        <li><strong>24道弯</strong>：以24道连续弯道而闻名，是世界公路史上的奇迹</li>
-                                        <li><strong>历史意义</strong>：具有重要的历史意义，是爱国主义教育基地</li>
-                                        <li><strong>观景台</strong>：有多个观景台，可以俯瞰24道拐的全貌</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>游玩建议</h4>
-                                    <ul>
-                                        <li><strong>最佳游览时间</strong>：春秋两季，气候宜人</li>
-                                        <li><strong>游览方式</strong>：可以选择驾车体验24道拐，或在观景台俯瞰</li>
-                                        <li><strong>摄影提示</strong>：最佳拍摄点为观景台，可以拍摄24道拐的全貌</li>
-                                        <li><strong>特色活动</strong>：可以参加抗战历史展览和纪念活动</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-section">
-                                    <h4>交通与住宿</h4>
-                                    <ul>
-                                        <li><strong>交通：</strong>从晴隆县城乘坐公交或打车可达</li>
-                                        <li><strong>住宿：</strong>可以选择在晴隆县城住宿</li>
-                                        <li><strong>美食：</strong>当地特色美食有晴隆羊肉粉、晴隆糯米饭等</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="detail-footer">
-                                <button class="close-detail-btn" onclick="toggleErshisiDetails()">
-                                    <i class="fas fa-times"></i> 收起详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
-
-            <!-- 美食推荐 -->
-            <section class="content-section" id="food">
-                <h2 class="section-header">美食推荐</h2>
-                <div class="food-grid">
-                    <div class="food-card">
-                        <div class="food-image">
-                            <img src="images/贵州醇酒.jpeg" alt="贵州醇">
-                            <div class="food-tag">名酒</div>
-                        </div>
-                        <div class="food-content">
-                            <h3>贵州醇</h3>
-                            <p class="food-description">贵州名酒，浓香型白酒，口感醇厚，回味悠长</p>
-                            <div class="food-highlights">
-                                <span class="highlight">浓香型白酒</span>
-                                <span class="highlight">口感醇厚</span>
-                            </div>
-                            <div class="food-location">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>兴义市贵州醇酒厂</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="food-card">
-                        <div class="food-image">
-                            <img src="images/酸汤鱼.jpeg" alt="酸汤鱼">
-                            <div class="food-tag">地方名菜</div>
-                        </div>
-                        <div class="food-content">
-                            <h3>酸汤鱼</h3>
-                            <p class="food-description">黔西南特色菜，鱼肉鲜嫩，酸汤开胃，回味无穷</p>
-                            <div class="food-highlights">
-                                <span class="highlight">鱼肉鲜嫩</span>
-                                <span class="highlight">酸汤开胃</span>
-                            </div>
-                            <div class="food-location">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>兴义市各大餐厅</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="food-card">
-                        <div class="food-image">
-                            <img src="images/兴义烤鸭.jpeg" alt="兴义烤鸭">
-                            <div class="food-tag">地方名菜</div>
-                        </div>
-                        <div class="food-content">
-                            <h3>兴义烤鸭</h3>
-                            <p class="food-description">兴义特色美食，皮脆肉嫩，配酸萝卜丝，口感独特</p>
-                            <div class="food-highlights">
-                                <span class="highlight">皮脆肉嫩</span>
-                                <span class="highlight">口感独特</span>
-                            </div>
-                            <div class="food-location">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>兴义市老字号餐厅</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="food-card">
-                        <div class="food-image">
-                            <img src="images/夺夺粉.jpeg" alt="夺夺粉">
-                            <div class="food-tag">特色小吃</div>
-                        </div>
-                        <div class="food-content">
-                            <h3>夺夺粉</h3>
-                            <p class="food-description">兴义特色小吃，酸辣可口，食材丰富，是当地最受欢迎的街头美食</p>
-                            <div class="food-highlights">
-                                <span class="highlight">酸辣可口</span>
-                                <span class="highlight">食材丰富</span>
-                            </div>
-                            <div class="food-location">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>兴义市街头巷尾</span>
-                            </div>
-                        </div>
+                    <div class="food-content">
+                        <h3>贵州醇</h3>
+                        <p class="food-description">浓香型白酒，口感醇厚，回味悠长</p>
                     </div>
                 </div>
-            </section>
 
-            <!-- 交通出行 -->
-            <section class="content-section" id="transport">
-                <h2 class="section-header">交通出行</h2>
-                <div class="transport-container">
-                    <div class="transport-section">
-                        <h3>如何到达</h3>
-                        <div class="transport-grid">
-                            <div class="transport-card">
-                                <div class="transport-icon">
-                                    <i class="fas fa-plane"></i>
-                                </div>
-                                <div class="transport-info">
-                                    <h4>航空</h4>
-                                    <p>兴义万峰林机场距离市区约10公里，有航班连接贵阳等地</p>
-                                </div>
-                            </div>
-                            <div class="transport-card">
-                                <div class="transport-icon">
-                                    <i class="fas fa-train"></i>
-                                </div>
-                                <div class="transport-info">
-                                    <h4>铁路</h4>
-                                    <p>兴义站是南昆铁路重要站点，连接昆明、南宁等地</p>
-                                </div>
-                            </div>
-                            <div class="transport-card">
-                                <div class="transport-icon">
-                                    <i class="fas fa-bus"></i>
-                                </div>
-                                <div class="transport-info">
-                                    <h4>公路</h4>
-                                    <p>兴义是黔西南州交通枢纽，多条高速公路在此交汇</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/酸汤鱼.jpeg" alt="酸汤鱼" loading="lazy">
+                        <div class="food-tag">地方名菜</div>
                     </div>
-
-                    <div class="transport-section">
-                        <h3>主要交通路线</h3>
-                        <div class="route-list">
-                            <div class="route-item">
-                                <div class="route-icon">
-                                    <i class="fas fa-route"></i>
-                                </div>
-                                <div class="route-info">
-                                    <h4>兴义市区 - 万峰林</h4>
-                                    <p>距离约15公里，车程约30分钟，有旅游专线直达</p>
-                                </div>
-                            </div>
-                            <div class="route-item">
-                                <div class="route-icon">
-                                    <i class="fas fa-route"></i>
-                                </div>
-                                <div class="route-info">
-                                    <h4>兴义市区 - 马岭河峡谷</h4>
-                                    <p>距离约5公里，车程约15分钟，可乘坐公交车或出租车</p>
-                                </div>
-                            </div>
-                            <div class="route-item">
-                                <div class="route-icon">
-                                    <i class="fas fa-route"></i>
-                                </div>
-                                <div class="route-info">
-                                    <h4>兴义市区 - 双乳峰</h4>
-                                    <p>距离约45公里，车程约1小时，可乘坐班车或自驾前往</p>
-                                </div>
-                            </div>
-                            <div class="route-item">
-                                <div class="route-icon">
-                                    <i class="fas fa-route"></i>
-                                </div>
-                                <div class="route-info">
-                                    <h4>兴义市区 - 永宁石林</h4>
-                                    <p>距离约70公里，车程约1.5小时，建议自驾或包车前往</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="food-content">
+                        <h3>酸汤鱼</h3>
+                        <p class="food-description">鱼肉鲜嫩，酸汤开胃</p>
                     </div>
                 </div>
-            </section>
-        </div>
-    </main>
 
-    <footer class="region-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>云上贵州行</h4>
-                    <p>探索贵州的自然风光与民族风情</p>
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/兴义烤鸭.jpeg" alt="兴义烤鸭" loading="lazy">
+                        <div class="food-tag">地方名菜</div>
+                    </div>
+                    <div class="food-content">
+                        <h3>兴义烤鸭</h3>
+                        <p class="food-description">皮脆肉嫩，口感独特</p>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h4>联系信息</h4>
-                    <p>邮箱: info@yunshang.gz.com</p>
-                    <p>电话: 400-123-4567</p>
-                </div>
-                <div class="footer-section">
-                    <h4>快速链接</h4>
-                    <ul>
-                        <li><a href="guiyang.html">贵阳</a></li>
-                        <li><a href="zunyi.html">遵义</a></li>
-                        <li><a href="anshun.html">安顺</a></li>
-                        <li><a href="qiandongnan.html">黔东南</a></li>
-                        <li><a href="qiannan.html">黔南</a></li>
-                        <li><a href="qianxinan.html">黔西南</a></li>
-                    </ul>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/夺夺粉.jpeg" alt="夺夺粉" loading="lazy">
+                        <div class="food-tag">特色小吃</div>
+                    </div>
+                    <div class="food-content">
+                        <h3>夺夺粉</h3>
+                        <p class="food-description">酸辣可口，兴义街头人气美食</p>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 云上贵州行. 版权所有</p>
+        </section>
+
+        <!-- 交通出行 -->
+        <section class="content-section" id="transport">
+            <h2 class="section-header">交通出行</h2>
+            <div class="transport-container">
+                <div class="transport-section">
+                    <h3>如何到达</h3>
+                    <div class="transport-grid">
+                        <div class="transport-card">
+                            <div class="transport-icon"><i class="fas fa-plane"></i></div>
+                            <div class="transport-info">
+                                <h4>航空</h4>
+                                <p>兴义万峰林机场，连接贵阳等城市</p>
+                            </div>
+                        </div>
+                        <div class="transport-card">
+                            <div class="transport-icon"><i class="fas fa-train"></i></div>
+                            <div class="transport-info">
+                                <h4>铁路</h4>
+                                <p>兴义站连通昆明、南宁</p>
+                            </div>
+                        </div>
+                        <div class="transport-card">
+                            <div class="transport-icon"><i class="fas fa-bus"></i></div>
+                            <div class="transport-info">
+                                <h4>公路</h4>
+                                <p>高速网络密集，交通便利</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transport-section">
+                    <h3>主要交通路线</h3>
+                    <div class="route-list">
+                        <div class="route-item">
+                            <div class="route-icon"><i class="fas fa-route"></i></div>
+                            <div class="route-info">
+                                <h4>兴义 → 万峰林</h4>
+                                <p>15公里，约30分钟</p>
+                            </div>
+                        </div>
+                        <div class="route-item">
+                            <div class="route-icon"><i class="fas fa-route"></i></div>
+                            <div class="route-info">
+                                <h4>兴义 → 马岭河峡谷</h4>
+                                <p>5公里，约15分钟</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer class="region-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>云上贵州行</h4>
+                <p>探索贵州的自然风光与民族风情</p>
+            </div>
+            <div class="footer-section">
+                <h4>联系信息</h4>
+                <p>电话: 400-123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="guiyang.html">贵阳</a></li>
+                    <li><a href="zunyi.html">遵义</a></li>
+                    <li><a href="anshun.html">安顺</a></li>
+                    <li><a href="qiandongnan.html">黔东南</a></li>
+                    <li><a href="qiannan.html">黔南</a></li>
+                    <li><a href="qianxinan.html">黔西南</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 云上贵州行. 版权所有</p>
+        </div>
+    </div>
+</footer>
 
-    <script src="js/qianxinan.js"></script>
+<script src="js/qianxinan.js"></script>
 </body>
 </html>
