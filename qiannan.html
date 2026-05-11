@@ -10,596 +10,337 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 统一视频卡片高度，修复溢出问题 */
+        .attraction-image video {
+            width: 100% !important;
+            height: 220px !important;
+            object-fit: cover !important;
+            border-radius: 12px;
+        }
+        .attraction-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        .region-header {
+            background: url('images/黔南平塘特大桥.jpeg') center / cover no-repeat !important;
+            padding: 100px 0 !important;
+        }
+        .title-text {
+            font-family: '楷体', KaiTi, serif;
+            font-size: 2.8rem;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+            line-height: 1.4;
+        }
+        @media (max-width:768px) {
+            .title-text {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="region-header" style="background: url('images/黔南平塘特大桥.jpeg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; padding: 150px 0;">
-        <div class="container" style="position: relative; padding: 0;">
-            <div style="position: relative; z-index: 1;">
-                <nav class="breadcrumb">
-                    <a href="index.html">首页</a>
-                    <span>/</span>
-                    <span>黔南州</span>
-                </nav>
-                <h1 class="region-title">黔南州</h1>
-                <p class="region-subtitle">山水黔南，天眼之乡</p>
-            </div>
 
+<header class="region-header">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span>/</span>
+            <span>黔南州</span>
+        </nav>
+        <h1 class="region-title">黔南州</h1>
+        <p class="region-subtitle">山水黔南，天眼之乡</p>
+    </div>
+</header>
+
+<nav class="region-navigation">
+    <div class="container">
+        <div class="nav-tabs">
+            <button class="tab-button active" data-tab="natural">
+                <i class="fas fa-mountain"></i>
+                <span>自然景观</span>
+            </button>
+            <button class="tab-button" data-tab="cultural">
+                <i class="fas fa-landmark"></i>
+                <span>人文风景</span>
+            </button>
+            <button class="tab-button" data-tab="food">
+                <i class="fas fa-utensils"></i>
+                <span>美食推荐</span>
+            </button>
+            <button class="tab-button" data-tab="transport">
+                <i class="fas fa-train"></i>
+                <span>交通出行</span>
+            </button>
         </div>
-    </header>
+    </div>
+</nav>
 
-    <nav class="region-navigation">
-        <div class="container">
-            <div class="nav-tabs">
-                <button class="tab-button active" data-tab="natural">
-                    <i class="fas fa-mountain"></i>
-                    <span>自然景观</span>
-                </button>
-                <button class="tab-button" data-tab="cultural">
-                    <i class="fas fa-landmark"></i>
-                    <span>人文风景</span>
-                </button>
-                <button class="tab-button" data-tab="food">
-                    <i class="fas fa-utensils"></i>
-                    <span>美食推荐</span>
-                </button>
-                <button class="tab-button" data-tab="transport">
-                    <i class="fas fa-train"></i>
-                    <span>交通出行</span>
-                </button>
-            </div>
-        </div>
-    </nav>
+<main class="region-main">
+    <div class="container">
+        <div class="title-text">生态之州，幸福黔南</div>
 
-    <main class="region-main">
-        <div class="container">
-            <div style="font-family: '楷体', 'KaiTi', serif; font-size: 3.5rem; color: #333; text-align: center; margin-bottom: 20px;">
-                生态之州，幸福黔南
-            </div>
-            <!-- 自然景观 -->
-            <section class="content-section active" id="natural">
-                <h2 class="section-header">自然景观</h2>
-                <div class="attractions-grid">
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <video src="images/斗蓬山.mp4" alt="斗篷山" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
-                            <div class="attraction-badge">原始森林</div>
-                        </div>
-                        <div class="attraction-content">
-                            <h3>斗篷山</h3>
-                            <p class="attraction-description">原始森林覆盖，云雾缭绕，高山湖泊点缀其中</p>
-                            <div class="attraction-highlights">
-                                <span class="highlight">原始森林</span>
-                                <span class="highlight">高山湖泊</span>
-                                <span class="highlight">云雾缭绕</span>
-                            </div>
-                            <div class="attraction-info">
-                                <div class="info-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>建议游览时间：1天</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>都匀市斗篷山景区</span>
-                                </div>
-                            </div>
-                            <button class="detail-btn" onclick="toggleDoupengDetails()">
-                                <i class="fas fa-info-circle"></i>
-                                查看详细介绍
-                            </button>
-                        </div>
+        <!-- 自然景观 -->
+        <section class="content-section active" id="natural">
+            <h2 class="section-header">自然景观</h2>
+            <div class="attractions-grid">
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/斗蓬山.mp4" alt="斗篷山" autoplay muted loop></video>
+                        <div class="attraction-badge">原始森林</div>
                     </div>
-
-                    <!-- 斗篷山详细介绍 -->
-                    <div class="attraction-detail" id="doupeng-detail" style="display: none;">
-                        <div class="detail-header">
-                            <h3>斗篷山详细简介</h3>
-                            <p class="detail-subtitle">贵州三大名山之一・国家级风景名胜区</p>
+                    <div class="attraction-content">
+                        <h3>斗篷山</h3>
+                        <p class="attraction-description">原始森林覆盖，云雾缭绕，高山湖泊点缀其中</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">原始森林</span>
+                            <span class="highlight">高山湖泊</span>
+                            <span class="highlight">云雾缭绕</span>
                         </div>
-                        
-                        <div class="detail-intro">
-                            <p>斗篷山（黔南都匀）是贵州三大名山之一、国家级风景名胜区，以黔南第一高峰（1961 米）、原始森林、高山天池、玻璃水溪流、瀑布云海为核心，是中国距离市区最近的原始森林（距都匀仅 22km）。</p>
-                        </div>
-
-                        <div class="detail-section">
-                            <h4><i class="fas fa-star"></i> 核心亮点（必看）</h4>
-                            <ul>
-                                <li><strong>主峰・黔南之巅</strong>：海拔1961 米，苗岭主峰，登顶可俯瞰三县（都匀、麻江、贵定），常现云海翻涌，日出 / 日落绝美。</li>
-                                <li><strong>天池・一水分两江</strong>：山巅1900 米处的高山湖泊（约 20 亩），四季水位恒定，更神奇：同一池水分流长江、珠江两大水系，西南唯一。</li>
-                                <li><strong>彩虹瀑布・林间幻景</strong>：马腰河峡谷内，落差约40 米，晴天午后必现彩虹，丰水期气势磅礴，枯水如银纱。</li>
-                                <li><strong>原始森林・树石奇观</strong>：森林覆盖率 90%+，千年古木、红豆杉、珙桐、全球独有的毛环方竹；奇观：树抱石、石抱树、树搭桥。</li>
-                                <li><strong>玻璃水溪流・宝石河床</strong>：马腰河、胡广峡谷，溪水清澈见底（5 米可见鱼虾），河床铺满七彩卵石，堪称 "贵州小九寨"。</li>
-                            </ul>
-                        </div>
-
-                        <div class="detail-section">
-                            <h4><i class="fas fa-clipboard-list"></i> 实用信息（2026 最新）</h4>
-                            <ul>
-                                <li><strong>门票</strong>：50 元（通票，无小门票）；学生 / 老人半价；14 岁以下、军人、残疾人免票。</li>
-                                <li><strong>开放时间</strong>：09:00–16:00（15:00 前入园，留足下山时间）。</li>
-                                <li><strong>交通</strong>：
-                                    <ul>
-                                        <li>自驾（推荐）：都匀市区→约 30–40 分钟，导航 "斗篷山景区"。</li>
-                                        <li>公共交通：都匀百子桥附近乘小巴，约 8 元 / 人，1 小时，班次少。</li>
-                                        <li>打车：市区→景区约 50–70 元。</li>
-                                    </ul>
-                                </li>
-                                <li><strong>最佳季节</strong>：
-                                    <ul>
-                                        <li>夏季（6–8 月）：避暑（23℃）、溯溪、瀑布壮观。</li>
-                                        <li>春秋（4–5 月、9–11 月）：云海概率高、彩林 / 山花美。</li>
-                                    </ul>
-                                </li>
-                                <li><strong>游览路线（经典一日）</strong>：大门→观光车→彩虹瀑布→马腰河峡谷→原始森林→登顶→天池→返程。</li>
-                                <li><strong>必吃</strong>：农家腊肉、竹笋炖鸡、都匀毛尖茶。</li>
-                            </ul>
-                        </div>
-
-                        <div class="detail-section">
-                            <h4><i class="fas fa-balance-scale"></i> 斗篷山 vs 镇远 / 西江 / 肇兴</h4>
-                            <ul>
-                                <li><strong>斗篷山</strong>：纯自然、原始森林、徒步溯溪、高负氧离子、清静人少。</li>
-                                <li><strong>镇远</strong>：古城水乡、历史人文、夜景。</li>
-                                <li><strong>西江</strong>：苗寨、万家灯火、民族表演。</li>
-                                <li><strong>肇兴</strong>：侗寨、鼓楼、梯田。</li>
-                            </ul>
-                            <p>一句话：想逃离城市、洗肺、徒步、看原生态山水，选斗篷山。</p>
-                        </div>
-
-                        <div class="detail-footer">
-                            <p>斗篷山以其独特的原始森林景观、高山天池和玻璃水溪流，成为贵州黔南地区最受欢迎的旅游目的地之一。</p>
-                            <button class="close-detail-btn" onclick="toggleDoupengDetails()">
-                                <i class="fas fa-times"></i> 收起详情
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <video src="images/乌蒙大草原.mp4" alt="乌蒙大草原" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
-                            <div class="attraction-badge">贵州屋脊</div>
-                        </div>
-                        <div class="attraction-content">
-                            <h3>乌蒙大草原</h3>
-                            <p class="attraction-description">贵州屋脊，10万亩草甸 + 百座白色风车，草原佛光、天池、杜鹃花海</p>
-                            <div class="attraction-highlights">
-                                <span class="highlight">草原佛光</span>
-                                <span class="highlight">高山天池</span>
-                                <span class="highlight">杜鹃花海</span>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览时间：1天</span>
                             </div>
-                            <div class="attraction-info">
-                                <div class="info-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>建议游览时间：1天</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>六盘水盘州市</span>
-                                </div>
-                            </div>
-                            <button class="detail-btn" onclick="toggleGrasslandDetails()">
-                                <i class="fas fa-info-circle"></i>
-                                查看详细介绍
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- 乌蒙大草原详细介绍 -->
-                    <div class="attraction-detail" id="grassland-detail" style="display: none;">
-                        <div class="detail-header">
-                            <h3>乌蒙大草原详细简介</h3>
-                            <p class="detail-subtitle">贵州屋脊・贵州两大顶级高山草原之一</p>
-                        </div>
-                        
-                        <div class="detail-intro">
-                            <p>乌蒙大草原（六盘水盘州）是贵州两大顶级高山草原之一，与阿西里西大草原（毕节赫章）并称贵州两大 "云上草原"，是西南海拔最高、最壮阔的草原之一。</p>
-                        </div>
-
-                        <div class="detail-section">
-                            <h4><i class="fas fa-star"></i> 一、乌蒙大草原（最推荐，贵州屋脊）</h4>
-                            <ul>
-                                <li><strong>位置</strong>：六盘水盘州市（贵州西南），平均海拔2500 米，最高峰2857 米（贵州屋脊）。</li>
-                                <li><strong>门票</strong>：30 元（2026 年）。</li>
-                                <li><strong>核心亮点</strong>：
-                                    <ul>
-                                        <li>高山草原 + 风车群：10 万亩草甸 + 百座白色风车，"小呼伦贝尔" 既视感。</li>
-                                        <li>草原佛光（罕见）：雨后初晴、阳光斜射时在观佛台可见，七彩光环笼罩人影。</li>
-                                        <li>天池 + 矮杜鹃：高原湖泊 "长海子"，4-5 月 10 万亩杜鹃花海爆美。</li>
-                                        <li>云海日出：清晨云海漫过草坡，日出金红染满天际。</li>
-                                    </ul>
-                                </li>
-                                <li><strong>实用攻略</strong>：
-                                    <ul>
-                                        <li>最佳时间：5-10 月（避暑 19℃）；4 月杜鹃、9-10 月佛光 / 云海。</li>
-                                        <li>必打卡：观佛台（佛光）、百草坪（全景）、天池、风车公路。</li>
-                                        <li>玩法：骑马（80-150 元）、露营、自驾、看彝族篝火。</li>
-                                        <li>穿搭：昼夜温差极大（夏晚 10℃），必备防风外套 + 防晒。</li>
-                                        <li>美食：烤全羊、乌洋芋、盘州火腿。</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="detail-section">
-                            <h4><i class="fas fa-star"></i> 二、阿西里西大草原（云顶草原，毕节）</h4>
-                            <ul>
-                                <li><strong>位置</strong>：毕节赫章县（贵州西北），近韭菜坪，平均海拔2300 米。</li>
-                                <li><strong>门票</strong>：4A 景区，约30 元。</li>
-                                <li><strong>核心亮点</strong>：
-                                    <ul>
-                                        <li>万亩 "波浪草原"：地势起伏如绿浪，"风吹草低见牛羊"，自驾公路超美。</li>
-                                        <li>复古小火车：穿行草原与花海，网红出片。</li>
-                                        <li>十万大山景观：远眺连绵群山，气势磅礴。</li>
-                                        <li>近韭菜坪：可顺路看 "天上花海" 大韭菜坪（8-9 月）。</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="detail-section">
-                            <h4><i class="fas fa-balance-scale"></i> 三、乌蒙 vs 阿西里西（怎么选）</h4>
-                            <table class="comparison-table">
-                                <tr>
-                                    <th>对比项</th>
-                                    <th>乌蒙大草原（盘州）</th>
-                                    <th>阿西里西（赫章）</th>
-                                </tr>
-                                <tr>
-                                    <td>海拔</td>
-                                    <td>2500-2857 米（更高）</td>
-                                    <td>2300 米</td>
-                                </tr>
-                                <tr>
-                                    <td>特色</td>
-                                    <td>佛光、天池、风车、杜鹃</td>
-                                    <td>波浪草原、小火车、自驾天路</td>
-                                </tr>
-                                <tr>
-                                    <td>位置</td>
-                                    <td>贵州西南（你问的 "西南大草原"）</td>
-                                    <td>贵州西北</td>
-                                </tr>
-                                <tr>
-                                    <td>氛围</td>
-                                    <td>壮阔、云海佛光概率高</td>
-                                    <td>柔美、公路自驾感强</td>
-                                </tr>
-                                <tr>
-                                    <td>避暑</td>
-                                    <td>19℃（更冷）</td>
-                                    <td>20℃左右</td>
-                                </tr>
-                            </table>
-                            <p>一句话建议：想看贵州屋脊、佛光、天池、风车，去乌蒙大草原（六盘水盘州）。想走最美草原公路、坐小火车，去阿西里西（毕节赫章）。</p>
-                        </div>
-
-                        <div class="detail-footer">
-                            <p>贵州的高山大草原以其独特的自然风光和凉爽的气候，成为夏季避暑的理想去处。</p>
-                            <button class="close-detail-btn" onclick="toggleGrasslandDetails()">
-                                <i class="fas fa-times"></i> 收起详情
-                            </button>
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
-
-            <!-- 人文景观 -->
-            <section class="content-section" id="cultural">
-                <h2 class="section-header">人文风景</h2>
-                <div class="attractions-grid">
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <video src="images/中国天眼.mp4" alt="中国天眼" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
-                            <div class="attraction-badge">世界最大射电望远镜</div>
-                        </div>
-                        <div class="attraction-content">
-                            <h3>中国天眼景区</h3>
-                            <p class="attraction-description">世界最大单口径射电望远镜，探索宇宙奥秘的科技基地</p>
-                            <div class="attraction-highlights">
-                                <span class="highlight">科技奇观</span>
-                                <span class="highlight">宇宙探索</span>
-                                <span class="highlight">科普教育</span>
-                            </div>
-                            <div class="attraction-info">
-                                <div class="info-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>建议游览时间：半天</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>平塘县克度镇</span>
-                                </div>
-                            </div>
-                            <button class="detail-btn" onclick="toggleTianyanDetails()">
-                                <i class="fas fa-info-circle"></i>
-                                查看详细介绍
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- 中国天眼景区详细介绍 -->
-                    <div class="attraction-detail" id="tianyan-detail" style="display: none;">
-                        <div class="detail-header">
-                            <h3>中国天眼详细简介</h3>
-                            <p class="detail-subtitle">世界最大单口径射电望远镜・国家5A级景区</p>
-                        </div>
-                        
-                        <div class="detail-intro">
-                            <p>中国天眼（FAST）是世界最大单口径射电望远镜，位于贵州省黔南布依族苗族自治州平塘县克度镇，口径500米，是目前世界上最大、最灵敏的射电望远镜。</p>
-                        </div>
-
-                        <div class="detail-section">
-                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
-                            <ul>
-                                <li><strong>世界之最</strong>：口径500米，是目前世界上最大的单口径射电望远镜，灵敏度是美国阿雷西博望远镜的2.5倍。</li>
-                                <li><strong>科技奇观</strong>：由4450块反射面板组成，相当于30个足球场大小，可接收137亿光年外的电磁信号。</li>
-                                <li><strong>宇宙探索</strong>：主要用于观测脉冲星、中性氢、黑洞等天体，为人类探索宇宙奥秘提供重要数据。</li>
-                                <li><strong>科普教育</strong>：景区内设有天文体验馆，通过互动展览和科普讲座，向公众普及天文知识。</li>
-                                <li><strong>自然景观</strong>：周围环境优美，群山环绕，空气清新，是观星和摄影的绝佳地点。</li>
-                            </ul>
-                        </div>
-
-                        <div class="detail-section">
-                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
-                            <ul>
-                                <li><strong>门票</strong>：景区门票+摆渡车+天文体验馆：140元/人；学生、老人半价。</li>
-                                <li><strong>开放时间</strong>：08:30-16:30（15:30停止入场）。</li>
-                                <li><strong>交通</strong>：
-                                    <ul>
-                                        <li>自驾：从都匀出发，经兰海高速、独平高速，约2小时车程。</li>
-                                        <li>公共交通：都匀客车站有直达平塘的班车，再转乘景区专车。</li>
-                                        <li>景区内：需乘坐摆渡车往返，车程约20分钟。</li>
-                                    </ul>
-                                </li>
-                                <li><strong>参观须知</strong>：
-                                    <ul>
-                                        <li>进入核心区需寄存电子设备（手机、相机等）。</li>
-                                        <li>禁止携带任何电子产品、金属物品进入观景台。</li>
-                                        <li>建议穿着舒适的鞋子，观景台需要步行约10分钟。</li>
-                                    </ul>
-                                </li>
-                                <li><strong>最佳季节</strong>：春秋两季，天气晴朗，能见度高，适合观星。</li>
-                                <li><strong>周边景点</strong>：平塘天坑群、甲茶风景区、掌布国家地质公园。</li>
-                            </ul>
-                        </div>
-
-                        <div class="detail-footer">
-                            <p>中国天眼是中国科技实力的象征，也是贵州旅游的新名片，吸引着来自世界各地的游客和科学家。</p>
-                            <button class="close-detail-btn" onclick="toggleTianyanDetails()">
-                                <i class="fas fa-times"></i> 收起详情
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <video src="images/都匀石板街.mp4" alt="都匀石板街" autoplay muted loop style="width: 100%; height: 150%; object-fit: cover;"></video>
-                            <div class="attraction-badge">历史文化街区</div>
-                        </div>
-                        <div class="attraction-content">
-                            <h3>都匀石板街</h3>
-                            <p class="attraction-description">明清时期的古老街道，青石板铺路，两侧商铺林立，充满浓郁的民族风情</p>
-                            <div class="attraction-highlights">
-                                <span class="highlight">历史文化</span>
-                                <span class="highlight">青石板路</span>
-                                <span class="highlight">民族风情</span>
-                            </div>
-                            <div class="attraction-info">
-                                <div class="info-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>建议游览时间：2小时</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>都匀市 downtown</span>
-                                </div>
-                            </div>
-                            <button class="detail-btn" onclick="toggleShibanDetails()">
-                                <i class="fas fa-info-circle"></i>
-                                查看详细介绍
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- 都匀石板街详细介绍 -->
-                    <div class="attraction-detail" id="shiban-detail" style="display: none;">
-                        <div class="detail-header">
-                            <h3>都匀石板街详细简介</h3>
-                            <p class="detail-subtitle">明清历史文化街区・黔南州重要文化遗产</p>
-                        </div>
-                        
-                        <div class="detail-intro">
-                            <p>都匀石板街是明清时期的古老街道，位于都匀市中心，全长约300米，宽约10米，因全部用青石板铺路而得名。街道两侧商铺林立，充满浓郁的民族风情，是都匀市重要的历史文化街区。</p>
-                        </div>
-
-                        <div class="detail-section">
-                            <h4><i class="fas fa-star"></i> 核心亮点</h4>
-                            <ul>
-                                <li><strong>历史悠久</strong>：始建于明朝洪武年间，至今已有600多年历史，是都匀市保存最完好的明清时期街道。</li>
-                                <li><strong>青石板路</strong>：整条街道全部用青石板铺成，历经数百年风雨，依然坚固耐用，是石板街的标志性景观。</li>
-                                <li><strong>民族风情</strong>：街道两侧的建筑融合了汉族、布依族、苗族等多个民族的建筑风格，体现了黔南地区多民族文化的交融。</li>
-                                <li><strong>商业繁华</strong>：街道两侧商铺林立，经营着当地特色商品、手工艺品、美食等，是游客购物和品尝当地美食的好去处。</li>
-                                <li><strong>文化活动</strong>：每年都会举办各种民族文化活动，如布依族歌会、苗族芦笙舞表演等，吸引了大量游客。</li>
-                            </ul>
-                        </div>
-
-                        <div class="detail-section">
-                            <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
-                            <ul>
-                                <li><strong>门票</strong>：免费开放。</li>
-                                <li><strong>开放时间</strong>：全天开放。</li>
-                                <li><strong>交通</strong>：
-                                    <ul>
-                                        <li>公交：市区内乘坐1路、2路、3路等公交车均可到达。</li>
-                                        <li>步行：从都匀市中心步行即可到达。</li>
-                                    </ul>
-                                </li>
-                                <li><strong>最佳游览时间</strong>：春秋两季，气候适宜，游客较少。</li>
-                                <li><strong>周边景点</strong>：文峰公园、百子桥、黔南州博物馆。</li>
-                                <li><strong>特色美食</strong>：都匀冲冲糕、都匀毛尖茶、布依族酸汤鱼。</li>
-                            </ul>
-                        </div>
-
-                        <div class="detail-footer">
-                            <p>都匀石板街是黔南州重要的历史文化遗产，也是都匀市的一张文化名片，吸引着来自世界各地的游客前来观光游览。</p>
-                            <button class="close-detail-btn" onclick="toggleShibanDetails()">
-                                <i class="fas fa-times"></i> 收起详情
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 美食推荐 -->
-            <section class="content-section" id="food">
-                <h2 class="section-header">美食推荐</h2>
-                <div class="food-grid">
-                    <div class="food-card">
-                        <div class="food-image">
-                            <img src="images/黔南红烧肉.jpeg" alt="黔南红烧肉">
-                            <div class="food-tag">地方名菜</div>
-                        </div>
-                        <div class="food-content">
-                            <h3>黔南红烧肉</h3>
-                            <p class="food-description">肥而不腻，入口即化，黔南经典家常菜</p>
-                            <div class="food-highlights">
-                                <span class="highlight">肥而不腻</span>
-                                <span class="highlight">传统工艺</span>
-                            </div>
-                            <div class="food-location">
+                            <div class="info-item">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span>各地餐厅</span>
+                                <span>都匀市斗篷山景区</span>
                             </div>
                         </div>
+                        <button class="detail-btn" onclick="toggleDoupengDetails()">
+                            <i class="fas fa-info-circle"></i> 查看详细介绍
+                        </button>
                     </div>
+                </div>
 
+                <!-- 斗篷山详情 -->
+                <div class="attraction-detail" id="doupeng-detail" style="display: none;">
+                    <div class="detail-header">
+                        <h3>斗篷山详细简介</h3>
+                        <p class="detail-subtitle">贵州三大名山之一・国家级风景名胜区</p>
+                    </div>
+                    <div class="detail-intro">
+                        <p>斗篷山（黔南都匀）是贵州三大名山之一、国家级风景名胜区，以黔南第一高峰（1961 米）、原始森林、高山天池、玻璃水溪流、瀑布云海为核心，是中国距离市区最近的原始森林（距都匀仅 22km）。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4><i class="fas fa-star"></i> 核心亮点（必看）</h4>
+                        <ul>
+                            <li><strong>主峰・黔南之巅</strong>：海拔1961 米，苗岭主峰，登顶可俯瞰三县，常现云海翻涌。</li>
+                            <li><strong>天池・一水分两江</strong>：山巅1900 米处高山湖泊，同一池水分流长江、珠江两大水系。</li>
+                            <li><strong>彩虹瀑布・林间幻景</strong>：落差约40 米，晴天午后必现彩虹。</li>
+                            <li><strong>原始森林・树石奇观</strong>：千年古木、红豆杉、珙桐、独有的毛环方竹。</li>
+                            <li><strong>玻璃水溪流</strong>：溪水清澈见底，堪称 "贵州小九寨"。</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4><i class="fas fa-clipboard-list"></i> 实用信息</h4>
+                        <ul>
+                            <li><strong>门票</strong>：50 元；学生/老人半价；14岁以下免票。</li>
+                            <li><strong>开放时间</strong>：09:00–16:00。</li>
+                            <li><strong>交通</strong>：都匀自驾30–40分钟。</li>
+                            <li><strong>最佳季节</strong>：夏季避暑、春秋云海。</li>
+                        </ul>
+                    </div>
+                    <div class="detail-footer">
+                        <button class="close-detail-btn" onclick="toggleDoupengDetails()">
+                            <i class="fas fa-times"></i> 收起详情
+                        </button>
+                    </div>
+                </div>
 
-
-                    <div class="food-card">
-                        <div class="food-image">
-                            <img src="images/都匀毛尖.jpeg" alt="都匀毛尖">
-                            <div class="food-tag">名茶</div>
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/乌蒙大草原.mp4" alt="乌蒙大草原" autoplay muted loop></video>
+                        <div class="attraction-badge">贵州屋脊</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>乌蒙大草原</h3>
+                        <p class="attraction-description">贵州屋脊，10万亩草甸 + 百座白色风车，草原佛光、天池、杜鹃花海</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">草原佛光</span>
+                            <span class="highlight">高山天池</span>
+                            <span class="highlight">杜鹃花海</span>
                         </div>
-                        <div class="food-content">
-                            <h3>都匀毛尖</h3>
-                            <p class="food-description">中国十大名茶之一，茶叶扁平光滑，香气清雅</p>
-                            <div class="food-highlights">
-                                <span class="highlight">中国十大名茶</span>
-                                <span class="highlight">香气清雅</span>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览时间：1天</span>
                             </div>
-                            <div class="food-location">
+                            <div class="info-item">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span>都匀茶园</span>
+                                <span>六盘水盘州市</span>
                             </div>
                         </div>
+                        <button class="detail-btn" onclick="toggleGrasslandDetails()">
+                            <i class="fas fa-info-circle"></i> 查看详细介绍
+                        </button>
                     </div>
                 </div>
-            </section>
 
-            <!-- 交通出行 -->
-            <section class="content-section" id="transport">
-                <h2 class="section-header">交通出行</h2>
-                <div class="transport-container">
-                    <div class="transport-section">
-                        <h3>如何到达</h3>
-                        <div class="transport-grid">
-                            <div class="transport-card">
-                                <div class="transport-icon">
-                                    <i class="fas fa-plane"></i>
-                                </div>
-                                <div class="transport-info">
-                                    <h4>航空</h4>
-                                    <p>贵阳龙洞堡国际机场距离都匀约1小时车程</p>
-                                </div>
+                <div class="attraction-detail" id="grassland-detail" style="display: none;">
+                    <div class="detail-header">
+                        <h3>乌蒙大草原详细简介</h3>
+                        <p class="detail-subtitle">贵州屋脊・贵州两大顶级高山草原之一</p>
+                    </div>
+                    <div class="detail-intro">
+                        <p>乌蒙大草原是西南海拔最高、最壮阔的草原之一，与阿西里西并称贵州两大云上草原。</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>核心亮点</h4>
+                        <ul>
+                            <li>10万亩草甸+百座白色风车</li>
+                            <li>高原佛光、长海子天池</li>
+                            <li>4-5月杜鹃花海震撼</li>
+                        </ul>
+                    </div>
+                    <div class="detail-footer">
+                        <button class="close-detail-btn" onclick="toggleGrasslandDetails()">收起详情</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 人文景观 -->
+        <section class="content-section" id="cultural">
+            <h2 class="section-header">人文风景</h2>
+            <div class="attractions-grid">
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/中国天眼.mp4" alt="中国天眼" autoplay muted loop></video>
+                        <div class="attraction-badge">世界最大射电望远镜</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>中国天眼景区</h3>
+                        <p class="attraction-description">世界最大单口径射电望远镜，探索宇宙奥秘的科技基地</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">科技奇观</span>
+                            <span class="highlight">宇宙探索</span>
+                            <span class="highlight">科普教育</span>
+                        </div>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览时间：半天</span>
                             </div>
-                            <div class="transport-card">
-                                <div class="transport-icon">
-                                    <i class="fas fa-train"></i>
-                                </div>
-                                <div class="transport-info">
-                                    <h4>铁路</h4>
-                                    <p>都匀站是贵广高铁重要站点，连接贵阳、广州等地</p>
-                                </div>
-                            </div>
-                            <div class="transport-card">
-                                <div class="transport-icon">
-                                    <i class="fas fa-bus"></i>
-                                </div>
-                                <div class="transport-info">
-                                    <h4>公路</h4>
-                                    <p>都匀是贵州省南部交通枢纽，多条高速公路在此交汇</p>
-                                </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>平塘县克度镇</span>
                             </div>
                         </div>
+                        <button class="detail-btn" onclick="toggleTianyanDetails()">查看详细介绍</button>
                     </div>
+                </div>
 
-                    <div class="transport-section">
-                        <h3>主要交通路线</h3>
-                        <div class="route-list">
-                            <div class="route-item">
-                                <div class="route-icon">
-                                    <i class="fas fa-route"></i>
-                                </div>
-                                <div class="route-info">
-                                    <h4>都匀市区 - 斗篷山</h4>
-                                    <p>距离约20公里，车程约30分钟，有直达旅游专线</p>
-                                </div>
-                            </div>
-                            <div class="route-item">
-                                <div class="route-icon">
-                                    <i class="fas fa-route"></i>
-                                </div>
-                                <div class="route-info">
-                                    <h4>都匀市区 - 卓稀古镇</h4>
-                                    <p>距离约40公里，车程约1小时，可乘坐县际班车</p>
-                                </div>
-                            </div>
-                            <div class="route-item">
-                                <div class="route-icon">
-                                    <i class="fas fa-route"></i>
-                                </div>
-                                <div class="route-info">
-                                    <h4>都匀市区 - 贵州西南大草原</h4>
-                                    <p>距离约25公里，车程约40分钟，可自驾或包车前往</p>
-                                </div>
-                            </div>
+                <div class="attraction-detail" id="tianyan-detail" style="display: none;">
+                    <div class="detail-header"><h3>中国天眼详细简介</h3></div>
+                    <div class="detail-intro"><p>世界最大500米口径射电望远镜，国家AAAAA级景区。</p></div>
+                    <div class="detail-section"><h4>参观须知</h4><ul><li>禁止携带电子设备</li><li>需乘摆渡车</li><li>门票套票140元</li></ul></div>
+                    <div class="detail-footer"><button class="close-detail-btn" onclick="toggleTianyanDetails()">收起</button></div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/都匀石板街.mp4" alt="都匀石板街" autoplay muted loop></video>
+                        <div class="attraction-badge">历史文化街区</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>都匀石板街</h3>
+                        <p class="attraction-description">明清时期古老街道，青石板铺路，民族风情浓郁</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">历史文化</span>
+                            <span class="highlight">青石板路</span>
+                            <span class="highlight">民族风情</span>
                         </div>
+                        <div class="attraction-info">
+                            <div class="info-item"><i class="fas fa-clock"></i><span>建议游览：2小时</span></div>
+                            <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>都匀市中心</span></div>
+                        </div>
+                        <button class="detail-btn" onclick="toggleShibanDetails()">查看详细介绍</button>
                     </div>
                 </div>
-            </section>
-        </div>
-    </main>
 
-    <footer class="region-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>云上贵州行</h4>
-                    <p>探索贵州的自然风光与民族风情</p>
+                <div class="attraction-detail" id="shiban-detail" style="display: none;">
+                    <div class="detail-header"><h3>都匀石板街详细简介</h3></div>
+                    <div class="detail-intro"><p>明清古街，青石板铺路，多民族文化交融，免费开放。</p></div>
+                    <div class="detail-footer"><button class="close-detail-btn" onclick="toggleShibanDetails()">收起</button></div>
                 </div>
-                <div class="footer-section">
-                    <h4>联系信息</h4>
-                    <p>邮箱: info@yunshang.gz.com</p>
-                    <p>电话: 400-123-4567</p>
+
+            </div>
+        </section>
+
+        <!-- 美食 -->
+        <section class="content-section" id="food">
+            <h2 class="section-header">美食推荐</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/黔南红烧肉.jpeg" alt="黔南红烧肉" loading="lazy">
+                        <div class="food-tag">地方名菜</div>
+                    </div>
+                    <div class="food-content">
+                        <h3>黔南红烧肉</h3>
+                        <p class="food-description">肥而不腻，入口即化</p>
+                        <div class="food-location"><i class="fas fa-map-marker-alt"></i><span>黔南各地餐厅</span></div>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h4>快速链接</h4>
-                    <ul>
-                        <li><a href="guiyang.html">贵阳</a></li>
-                        <li><a href="zunyi.html">遵义</a></li>
-                        <li><a href="anshun.html">安顺</a></li>
-                        <li><a href="qiandongnan.html">黔东南</a></li>
-                        <li><a href="qiannan.html">黔南</a></li>
-                    </ul>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/都匀毛尖.jpeg" alt="都匀毛尖" loading="lazy">
+                        <div class="food-tag">中国十大名茶</div>
+                    </div>
+                    <div class="food-content">
+                        <h3>都匀毛尖</h3>
+                        <p class="food-description">清香回甘，色绿形美</p>
+                        <div class="food-location"><i class="fas fa-map-marker-alt"></i><span>都匀各茶铺</span></div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 云上贵州行. 版权所有</p>
-            </div>
-        </div>
-    </footer>
+        </section>
 
-    <script src="js/qiannan.js"></script>
+        <!-- 交通 -->
+        <section class="content-section" id="transport">
+            <h2 class="section-header">交通出行</h2>
+            <div class="transport-container">
+                <div class="transport-section">
+                    <h3>如何到达黔南</h3>
+                    <div class="transport-grid">
+                        <div class="transport-card"><div class="transport-icon"><i class="fas fa-plane"></i></div><div class="transport-info"><h4>航空</h4><p>贵阳机场→都匀1小时</p></div></div>
+                        <div class="transport-card"><div class="transport-icon"><i class="fas fa-train"></i></div><div class="transport-info"><h4>高铁</h4><p>都匀东站连通全国</p></div></div>
+                        <div class="transport-card"><div class="transport-icon"><i class="fas fa-bus"></i></div><div class="transport-info"><h4>公路</h4><p>高速网络密集</p></div></div>
+                    </div>
+                </div>
+
+                <div class="transport-section">
+                    <h3>景区路线</h3>
+                    <div class="route-list">
+                        <div class="route-item"><div class="route-icon"><i class="fas fa-route"></i></div><div class="route-info"><h4>都匀→斗篷山</h4><p>约20km，30分钟</p></div></div>
+                        <div class="route-item"><div class="route-icon"><i class="fas fa-route"></i></div><div class="route-info"><h4>都匀→天眼</h4><p>约2小时车程</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer class="region-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section"><h4>云上贵州行</h4><p>探索自然与民族之美</p></div>
+            <div class="footer-section"><h4>联系我们</h4><p>400-123-4567</p></div>
+            <div class="footer-section"><h4>城市导航</h4><ul><li><a href="guiyang.html">贵阳</a></li><li><a href="qiannan.html">黔南</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 云上贵州行 版权所有</p></div>
+    </div>
+</footer>
+
+<script src="js/qiannan.js"></script>
 </body>
 </html>
