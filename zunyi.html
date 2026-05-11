@@ -10,31 +10,388 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 统一修复视频 & 头部 & 排版 */
+        .attraction-image video {
+            width: 100% !important;
+            height: 220px !important;
+            object-fit: cover !important;
+            border-radius: 12px;
+        }
+        .attraction-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        .region-header {
+            background: url('images/遵义江界河大桥.jpeg') center / cover no-repeat !important;
+            padding: 100px 0 !important;
+        }
+        .page-slogan {
+            font-family: '楷体', KaiTi, serif;
+            font-size: 2.6rem;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+        }
+        @media (max-width:768px) {
+            .page-slogan {
+                font-size: 1.7rem;
+            }
+        }
+        .attraction-detail {
+            display: none;
+        }
+        .food-image img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+    </style>
 </head>
 <body>
-    <header class="region-header" style="background: url('images/遵义江界河大桥.jpeg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; padding: 150px 0;">
-        <div class="container" style="position: relative; padding: 0;">
-            <div style="position: relative; z-index: 1;">
-                <nav class="breadcrumb">
-                    <a href="index.html">首页</a>
-                    <span>/</span>
-                    <span>遵义市</span>
-                </nav>
-                <h1 class="region-title">遵义市</h1>
-                <p class="region-subtitle">红色圣地，历史文化</p>
-            </div>
 
+<header class="region-header">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span>/</span>
+            <span>遵义市</span>
+        </nav>
+        <h1 class="region-title">遵义市</h1>
+        <p class="region-subtitle">红色圣地，历史文化</p>
+    </div>
+</header>
+
+<nav class="region-navigation">
+    <div class="container">
+        <div class="nav-tabs">
+            <button class="tab-button active" data-tab="natural">
+                <i class="fas fa-mountain"></i>
+                <span>自然景观</span>
+            </button>
+            <button class="tab-button" data-tab="cultural">
+                <i class="fas fa-landmark"></i>
+                <span>人文风景</span>
+            </button>
+            <button class="tab-button" data-tab="food">
+                <i class="fas fa-utensils"></i>
+                <span>美食推荐</span>
+            </button>
+            <button class="tab-button" data-tab="transport">
+                <i class="fas fa-train"></i>
+                <span>交通出行</span>
+            </button>
         </div>
-    </header>
+    </div>
+</nav>
 
-    <nav class="region-navigation">
-        <div class="container">
-            <div class="nav-tabs">
-                <button class="tab-button active" data-tab="natural">
-                    <i class="fas fa-mountain"></i>
-                    <span>自然景观</span>
-                </button>
-                <button class="tab-button" data-tab="cultural">
+<main class="region-main">
+    <div class="container">
+        <div class="page-slogan">红色圣地 · 醉美遵义</div>
+
+        <!-- 自然景观 -->
+        <section class="content-section active" id="natural">
+            <h2 class="section-header">自然景观</h2>
+            <div class="attractions-grid">
+
+                <!-- 赤水丹霞 -->
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/赤水丹霞.mp4" alt="赤水丹霞" autoplay muted loop></video>
+                        <div class="attraction-badge">世界自然遗产</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>赤水丹霞</h3>
+                        <p class="attraction-description">中国最美丹霞地貌，瀑布成群，丹霞绝壁壮观</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">丹霞地貌</span>
+                            <span class="highlight">瀑布成群</span>
+                            <span class="highlight">世界遗产</span>
+                        </div>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览：1-2天</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>赤水市</span>
+                            </div>
+                        </div>
+                        <button class="detail-btn" onclick="toggleChishuiDetails()">
+                            <i class="fas fa-info-circle"></i> 查看详情
+                        </button>
+                    </div>
+                </div>
+                <div class="attraction-detail" id="chishui-detail">
+                    <button class="close-detail-btn" onclick="toggleChishuiDetails()">收起详情</button>
+                </div>
+
+                <!-- 娄山关 -->
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/娄山关.mp4" alt="娄山关" autoplay muted loop></video>
+                        <div class="attraction-badge">红色圣地</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>娄山关</h3>
+                        <p class="attraction-description">黔北第一险要，红色革命圣地，雄关漫道真如铁</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">雄关险峻</span>
+                            <span class="highlight">红色文化</span>
+                            <span class="highlight">自然风光</span>
+                        </div>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览：半天</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>汇川区</span>
+                            </div>
+                        </div>
+                        <button class="detail-btn" onclick="toggleLoushanDetails()">查看详情</button>
+                    </div>
+                </div>
+                <div class="attraction-detail" id="loushan-detail">
+                    <button class="close-detail-btn" onclick="toggleLoushanDetails()">收起详情</button>
+                </div>
+
+                <!-- 双河溶洞 -->
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/双河溶洞.mp4" alt="双河溶洞" autoplay muted loop></video>
+                        <div class="attraction-badge">亚洲第一长洞</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>双河溶洞</h3>
+                        <p class="attraction-description">亚洲最长溶洞，地下奇观，地质博物馆</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">溶洞奇观</span>
+                            <span class="highlight">地下世界</span>
+                            <span class="highlight">地质遗产</span>
+                        </div>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览：3小时</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>绥阳县</span>
+                            </div>
+                        </div>
+                        <button class="detail-btn" onclick="toggleCaveDetails()">查看详情</button>
+                    </div>
+                </div>
+                <div class="attraction-detail" id="cave-detail">
+                    <button class="close-detail-btn" onclick="toggleCaveDetails()">收起详情</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 人文景观 -->
+        <section class="content-section" id="cultural">
+            <h2 class="section-header">人文风景</h2>
+            <div class="attractions-grid">
+
+                <!-- 遵义会议会址 -->
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/遵义会议会址.mp4" alt="遵义会议会址" autoplay muted loop></video>
+                        <div class="attraction-badge">红色圣地</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>遵义会议会址</h3>
+                        <p class="attraction-description">中国革命转折点，全国重点文物保护单位</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">红色文化</span>
+                            <span class="highlight">历史遗址</span>
+                            <span class="highlight">爱国主义基地</span>
+                        </div>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览：1-2小时</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>红花岗区</span>
+                            </div>
+                        </div>
+                        <button class="detail-btn" onclick="toggleMeetingDetails()">查看详情</button>
+                    </div>
+                </div>
+                <div class="attraction-detail" id="meeting-detail">
+                    <button class="close-detail-btn" onclick="toggleMeetingDetails()">收起详情</button>
+                </div>
+
+                <!-- 土城古镇 -->
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <video src="images/土城古镇.mp4" alt="土城古镇" autoplay muted loop></video>
+                        <div class="attraction-badge">千年古镇</div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>土城古镇</h3>
+                        <p class="attraction-description">千年古镇，四渡赤水纪念馆，历史文化浓厚</p>
+                        <div class="attraction-highlights">
+                            <span class="highlight">千年古镇</span>
+                            <span class="highlight">红色文化</span>
+                            <span class="highlight">民俗风情</span>
+                        </div>
+                        <div class="attraction-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>建议游览：半天</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>习水县</span>
+                            </div>
+                        </div>
+                        <button class="detail-btn" onclick="toggleTuchengDetails()">查看详情</button>
+                    </div>
+                </div>
+                <div class="attraction-detail" id="tucheng-detail">
+                    <button class="close-detail-btn" onclick="toggleTuchengDetails()">收起详情</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 美食推荐 -->
+        <section class="content-section" id="food">
+            <h2 class="section-header">美食推荐</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/遵义羊肉粉.jpeg" alt="遵义羊肉粉" loading="lazy">
+                        <div class="food-tag">特色小吃</div>
+                    </div>
+                    <div class="food-content">
+                        <h3>遵义羊肉粉</h3>
+                        <p>鲜香浓郁，粉滑肉嫩，贵州第一名小吃</p>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/豆花面.jpeg" alt="豆花面" loading="lazy">
+                        <div class="food-tag">地方特色</div>
+                    </div>
+                    <div class="food-content">
+                        <h3>豆花面</h3>
+                        <p>软嫩豆花配秘制蘸水，遵义人早餐首选</p>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/鸡蛋糕.jpeg" alt="遵义鸡蛋糕" loading="lazy">
+                        <div class="food-tag">传统糕点</div>
+                    </div>
+                    <div class="food-content">
+                        <h3>遵义鸡蛋糕</h3>
+                        <p>香甜松软，百年老字号，伴手礼首选</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 交通出行 -->
+        <section class="content-section" id="transport">
+            <h2 class="section-header">交通出行</h2>
+            <div class="transport-container">
+                <div class="transport-section">
+                    <h3>如何到达</h3>
+                    <div class="transport-grid">
+                        <div class="transport-card">
+                            <div class="transport-icon"><i class="fas fa-plane"></i></div>
+                            <div class="transport-info">
+                                <h4>航空</h4>
+                                <p>遵义新舟机场 / 茅台机场，通达全国</p>
+                            </div>
+                        </div>
+                        <div class="transport-card">
+                            <div class="transport-icon"><i class="fas fa-train"></i></div>
+                            <div class="transport-info">
+                                <h4>铁路</h4>
+                                <p>高铁直达，渝贵铁路、成贵高铁过境</p>
+                            </div>
+                        </div>
+                        <div class="transport-card">
+                            <div class="transport-icon"><i class="fas fa-bus"></i></div>
+                            <div class="transport-info">
+                                <h4>公路</h4>
+                                <p>高速网络密集，自驾出行便利</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transport-section">
+                    <h3>主要路线</h3>
+                    <div class="route-list">
+                        <div class="route-item">
+                            <div class="route-icon"><i class="fas fa-route"></i></div>
+                            <div class="route-info">
+                                <h4>遵义市区 → 娄山关</h4>
+                                <p>约50公里，1小时车程</p>
+                            </div>
+                        </div>
+                        <div class="route-item">
+                            <div class="route-icon"><i class="fas fa-route"></i></div>
+                            <div class="route-info">
+                                <h4>遵义市区 → 赤水丹霞</h4>
+                                <p>约200公里，2.5小时车程</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer class="region-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>云上贵州行</h4>
+                <p>探索贵州的自然风光与民族风情</p>
+            </div>
+            <div class="footer-section">
+                <h4>联系我们</h4>
+                <p>电话：400-123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="guiyang.html">贵阳</a></li>
+                    <li><a href="zunyi.html">遵义</a></li>
+                    <li><a href="anshun.html">安顺</a></li>
+                    <li><a href="qiandongnan.html">黔东南</a></li>
+                    <li><a href="qiannan.html">黔南</a></li>
+                    <li><a href="qianxinan.html">黔西南</a></li>
+                    <li><a href="tongren.html">铜仁</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 云上贵州行. 版权所有</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/zunyi.js"></script>
+</body>
+</html>                <button class="tab-button" data-tab="cultural">
                     <i class="fas fa-landmark"></i>
                     <span>人文风景</span>
                 </button>
